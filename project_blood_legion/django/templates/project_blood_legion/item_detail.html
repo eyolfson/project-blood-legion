@@ -3,11 +3,22 @@
 {% block content %}
 
 {% if item.loot_set.count %}
-<ul>
-  {% for loot in item.loot_set.all %}
-  <li>{{ loot.character }} @ {{ loot.raid }}</li>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Character</th>
+      <th>Raid</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for loot in item.loot_set.all %}
+    <tr>
+      <td><a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a></td>
+      <td><a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a></td>
+    </tr>
   {% endfor %}
-</ul>
+  </tbody>
+</table>
 {% else %}
 <p>Never looted.</p>
 {% endif %}

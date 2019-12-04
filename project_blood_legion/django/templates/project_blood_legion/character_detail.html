@@ -2,4 +2,26 @@
 
 {% block content %}
 <p>{{ character.get_race_display }} {{ character.get_cls_display }}</p>
+
+{% if character.loot_set.count %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Raid</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for loot in character.loot_set.all %}
+    <tr>
+      <td><a href="{% url 'project_blood_legion:item_detail' loot.item.id %}" rel="item={{ loot.item.classicdb_id }}">{{ loot.item }}</a></td>
+      <td><a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No loot.</p>
+{% endif %}
+
 {% endblock %}
