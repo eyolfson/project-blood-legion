@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if items %}
+  <ul>
+  {% for item in items %}
+    <li><a href="{% url 'project_blood_legion:item_detail' item.id %}" rel="item={{ item.classicdb_id }}">{{ item }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No items exist.</p>
+{% endif %}
+
+{% endblock %}

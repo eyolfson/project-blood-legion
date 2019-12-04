@@ -95,6 +95,7 @@ class Boss(models.Model):
 		verbose_name = 'boss'
 		verbose_name_plural = 'bosses'
 		ordering = ['name']
+		unique_together = ['zone', 'name']
 
 class Raid(models.Model):
 	zone = models.ForeignKey(

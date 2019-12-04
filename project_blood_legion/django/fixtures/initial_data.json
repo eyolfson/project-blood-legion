@@ -102,6 +102,14 @@
   }
 },
 {
+  "model": "project_blood_legion.boss",
+  "pk": 12,
+  "fields": {
+    "zone": 1,
+    "name": "Trash"
+  }
+},
+{
   "model": "project_blood_legion.raid",
   "pk": 1,
   "fields": {
@@ -433,6 +441,105 @@
     "name": "Gauntlets of Might",
     "quality": "E",
     "classicdb_id": 16863
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 7,
+  "fields": {
+    "name": "Helm of the Lifegiver",
+    "quality": "E",
+    "classicdb_id": 18870
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 8,
+  "fields": {
+    "name": "Choker of Enlightenment",
+    "quality": "E",
+    "classicdb_id": 17109
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 9,
+  "fields": {
+    "name": "Robe of Volatile Power",
+    "quality": "E",
+    "classicdb_id": 19145
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 10,
+  "fields": {
+    "name": "Wristguards of Stability",
+    "quality": "E",
+    "classicdb_id": 19146
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 11,
+  "fields": {
+    "name": "Manastorm Leggings",
+    "quality": "E",
+    "classicdb_id": 18872
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 12,
+  "fields": {
+    "name": "Salamander Scale Pants",
+    "quality": "E",
+    "classicdb_id": 18875
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 13,
+  "fields": {
+    "name": "Flamewaker Legplates",
+    "quality": "E",
+    "classicdb_id": 18861
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 14,
+  "fields": {
+    "name": "Heavy Dark Iron Ring",
+    "quality": "E",
+    "classicdb_id": 18879
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 15,
+  "fields": {
+    "name": "Ring of Spell Power",
+    "quality": "E",
+    "classicdb_id": 19147
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 16,
+  "fields": {
+    "name": "Crimson Shocker",
+    "quality": "E",
+    "classicdb_id": 17077
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 17,
+  "fields": {
+    "name": "Sorcerous Dagger",
+    "quality": "E",
+    "classicdb_id": 18878
   }
 }
 ]

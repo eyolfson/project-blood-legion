@@ -25,3 +25,20 @@ def character_detail(request, character_id):
 		'character': character,
 	}
 	return render(request, 'project_blood_legion/character_detail.html', context)
+
+@permission_required('project_blood_legion.view_character')
+def item_index(request):
+	context = {
+		'title': 'Items',
+		'items': Item.objects.all(),
+	}
+	return render(request, 'project_blood_legion/item_index.html', context)
+
+@permission_required('project_blood_legion.view_character')
+def item_detail(request, item_id):
+	item = get_object_or_404(Item, pk=item_id)
+	context = {
+		'title': item.name,
+		'item': item,
+	}
+	return render(request, 'project_blood_legion/item_detail.html', context)

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if item.loot_set.count %}
+<ul>
+  {% for loot in item.loot_set.all %}
+  <li>{{ loot.character }} @ {{ loot.raid }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Never looted.</p>
+{% endif %}
+
+{% endblock %}
