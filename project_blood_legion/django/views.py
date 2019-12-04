@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.contrib.auth.decorators import login_required, permission_required
 
-from .models import Character, Item
+from .models import Character, Item, Raid
 
 def index(request):
 	context = {
@@ -42,3 +42,20 @@ def item_detail(request, item_id):
 		'item': item,
 	}
 	return render(request, 'project_blood_legion/item_detail.html', context)
+
+@permission_required('project_blood_legion.view_character')
+def raid_index(request):
+	context = {
+		'title': 'Raids',
+		'raids': Raid.objects.all(),
+	}
+	return render(request, 'project_blood_legion/raid_index.html', context)
+
+@permission_required('project_blood_legion.view_character')
+def raid_detail(request, raid_id):
+	raid = get_object_or_404(Raid, pk=raid_id)
+	context = {
+		'title': str(raid),
+		'raid': raid,
+	}
+	return render(request, 'project_blood_legion/raid_detail.html', context)

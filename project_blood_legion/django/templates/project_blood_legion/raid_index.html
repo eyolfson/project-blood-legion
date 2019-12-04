@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if raids %}
+  <ul>
+  {% for raid in raids %}
+    <li><a href="{% url 'project_blood_legion:raid_detail' raid.id %}">{{ raid }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No raids exist.</p>
+{% endif %}
+
+{% endblock %}

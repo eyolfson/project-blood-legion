@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if raid.loot_set.count %}
+<ul>
+  {% for loot in raid.loot_set.all %}
+  <li>{{ loot }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No loot.</p>
+{% endif %}
+
+{% endblock %}

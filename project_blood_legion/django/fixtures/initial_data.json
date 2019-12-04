@@ -110,6 +110,14 @@
   }
 },
 {
+  "model": "project_blood_legion.boss",
+  "pk": 13,
+  "fields": {
+    "zone": 2,
+    "name": "Trash"
+  }
+},
+{
   "model": "project_blood_legion.raid",
   "pk": 1,
   "fields": {
