@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from django.contrib.auth.decorators import permission_required
+from django.contrib.auth.decorators import login_required, permission_required
 
 from .models import Character, Item
 
@@ -9,7 +9,7 @@ def index(request):
 	}
 	return render(request, 'project_blood_legion/index.html', context)
 
-@permission_required('polls.view_character')
+@permission_required('project_blood_legion.view_character')
 def character_index(request):
 	context = {
 		'title': 'Characters',
@@ -17,7 +17,7 @@ def character_index(request):
 	}
 	return render(request, 'project_blood_legion/character_index.html', context)
 
-@permission_required('polls.view_character')
+@permission_required('project_blood_legion.view_character')
 def character_detail(request, character_id):
 	character = get_object_or_404(Character, pk=character_id)
 	context = {
