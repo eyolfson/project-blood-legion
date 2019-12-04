@@ -1,0 +1,438 @@
+[
+{
+  "model": "project_blood_legion.zone",
+  "pk": 1,
+  "fields": {
+    "name": "Molten Core"
+  }
+},
+{
+  "model": "project_blood_legion.zone",
+  "pk": 2,
+  "fields": {
+    "name": "Onyxia's Lair"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 1,
+  "fields": {
+    "zone": 1,
+    "name": "Lucifron"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 2,
+  "fields": {
+    "zone": 1,
+    "name": "Magmadar"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 3,
+  "fields": {
+    "zone": 1,
+    "name": "Gehennas"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 4,
+  "fields": {
+    "zone": 1,
+    "name": "Garr"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 5,
+  "fields": {
+    "zone": 1,
+    "name": "Baron Geddon"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 6,
+  "fields": {
+    "zone": 1,
+    "name": "Shazzrah"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 7,
+  "fields": {
+    "zone": 1,
+    "name": "Sulfuron Harbinger"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 8,
+  "fields": {
+    "zone": 1,
+    "name": "Golemagg the Incinerator"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 9,
+  "fields": {
+    "zone": 1,
+    "name": "Majordomo Executus"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 10,
+  "fields": {
+    "zone": 1,
+    "name": "Ragnaros"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 11,
+  "fields": {
+    "zone": 2,
+    "name": "Onyxia"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 1,
+  "fields": {
+    "zone": 1,
+    "reset": 1
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 2,
+  "fields": {
+    "zone": 2,
+    "reset": 1
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 3,
+  "fields": {
+    "zone": 2,
+    "reset": 2
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 4,
+  "fields": {
+    "zone": 1,
+    "reset": 2
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 5,
+  "fields": {
+    "zone": 2,
+    "reset": 3
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 6,
+  "fields": {
+    "zone": 1,
+    "reset": 3
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 7,
+  "fields": {
+    "zone": 2,
+    "reset": 4
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 8,
+  "fields": {
+    "zone": 1,
+    "reset": 4
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 9,
+  "fields": {
+    "zone": 2,
+    "reset": 5
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 10,
+  "fields": {
+    "zone": 2,
+    "reset": 6
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 11,
+  "fields": {
+    "zone": 1,
+    "reset": 5
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 12,
+  "fields": {
+    "zone": 2,
+    "reset": 7
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 13,
+  "fields": {
+    "zone": 1,
+    "reset": 6
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 14,
+  "fields": {
+    "zone": 2,
+    "reset": 8
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 15,
+  "fields": {
+    "zone": 2,
+    "reset": 9
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 16,
+  "fields": {
+    "zone": 1,
+    "reset": 7
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 17,
+  "fields": {
+    "zone": 2,
+    "reset": 10
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 18,
+  "fields": {
+    "zone": 1,
+    "reset": 8
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 19,
+  "fields": {
+    "zone": 2,
+    "reset": 11
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 20,
+  "fields": {
+    "zone": 1,
+    "reset": 9
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 21,
+  "fields": {
+    "zone": 2,
+    "reset": 12
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 22,
+  "fields": {
+    "zone": 2,
+    "reset": 13
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 23,
+  "fields": {
+    "zone": 1,
+    "reset": 10
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 24,
+  "fields": {
+    "zone": 2,
+    "reset": 14
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 25,
+  "fields": {
+    "zone": 1,
+    "reset": 11
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 26,
+  "fields": {
+    "zone": 2,
+    "reset": 15
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 27,
+  "fields": {
+    "zone": 2,
+    "reset": 16
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 28,
+  "fields": {
+    "zone": 1,
+    "reset": 12
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 29,
+  "fields": {
+    "zone": 2,
+    "reset": 17
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 30,
+  "fields": {
+    "zone": 1,
+    "reset": 13
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 31,
+  "fields": {
+    "zone": 2,
+    "reset": 18
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 32,
+  "fields": {
+    "zone": 1,
+    "reset": 14
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 33,
+  "fields": {
+    "zone": 2,
+    "reset": 19
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 34,
+  "fields": {
+    "zone": 2,
+    "reset": 20
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 35,
+  "fields": {
+    "zone": 1,
+    "reset": 15
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 1,
+  "fields": {
+    "name": "Arcanist Boots",
+    "quality": "E",
+    "classicdb_id": 16800
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 2,
+  "fields": {
+    "name": "Felheart Gloves",
+    "quality": "E",
+    "classicdb_id": 16805
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 3,
+  "fields": {
+    "name": "Cenarion Boots",
+    "quality": "E",
+    "classicdb_id": 16829
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 4,
+  "fields": {
+    "name": "Earthfury Boots",
+    "quality": "E",
+    "classicdb_id": 16837
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 5,
+  "fields": {
+    "name": "Lawbringer Boots",
+    "quality": "E",
+    "classicdb_id": 16859
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 6,
+  "fields": {
+    "name": "Gauntlets of Might",
+    "quality": "E",
+    "classicdb_id": 16863
+  }
+}
+]

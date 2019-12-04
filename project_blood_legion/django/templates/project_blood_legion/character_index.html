@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if characters %}
+  <ul>
+  {% for character in characters %}
+    <li><a href="{% url 'project_blood_legion:character_detail' character.id %}">{{ character }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No characters exist.</p>
+{% endif %}
+
+{% endblock %}
