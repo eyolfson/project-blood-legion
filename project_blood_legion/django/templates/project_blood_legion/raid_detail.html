@@ -14,7 +14,7 @@
     {% for loot in raid.loot_set.all %}
     <tr>
       <td><a href="{% url 'project_blood_legion:item_detail' loot.item.id %}" rel="item={{ loot.item.classicdb_id }}">{{ loot.item }}</a></td>
-      <td><a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a></td>
+      <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>

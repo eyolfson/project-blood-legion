@@ -549,5 +549,230 @@
     "quality": "E",
     "classicdb_id": 18878
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 18,
+  "fields": {
+    "name": "Tome of Tranquilizing Shot",
+    "quality": "U",
+    "classicdb_id": 16665
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 19,
+  "fields": {
+    "name": "Pants of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16814
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 20,
+  "fields": {
+    "name": "Arcanist Leggings",
+    "quality": "E",
+    "classicdb_id": 16796
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 21,
+  "fields": {
+    "name": "Felheart Pants",
+    "quality": "E",
+    "classicdb_id": 16810
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 22,
+  "fields": {
+    "name": "Nightslayer Pants",
+    "quality": "E",
+    "classicdb_id": 16822
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 23,
+  "fields": {
+    "name": "Cenarion Leggings",
+    "quality": "E",
+    "classicdb_id": 16835
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 24,
+  "fields": {
+    "name": "Giantstalker's Leggings",
+    "quality": "E",
+    "classicdb_id": 16847
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 25,
+  "fields": {
+    "name": "Earthfury Legguards",
+    "quality": "E",
+    "classicdb_id": 16843
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 26,
+  "fields": {
+    "name": "Lawbringer Legplates",
+    "quality": "E",
+    "classicdb_id": 16855
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 27,
+  "fields": {
+    "name": "Legplates of Might",
+    "quality": "E",
+    "classicdb_id": 16867
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 28,
+  "fields": {
+    "name": "Eskhandar's Right Claw",
+    "quality": "E",
+    "classicdb_id": 18203
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 29,
+  "fields": {
+    "name": "Medallion of Steadfast Might",
+    "quality": "E",
+    "classicdb_id": 17065
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 30,
+  "fields": {
+    "name": "Deep Earth Spaulders",
+    "quality": "E",
+    "classicdb_id": 18829
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 31,
+  "fields": {
+    "name": "Aged Core Leather Gloves",
+    "quality": "E",
+    "classicdb_id": 18823
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 32,
+  "fields": {
+    "name": "Flameguard Gauntlets",
+    "quality": "E",
+    "classicdb_id": 19143
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 33,
+  "fields": {
+    "name": "Mana Igniting Cord",
+    "quality": "E",
+    "classicdb_id": 19136
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 34,
+  "fields": {
+    "name": "Sabatons of the Flamewalker",
+    "quality": "E",
+    "classicdb_id": 19144
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 35,
+  "fields": {
+    "name": "Magma Tempered Boots",
+    "quality": "E",
+    "classicdb_id": 18824
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 36,
+  "fields": {
+    "name": "Quick Strike Ring",
+    "quality": "E",
+    "classicdb_id": 18821
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 37,
+  "fields": {
+    "name": "Talisman of Ephemeral Power",
+    "quality": "E",
+    "classicdb_id": 18820
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 38,
+  "fields": {
+    "name": "Fire Runed Grimoire",
+    "quality": "E",
+    "classicdb_id": 19142
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 39,
+  "fields": {
+    "name": "Striker's Mark",
+    "quality": "E",
+    "classicdb_id": 17069
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 40,
+  "fields": {
+    "name": "Earthshaker",
+    "quality": "E",
+    "classicdb_id": 17073
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 41,
+  "fields": {
+    "name": "Obsidian Edged Blade",
+    "quality": "E",
+    "classicdb_id": 18822
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 42,
+  "fields": {
+    "name": "Plans: Elemental Sharpening Stone",
+    "quality": "R",
+    "classicdb_id": 18264
+  }
 }
 ]

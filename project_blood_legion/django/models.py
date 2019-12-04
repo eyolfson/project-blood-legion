@@ -162,11 +162,13 @@ class Item(models.Model):
 class Loot(models.Model):
 	character = models.ForeignKey(
 		Character,
-		on_delete=models.CASCADE
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
 	)
 	item = models.ForeignKey(
 		Item,
-		on_delete=models.CASCADE
+		on_delete=models.CASCADE,
 	)
 	raid = models.ForeignKey(
 		Raid,
