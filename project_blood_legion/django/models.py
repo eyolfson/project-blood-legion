@@ -182,6 +182,12 @@ class Loot(models.Model):
 		blank=True,
 		null=True,
 	)
+	group = models.ForeignKey(
+		Group,
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
+	)
 	boss = models.ForeignKey(
 		Boss,
 		on_delete=models.CASCADE,
