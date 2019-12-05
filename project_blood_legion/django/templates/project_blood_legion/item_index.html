@@ -5,7 +5,7 @@
 {% if items %}
   <ul>
   {% for item in items %}
-    <li><a href="{% url 'project_blood_legion:item_detail' item.id %}" rel="item={{ item.classicdb_id }}">{{ item }}</a></li>
+    <li>{% include "project_blood_legion/item_link.html" %}</li>
   {% endfor %}
   </ul>
 {% else %}

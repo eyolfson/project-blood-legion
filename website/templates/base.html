@@ -5,16 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script type="text/javascript" src="https://classicdb.ch/templates/wowhead/js/power.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+    </script>
+    <script src="https://classicdb.ch/templates/wowhead/js/power.js"></script>
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        {{ title }}
-      </h1>
-      {% block content %}{% endblock %}
-    </div>
-  </section>
+    <nav class="navbar is-dark" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-info" href="https://bl.eyl.io/"><strong>Blood Legion</strong></a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="{% url 'project_blood_legion:character_index' %}">Characters</a>
+          <a class="navbar-item" href="{% url 'project_blood_legion:item_index' %}">Items</a>
+          <a class="navbar-item" href="{% url 'project_blood_legion:raid_index' %}">Raids</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              {% if user.is_authenticated %}
+              <a class="button is-light" href="{% url 'account_logout' %}">
+                Logout
+              </a>
+              {% else %}
+              <a class="button is-primary" href="{% url 'account_signup' %}">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="{% url 'account_login' %}">
+                Login
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          {{ title }}
+        </h1>
+        {% block content %}{% endblock %}
+      </div>
+    </section>
   </body>
 </html>
