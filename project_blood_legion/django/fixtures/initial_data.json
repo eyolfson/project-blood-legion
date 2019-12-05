@@ -774,5 +774,1139 @@
     "quality": "R",
     "classicdb_id": 18264
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 43,
+  "fields": {
+    "name": "Cloak of the Shrouded Mists",
+    "quality": "E",
+    "classicdb_id": 17102
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 44,
+  "fields": {
+    "name": "Dragon's Blood Cape",
+    "quality": "E",
+    "classicdb_id": 17107
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 45,
+  "fields": {
+    "name": "Bloodfang Pants",
+    "quality": "E",
+    "classicdb_id": 16909
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 46,
+  "fields": {
+    "name": "Belt of Might",
+    "quality": "E",
+    "classicdb_id": 16864
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 47,
+  "fields": {
+    "name": "Bracers of Might",
+    "quality": "E",
+    "classicdb_id": 16861
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 48,
+  "fields": {
+    "name": "Breastplate of Might",
+    "quality": "E",
+    "classicdb_id": 16865
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 49,
+  "fields": {
+    "name": "Helm of Might",
+    "quality": "E",
+    "classicdb_id": 16866
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 50,
+  "fields": {
+    "name": "Pauldrons of Might",
+    "quality": "E",
+    "classicdb_id": 16868
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 51,
+  "fields": {
+    "name": "Sabatons of Might",
+    "quality": "E",
+    "classicdb_id": 16862
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 52,
+  "fields": {
+    "name": "Helm of Wrath",
+    "quality": "E",
+    "classicdb_id": 16963
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 53,
+  "fields": {
+    "name": "Legplates of Wrath",
+    "quality": "E",
+    "classicdb_id": 16962
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 54,
+  "fields": {
+    "name": "Bloodfang Hood",
+    "quality": "E",
+    "classicdb_id": 16908
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 55,
+  "fields": {
+    "name": "Dragonstalker's Helm",
+    "quality": "E",
+    "classicdb_id": 16939
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 56,
+  "fields": {
+    "name": "Dragonstalker's Legguards",
+    "quality": "E",
+    "classicdb_id": 16938
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 57,
+  "fields": {
+    "name": "Crown of Destruction",
+    "quality": "E",
+    "classicdb_id": 18817
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 58,
+  "fields": {
+    "name": "Azuresong Mageblade",
+    "quality": "E",
+    "classicdb_id": 17103
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 59,
+  "fields": {
+    "name": "Eye of Sulfuras",
+    "quality": "L",
+    "classicdb_id": 17204
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 60,
+  "fields": {
+    "name": "Ancient Petrified Leaf",
+    "quality": "E",
+    "classicdb_id": 18703
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 61,
+  "fields": {
+    "name": "The Eye of Divinity",
+    "quality": "E",
+    "classicdb_id": 18646
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 62,
+  "fields": {
+    "name": "Drillborer Disk",
+    "quality": "E",
+    "classicdb_id": 17066
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 63,
+  "fields": {
+    "name": "Bindings of the Windseeker",
+    "quality": "L",
+    "classicdb_id": 18563
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 64,
+  "fields": {
+    "name": "Bindings of the Windseeker",
+    "quality": "L",
+    "classicdb_id": 18564
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 65,
+  "fields": {
+    "name": "Spinal Reaper",
+    "quality": "E",
+    "classicdb_id": 17104
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 66,
+  "fields": {
+    "name": "Nightslayer Belt",
+    "quality": "E",
+    "classicdb_id": 16827
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 67,
+  "fields": {
+    "name": "Nightslayer Boots",
+    "quality": "E",
+    "classicdb_id": 16824
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 68,
+  "fields": {
+    "name": "Nightslayer Bracelets",
+    "quality": "E",
+    "classicdb_id": 16825
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 69,
+  "fields": {
+    "name": "Nightslayer Chestpiece",
+    "quality": "E",
+    "classicdb_id": 16820
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 70,
+  "fields": {
+    "name": "Nightslayer Cover",
+    "quality": "E",
+    "classicdb_id": 16821
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 71,
+  "fields": {
+    "name": "Nightslayer Gloves",
+    "quality": "E",
+    "classicdb_id": 16826
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 72,
+  "fields": {
+    "name": "Nightslayer Shoulder Pads",
+    "quality": "E",
+    "classicdb_id": 16823
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 73,
+  "fields": {
+    "name": "Band of Accuria",
+    "quality": "E",
+    "classicdb_id": 17063
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 74,
+  "fields": {
+    "name": "Brutality Blade",
+    "quality": "E",
+    "classicdb_id": 18832
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 75,
+  "fields": {
+    "name": "Head of Onyxia",
+    "quality": "E",
+    "classicdb_id": 18423
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 76,
+  "fields": {
+    "name": "Vis'kag the Bloodletter",
+    "quality": "E",
+    "classicdb_id": 17075
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 77,
+  "fields": {
+    "name": "Boots of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16811
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 78,
+  "fields": {
+    "name": "Circlet of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16813
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 79,
+  "fields": {
+    "name": "Girdle of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16817
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 80,
+  "fields": {
+    "name": "Gloves of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16812
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 81,
+  "fields": {
+    "name": "Mantle of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16816
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 82,
+  "fields": {
+    "name": "Robes of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16815
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 83,
+  "fields": {
+    "name": "Vambraces of Prophecy",
+    "quality": "E",
+    "classicdb_id": 16819
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 84,
+  "fields": {
+    "name": "Leggings of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16922
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 85,
+  "fields": {
+    "name": "Halo of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16921
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 86,
+  "fields": {
+    "name": "Arcanist Belt",
+    "quality": "E",
+    "classicdb_id": 16802
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 87,
+  "fields": {
+    "name": "Arcanist Bindings",
+    "quality": "E",
+    "classicdb_id": 16799
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 88,
+  "fields": {
+    "name": "Arcanist Crown",
+    "quality": "E",
+    "classicdb_id": 16795
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 89,
+  "fields": {
+    "name": "Arcanist Gloves",
+    "quality": "E",
+    "classicdb_id": 16801
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 90,
+  "fields": {
+    "name": "Arcanist Mantle",
+    "quality": "E",
+    "classicdb_id": 16797
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 91,
+  "fields": {
+    "name": "Arcanist Robes",
+    "quality": "E",
+    "classicdb_id": 16798
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 92,
+  "fields": {
+    "name": "Felheart Belt",
+    "quality": "E",
+    "classicdb_id": 16806
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 93,
+  "fields": {
+    "name": "Felheart Bracers",
+    "quality": "E",
+    "classicdb_id": 16804
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 94,
+  "fields": {
+    "name": "Felheart Robes",
+    "quality": "E",
+    "classicdb_id": 16809
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 95,
+  "fields": {
+    "name": "Felheart Shoulder Pads",
+    "quality": "E",
+    "classicdb_id": 16807
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 96,
+  "fields": {
+    "name": "Felheart Horns",
+    "quality": "E",
+    "classicdb_id": 16808
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 97,
+  "fields": {
+    "name": "Felheart Slippers",
+    "quality": "E",
+    "classicdb_id": 16803
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 98,
+  "fields": {
+    "name": "Schematic: Force Reactive Disk",
+    "quality": "R",
+    "classicdb_id": 18291
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 99,
+  "fields": {
+    "name": "Lawbringer Belt",
+    "quality": "E",
+    "classicdb_id": 16858
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 100,
+  "fields": {
+    "name": "Lawbringer Bracers",
+    "quality": "E",
+    "classicdb_id": 16857
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 101,
+  "fields": {
+    "name": "Lawbringer Chestguard",
+    "quality": "E",
+    "classicdb_id": 16853
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 102,
+  "fields": {
+    "name": "Lawbringer Gauntlets",
+    "quality": "E",
+    "classicdb_id": 16860
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 103,
+  "fields": {
+    "name": "Lawbringer Helm",
+    "quality": "E",
+    "classicdb_id": 16854
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 104,
+  "fields": {
+    "name": "Lawbringer Spaulders",
+    "quality": "E",
+    "classicdb_id": 16856
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 105,
+  "fields": {
+    "name": "Giantstalker's Belt",
+    "quality": "E",
+    "classicdb_id": 16851
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 106,
+  "fields": {
+    "name": "Giantstalker's Boots",
+    "quality": "E",
+    "classicdb_id": 16849
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 107,
+  "fields": {
+    "name": "Giantstalker's Bracers",
+    "quality": "E",
+    "classicdb_id": 16850
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 108,
+  "fields": {
+    "name": "Giantstalker's Breastplate",
+    "quality": "E",
+    "classicdb_id": 16845
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 109,
+  "fields": {
+    "name": "Giantstalker's Epaulets",
+    "quality": "E",
+    "classicdb_id": 16848
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 110,
+  "fields": {
+    "name": "Giantstalker's Gloves",
+    "quality": "E",
+    "classicdb_id": 16852
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 111,
+  "fields": {
+    "name": "Giantstalker's Helmet",
+    "quality": "E",
+    "classicdb_id": 16846
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 112,
+  "fields": {
+    "name": "Formula: Enchant Weapon - Spell Power",
+    "quality": "R",
+    "classicdb_id": 18259
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 113,
+  "fields": {
+    "name": "Cenarion Belt",
+    "quality": "E",
+    "classicdb_id": 16828
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 114,
+  "fields": {
+    "name": "Cenarion Bracers",
+    "quality": "E",
+    "classicdb_id": 16830
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 115,
+  "fields": {
+    "name": "Cenarion Vestments",
+    "quality": "E",
+    "classicdb_id": 16833
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 116,
+  "fields": {
+    "name": "Cenarion Gloves",
+    "quality": "E",
+    "classicdb_id": 16831
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 117,
+  "fields": {
+    "name": "Cenarion Helm",
+    "quality": "E",
+    "classicdb_id": 16834
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 118,
+  "fields": {
+    "name": "Cenarion Spaulders",
+    "quality": "E",
+    "classicdb_id": 16836
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 119,
+  "fields": {
+    "name": "Sash of Whispered Secrets",
+    "quality": "E",
+    "classicdb_id": 18809
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 120,
+  "fields": {
+    "name": "Gloves of the Hypnotic Flame",
+    "quality": "E",
+    "classicdb_id": 18808
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 121,
+  "fields": {
+    "name": "Band of Sulfuras",
+    "quality": "E",
+    "classicdb_id": 19138
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 122,
+  "fields": {
+    "name": "Mature Black Dragon Sinew",
+    "quality": "E",
+    "classicdb_id": 18705
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 123,
+  "fields": {
+    "name": "Stormrage Legguards",
+    "quality": "E",
+    "classicdb_id": 16901
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 124,
+  "fields": {
+    "name": "Stormrage Cover",
+    "quality": "E",
+    "classicdb_id": 16900
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 125,
+  "fields": {
+    "name": "Shard of the Scale",
+    "quality": "E",
+    "classicdb_id": 17064
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 126,
+  "fields": {
+    "name": "Ring of Binding",
+    "quality": "E",
+    "classicdb_id": 18813
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 127,
+  "fields": {
+    "name": "Gutgore Ripper",
+    "quality": "E",
+    "classicdb_id": 17071
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 128,
+  "fields": {
+    "name": "Shadowstrike",
+    "quality": "E",
+    "classicdb_id": 17074
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 129,
+  "fields": {
+    "name": "Staff of Dominance",
+    "quality": "E",
+    "classicdb_id": 18842
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 130,
+  "fields": {
+    "name": "Finkle's Lava Dredger",
+    "quality": "E",
+    "classicdb_id": 18803
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 131,
+  "fields": {
+    "name": "Cauterizing Band",
+    "quality": "E",
+    "classicdb_id": 19140
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 132,
+  "fields": {
+    "name": "Netherwind Crown",
+    "quality": "E",
+    "classicdb_id": 16914
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 133,
+  "fields": {
+    "name": "Netherwind Pants",
+    "quality": "E",
+    "classicdb_id": 16915
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 134,
+  "fields": {
+    "name": "Essence of the Pure Flame",
+    "quality": "E",
+    "classicdb_id": 18815
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 135,
+  "fields": {
+    "name": "Ancient Cornerstone Grimoire",
+    "quality": "E",
+    "classicdb_id": 17067
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 136,
+  "fields": {
+    "name": "Nemesis Skullcap",
+    "quality": "E",
+    "classicdb_id": 16929
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 137,
+  "fields": {
+    "name": "Nemesis Leggings",
+    "quality": "E",
+    "classicdb_id": 16930
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 138,
+  "fields": {
+    "name": "Seal of the Archmagus",
+    "quality": "E",
+    "classicdb_id": 17110
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 139,
+  "fields": {
+    "name": "Aurastone Hammer",
+    "quality": "E",
+    "classicdb_id": 17105
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 140,
+  "fields": {
+    "name": "Pattern: Flarecore Wraps",
+    "quality": "R",
+    "classicdb_id": 18265
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 141,
+  "fields": {
+    "name": "Schematic: Core Marksman Rifle",
+    "quality": "R",
+    "classicdb_id": 18292
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 142,
+  "fields": {
+    "name": "Wristguards of True Flight",
+    "quality": "E",
+    "classicdb_id": 18812
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 143,
+  "fields": {
+    "name": "Malistar's Defender",
+    "quality": "E",
+    "classicdb_id": 17106
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 144,
+  "fields": {
+    "name": "Judgement Legplates",
+    "quality": "E",
+    "classicdb_id": 16954
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 145,
+  "fields": {
+    "name": "Judgement Crown",
+    "quality": "E",
+    "classicdb_id": 16955
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 146,
+  "fields": {
+    "name": "Choker of the Fire Lord",
+    "quality": "E",
+    "classicdb_id": 18814
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 147,
+  "fields": {
+    "name": "Bonereaver's Edge",
+    "quality": "E",
+    "classicdb_id": 17076
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 148,
+  "fields": {
+    "name": "Blastershot Launcher",
+    "quality": "E",
+    "classicdb_id": 17072
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 149,
+  "fields": {
+    "name": "Core Forged Greaves",
+    "quality": "E",
+    "classicdb_id": 18806
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 150,
+  "fields": {
+    "name": "Fireguard Shoulders",
+    "quality": "E",
+    "classicdb_id": 19139
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 151,
+  "fields": {
+    "name": "Core Hound Tooth",
+    "quality": "E",
+    "classicdb_id": 18805
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 152,
+  "fields": {
+    "name": "Eskhandar's Collar",
+    "quality": "E",
+    "classicdb_id": 18205
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 153,
+  "fields": {
+    "name": "Sapphiron Drape",
+    "quality": "E",
+    "classicdb_id": 17078
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 154,
+  "fields": {
+    "name": "Wild Growth Spaulders",
+    "quality": "E",
+    "classicdb_id": 18810
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 155,
+  "fields": {
+    "name": "Fireproof Cloak",
+    "quality": "E",
+    "classicdb_id": 18811
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 156,
+  "fields": {
+    "name": "Perdition's Blade",
+    "quality": "E",
+    "classicdb_id": 18816
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 157,
+  "fields": {
+    "name": "Quel'Serrar",
+    "quality": "E",
+    "classicdb_id": 18348
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 158,
+  "fields": {
+    "name": "Force Reactive Disk",
+    "quality": "E",
+    "classicdb_id": 18168
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 159,
+  "fields": {
+    "name": "Onslaught Girdle",
+    "quality": "E",
+    "classicdb_id": 19137
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 160,
+  "fields": {
+    "name": "Earthfury Belt",
+    "quality": "E",
+    "classicdb_id": 16838
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 161,
+  "fields": {
+    "name": "Earthfury Bracers",
+    "quality": "E",
+    "classicdb_id": 16840
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 162,
+  "fields": {
+    "name": "Earthfury Vestments",
+    "quality": "E",
+    "classicdb_id": 16841
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 163,
+  "fields": {
+    "name": "Earthfury Epaulets",
+    "quality": "E",
+    "classicdb_id": 16844
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 164,
+  "fields": {
+    "name": "Earthfury Gauntlets",
+    "quality": "E",
+    "classicdb_id": 16839
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 165,
+  "fields": {
+    "name": "Earthfury Helmet",
+    "quality": "E",
+    "classicdb_id": 16842
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 166,
+  "fields": {
+    "name": "Sulfuras, Hand of Ragnaros",
+    "quality": "L",
+    "classicdb_id": 17182
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 167,
+  "fields": {
+    "name": "Legplates of Ten Storms",
+    "quality": "E",
+    "classicdb_id": 16946
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 168,
+  "fields": {
+    "name": "Helmet of Ten Storms",
+    "quality": "E",
+    "classicdb_id": 16947
+  }
 }
 ]

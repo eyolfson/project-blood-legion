@@ -8,6 +8,7 @@
     <tr>
       <th>Item</th>
       <th>Character</th>
+      <th>Boss</th>
     </tr>
   </thead>
   <tbody>
@@ -15,6 +16,7 @@
     <tr>
       <td><a href="{% url 'project_blood_legion:item_detail' loot.item.id %}" rel="item={{ loot.item.classicdb_id }}">{{ loot.item }}</a></td>
       <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
+      <td>{% if loot.boss %}{{ loot.boss }}{% else %}Unknown{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>

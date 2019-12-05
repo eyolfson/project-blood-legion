@@ -88,6 +88,8 @@ class Boss(models.Model):
 	)
 
 	def __str__(self):
+		if self.name == 'Trash':
+			return 'Trash ({})'.format(self.zone)
 		return self.name
 
 	class Meta:
@@ -151,6 +153,10 @@ class Item(models.Model):
 	classicdb_id = models.IntegerField()
 
 	def __str__(self):
+		if self.classicdb_id == 18563:
+			return 'Bindings of the Windseeker (Left)'
+		elif self.classicdb_id == 18564:
+			return 'Bindings of the Windseeker (Right)'
 		return self.name
 
 	def get_url(self):
@@ -189,3 +195,4 @@ class Loot(models.Model):
 	class Meta:
 		verbose_name = 'loot'
 		verbose_name_plural = 'loot'
+		ordering = ['character', 'item']
