@@ -14,7 +14,7 @@ def index(request):
 def character_index(request):
 	context = {
 		'title': 'Characters',
-		'characters': Character.objects.all(),
+		'characters': Character.objects.order_by('cls', 'name'),
 	}
 	return render(request, 'project_blood_legion/character_index.html', context)
 
