@@ -2,27 +2,16 @@
 
 {% block content %}
 
-{% if raid.loot_set.count %}
-<table class="table is-narrow">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Character</th>
-      <th>Boss</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for loot in raid.ordered_loot %}
-    <tr>
-      <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
-      <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
-      <td>{% if loot.boss %}{{ loot.boss }}{% else %}Unknown{% endif %}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-{% else %}
-<p>No loot.</p>
+{% for group in raid.group_set.all %}
+<h2 class="title is-4">{{ group.name }}</h2>
+
+{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=group.ordered_loot %}
+{% endfor %}
+
+{% if raid.ungrouped_ordered_loot %}
+<h2 class="title is-4">Ungrouped</h2>
+
+{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=raid.ungrouped_ordered_loot %}
 {% endif %}
 
 {% endblock %}

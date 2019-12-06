@@ -111,6 +111,9 @@ class Raid(models.Model):
 	def ordered_loot(self):
                 return self.loot_set.order_by('boss__id', 'character')
 
+	def ungrouped_ordered_loot(self):
+                return self.loot_set.filter(group=None).order_by('boss__id', 'character')
+
 	class Meta:
 		ordering = ['zone', 'reset']
 
@@ -126,6 +129,9 @@ class Group(models.Model):
 
 	def __str__(self):
 		return '{} → {}'.format(self.name, self.raid)
+
+	def ordered_loot(self):
+                return self.loot_set.order_by('boss__id', 'character')
 
 	class Meta:
 		ordering = ['raid', 'name']

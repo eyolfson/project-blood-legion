@@ -1,0 +1,22 @@
+{% if ordered_loot %}
+<table class="table is-narrow">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Character</th>
+      <th>Boss</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for loot in ordered_loot %}
+    <tr>
+      <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
+      <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
+      <td>{% if loot.boss %}{{ loot.boss }}{% else %}Unknown{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No loot.</p>
+{% endif %}
