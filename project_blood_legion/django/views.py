@@ -10,7 +10,7 @@ def index(request):
 	return render(request, 'project_blood_legion/index.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def character_index(request):
 	context = {
 		'title': 'Characters',
@@ -19,7 +19,7 @@ def character_index(request):
 	return render(request, 'project_blood_legion/character_index.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def character_detail(request, character_id):
 	character = get_object_or_404(Character, pk=character_id)
 	context = {
@@ -29,7 +29,7 @@ def character_detail(request, character_id):
 	return render(request, 'project_blood_legion/character_detail.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def item_index(request):
 	context = {
 		'title': 'Items',
@@ -38,7 +38,7 @@ def item_index(request):
 	return render(request, 'project_blood_legion/item_index.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def item_detail(request, item_id):
 	item = get_object_or_404(Item, pk=item_id)
 	context = {
@@ -48,7 +48,7 @@ def item_detail(request, item_id):
 	return render(request, 'project_blood_legion/item_detail.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def raid_index(request):
 	context = {
 		'title': 'Raids',
@@ -57,7 +57,7 @@ def raid_index(request):
 	return render(request, 'project_blood_legion/raid_index.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character')
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def raid_detail(request, raid_id):
 	raid = get_object_or_404(Raid, pk=raid_id)
 	context = {

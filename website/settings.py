@@ -97,4 +97,6 @@ SOCIALACCOUNT_PROVIDERS = {
 	}
 }
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
