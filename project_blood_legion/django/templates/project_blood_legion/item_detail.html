@@ -14,7 +14,15 @@
     {% for loot in item.loot_set.all %}
     <tr>
       <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
-      <td>{% if loot.raid %}<a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a>{% else %}Unknown{% endif %}</td>
+      <td>
+        {% if loot.group %}
+        <a href="{% url 'project_blood_legion:raid_detail' loot.group.raid.id %}">{{ loot.group.raid }}</a>
+        {% elif loot.raid %}
+        <a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a>
+        {% else %}
+        Unknown
+        {% endif %}
+      </td>
     </tr>
   {% endfor %}
   </tbody>

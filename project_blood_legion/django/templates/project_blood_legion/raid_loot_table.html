@@ -12,7 +12,7 @@
     <tr>
       <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
       <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
-      <td>{% if loot.boss %}{{ loot.boss }}{% else %}Unknown{% endif %}</td>
+      <td>{% if loot.boss %}{{ loot.boss.name }}{% else %}Unknown{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>

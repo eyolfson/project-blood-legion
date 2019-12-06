@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.contrib import admin
 
 class Character(models.Model):
 	DRUID = 'DR'
@@ -95,7 +96,6 @@ class Boss(models.Model):
 	class Meta:
 		verbose_name = 'boss'
 		verbose_name_plural = 'bosses'
-		ordering = ['name']
 		unique_together = ['zone', 'name']
 
 class Raid(models.Model):
@@ -211,3 +211,6 @@ class Loot(models.Model):
 		verbose_name = 'loot'
 		verbose_name_plural = 'loot'
 		ordering = ['character', 'item']
+
+class LootAdmin(admin.ModelAdmin):
+	list_display = ('item', 'character', 'group', 'raid', 'boss')
