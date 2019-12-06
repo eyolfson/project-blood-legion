@@ -1,6 +1,6 @@
 # Project Blood Legion
 
-A website for World of Warcraft Classic guilds.
+A website for World of Warcraft Classic guilds
 
 ## Setup
 
@@ -9,4 +9,5 @@ A website for World of Warcraft Classic guilds.
     pip install --upgrade pip
     pip install requirements.txt
     python manage.py migrate
+    python manage.py loaddata initial_data
     python manage.py runserver
