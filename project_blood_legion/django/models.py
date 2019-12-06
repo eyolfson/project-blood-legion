@@ -108,6 +108,9 @@ class Raid(models.Model):
 	def __str__(self):
 		return '{} (Reset {})'.format(self.zone, self.reset)
 
+	def ordered_loot(self):
+                return self.loot_set.order_by('boss__id', 'character')
+
 	class Meta:
 		ordering = ['zone', 'reset']
 
