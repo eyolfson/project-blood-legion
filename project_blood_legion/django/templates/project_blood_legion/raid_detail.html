@@ -2,10 +2,19 @@
 
 {% block content %}
 
-{% for group in raid.group_set.all %}
+{% for group in groups %}
 <h2 class="title is-4">{{ group.name }}</h2>
 
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=group.ordered_loot %}
+
+{% if group.loot_form %}
+<form action="{% url 'project_blood_legion:raid_detail' raid.id %}" method="post">
+  {% csrf_token %}
+  {{ group.loot_form.as_p }}
+  <input class="button" type="submit" name="{{ group.prefix }}" value="Submit">
+</form>
+{% endif %}
+
 {% endfor %}
 
 {% if raid.ungrouped_ordered_loot %}
