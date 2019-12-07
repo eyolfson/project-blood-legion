@@ -398,6 +398,38 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 36,
+  "fields": {
+    "zone": 2,
+    "reset": 21
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 37,
+  "fields": {
+    "zone": 1,
+    "reset": 16
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 38,
+  "fields": {
+    "zone": 2,
+    "reset": 22
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 39,
+  "fields": {
+    "zone": 2,
+    "reset": 23
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {
@@ -1907,6 +1939,87 @@
     "name": "Helmet of Ten Storms",
     "quality": "E",
     "classicdb_id": 16947
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 169,
+  "fields": {
+    "name": "Savage Gladiator Chain",
+    "quality": "E",
+    "classicdb_id": 11726
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 170,
+  "fields": {
+    "name": "Cloudkeeper Legplates",
+    "quality": "E",
+    "classicdb_id": 14554
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 171,
+  "fields": {
+    "name": "Edgemaster's Handguards",
+    "quality": "E",
+    "classicdb_id": 14551
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 172,
+  "fields": {
+    "name": "Stronghold Gauntlets",
+    "quality": "E",
+    "classicdb_id": 12639
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 173,
+  "fields": {
+    "name": "Breastplate of the Chromatic Flight",
+    "quality": "E",
+    "classicdb_id": 12895
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 174,
+  "fields": {
+    "name": "Myrmidon's Signet",
+    "quality": "E",
+    "classicdb_id": 2246
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 175,
+  "fields": {
+    "name": "Onyxia Tooth Pendant",
+    "quality": "E",
+    "classicdb_id": 18404
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 176,
+  "fields": {
+    "name": "Dragonslayer's Signet",
+    "quality": "E",
+    "classicdb_id": 18403
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 177,
+  "fields": {
+    "name": "Onyxia Blood Talisman",
+    "quality": "E",
+    "classicdb_id": 18406
   }
 }
 ]
