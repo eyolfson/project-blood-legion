@@ -10,8 +10,47 @@
 {% if group.loot_form %}
 <form action="{% url 'project_blood_legion:raid_detail' raid.id %}" method="post">
   {% csrf_token %}
-  {{ group.loot_form.as_p }}
-  <input class="button" type="submit" name="{{ group.prefix }}" value="Submit">
+
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label for="{{ group.loot_form.item.id_for_label }}" class="label">Item:</label>
+    </div>
+    <div class="field-body">
+      <div class="select">
+      {{ group.loot_form.item }}
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label for="{{ group.loot_form.boss.id_for_label }}" class="label">Boss:</label>
+    </div>
+    <div class="field-body">
+      <div class="select">
+      {{ group.loot_form.boss }}
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label for="{{ group.loot_form.character.id_for_label }}" class="label">Character:</label>
+    </div>
+    <div class="field-body">
+      <div class="select">
+      {{ group.loot_form.character }}
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label">
+    </div>
+    <div class="field-body">
+      <input class="button is-success" type="submit" name="{{ group.prefix }}" value="Add">
+    </div>
+  </div>
 </form>
 {% endif %}
 
