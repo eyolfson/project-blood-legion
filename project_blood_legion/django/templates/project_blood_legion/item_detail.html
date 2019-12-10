@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}Blood Legion - {{ item.name }}{% endblock %}
+
+<h1 class="title">{{ item.name }}</h1>
+
 {% block content %}
 
 {% if item.loot_set.count %}

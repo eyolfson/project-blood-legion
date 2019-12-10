@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
+{% block title %}Blood Legion - {{ character }}{% endblock %}
+
 {% block content %}
+
+<h1 class="title">{{ character }}</h1>
+
 <p>{{ character.get_race_display }} {{ character.get_cls_display }}</p>
 
 {% if character.loot_set.count %}

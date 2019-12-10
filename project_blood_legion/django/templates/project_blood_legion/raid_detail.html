@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
+{% block title %}Blood Legion - {{ raid }}{% endblock %}
+
 {% block content %}
+
+<h1 class="title">{{ raid }}</h1>
 
 {% for group in groups %}
 <h2 class="title is-4">{{ group.name }}</h2>
