@@ -2021,5 +2021,59 @@
     "quality": "E",
     "classicdb_id": 18406
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 178,
+  "fields": {
+    "name": "Pattern: Core Armor Kit",
+    "quality": "R",
+    "classicdb_id": 18252
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 179,
+  "fields": {
+    "name": "Schematic: Biznicks 247x128 Accurascope",
+    "quality": "R",
+    "classicdb_id": 18290
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 180,
+  "fields": {
+    "name": "Pattern: Core Felcloth Bag",
+    "quality": "R",
+    "classicdb_id": 21371
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 181,
+  "fields": {
+    "name": "Recipe: Major Rejuvenation Potion",
+    "quality": "R",
+    "classicdb_id": 18257
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 182,
+  "fields": {
+    "name": "Formula: Enchant Weapon - Healing Power",
+    "quality": "R",
+    "classicdb_id": 18260
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 183,
+  "fields": {
+    "name": "Sulfuron Ingot",
+    "quality": "E",
+    "classicdb_id": 17203
+  }
 }
 ]
