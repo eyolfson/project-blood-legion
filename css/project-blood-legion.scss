@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$primary: $blue;
+
+$light: $black-ter;
+$dark: $grey-lighter;
+
+$scheme-main: $black;
+$scheme-main-bis: $black-bis;
+$scheme-main-ter: $black-ter;
+$scheme-invert: $white;
+$scheme-invert-bis: $white-bis;
+$scheme-invert-ter: $white-ter;
+
+$background: $black-ter;
+
+$border: $grey-darker;
+$border-hover: $grey-dark;
+$border-light: $grey-darker;
+$border-light-hover: $grey-dark;
+
+$text: $white-ter;
+$text-invert: findColorInvert($text);
+$text-light: $grey;
+$text-strong: $grey-lighter;
+
+$druid: #FF7D0A;
+$hunter: #A9D271;
+$mage: #40C7EB;
+$paladin: #F58CBA;
+$priest: #FFFFFF;
+$rogue: #FFF569;
+$shaman: #0070DE;
+$warlock: #8787ED;
+$warrior: #C79C6E;
+
+$custom-colors: (
+  "druid": ($druid),
+  "hunter": ($hunter),
+  "mage": ($mage),
+  "paladin": ($paladin),
+  "priest": ($priest),
+  "rogue": ($rogue),
+  "shaman": ($shaman),
+  "warlock": ($warlock),
+  "warrior": ($warrior)
+);
+
+@import "bulma/sass/utilities/derived-variables";
+@import "bulma/sass/utilities/animations";
+@import "bulma/sass/utilities/mixins";
+@import "bulma/sass/utilities/controls";
+
+@import "bulma/sass/base/_all";
+@import "bulma/sass/elements/_all";
+@import "bulma/sass/form/_all";
+@import "bulma/sass/components/_all";
+@import "bulma/sass/grid/_all";
+@import "bulma/sass/layout/_all";
