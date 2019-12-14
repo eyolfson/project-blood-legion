@@ -37,6 +37,13 @@ $shaman: #0070DE;
 $warlock: #8787ED;
 $warrior: #C79C6E;
 
+$poor: #9D9D9D;
+$common: #FFFFFF;
+$uncommon: #1EFF00;
+$rare: #0070DD;
+$epic: #A335EE;
+$legendary: #FF8000;
+
 $custom-colors: (
   "druid": ($druid),
   "hunter": ($hunter),
@@ -46,7 +53,14 @@ $custom-colors: (
   "rogue": ($rogue),
   "shaman": ($shaman),
   "warlock": ($warlock),
-  "warrior": ($warrior)
+  "warrior": ($warrior),
+
+  "poor": ($poor),
+  "common": ($common),
+  "uncommon": ($uncommon),
+  "rare": ($rare),
+  "epic": ($epic),
+  "legendary": ($legendary)
 );
 
 @import "bulma/sass/utilities/derived-variables";

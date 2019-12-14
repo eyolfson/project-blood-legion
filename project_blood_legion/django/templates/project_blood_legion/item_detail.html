@@ -2,9 +2,9 @@
 
 {% block title %}Blood Legion - {{ item.name }}{% endblock %}
 
-<h1 class="title">{{ item.name }}</h1>
-
 {% block content %}
+
+<h1 class="title has-text-{{ item.get_quality_display|lower }}">{{ item.name }}</h1>
 
 {% if item.loot_set.count %}
 <table class="table is-narrow">
