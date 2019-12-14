@@ -1,6 +1,8 @@
+/project_blood_legion/django/static/
 /venv/
 /website/static/
 /db.sqlite3
 /settings.py
 
+.sass-cache/
 __pycache__/
