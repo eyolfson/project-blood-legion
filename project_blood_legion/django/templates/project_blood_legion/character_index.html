@@ -12,7 +12,7 @@
     {% ifchanged %}
     <li><strong>{{ character.get_cls_display }}</strong></li>
     {% endifchanged %}
-    <li><a href="{% url 'project_blood_legion:character_detail' character.id %}">{{ character }}</a></li>
+  <li>{% include "project_blood_legion/character_link.html" %}</li>
   {% endfor %}
   </ul>
 {% else %}

@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<h1 class="title">{{ character }}</h1>
+<h1 class="title has-text-{{ character.get_cls_display|lower }}">{{ character }}</h1>
 
 <p>{{ character.get_race_display }} {{ character.get_cls_display }}</p>
 

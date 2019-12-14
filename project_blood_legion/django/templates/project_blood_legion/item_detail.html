@@ -17,7 +17,13 @@
   <tbody>
     {% for loot in item.loot_set.all %}
     <tr>
-      <td>{% if loot.character %}<a href="{% url 'project_blood_legion:character_detail' loot.character.id %}">{{ loot.character }}</a>{% else %}Disenchant{% endif %}</td>
+      <td>
+        {% if loot.character %}
+        {% include "project_blood_legion/character_link.html" with character=loot.character %}
+        {% else %}
+        Disenchant
+        {% endif %}
+      </td>
       <td>
         {% if loot.group %}
         <a href="{% url 'project_blood_legion:raid_detail' loot.group.raid.id %}">{{ loot.group.raid }}</a>
