@@ -430,6 +430,14 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 40,
+  "fields": {
+    "zone": 1,
+    "reset": 17
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {
