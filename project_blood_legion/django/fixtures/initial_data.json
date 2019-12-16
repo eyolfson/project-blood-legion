@@ -2083,5 +2083,212 @@
     "quality": "E",
     "classicdb_id": 17203
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 184,
+  "fields": {
+    "name": "Onyxia Hide Backpack",
+    "quality": "U",
+    "classicdb_id": 17966
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 185,
+  "fields": {
+    "name": "Mature Blue Dragon Sinew",
+    "quality": "E",
+    "classicdb_id": 18704
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 186,
+  "fields": {
+    "name": "Fang of the Mystics",
+    "quality": "E",
+    "classicdb_id": 17070
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 187,
+  "fields": {
+    "name": "Eskhandar's Left Claw",
+    "quality": "E",
+    "classicdb_id": 18202
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 188,
+  "fields": {
+    "name": "Drape of Benediction",
+    "quality": "E",
+    "classicdb_id": 18208
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 189,
+  "fields": {
+    "name": "Puissant Cape",
+    "quality": "E",
+    "classicdb_id": 18541
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 190,
+  "fields": {
+    "name": "Typhoon",
+    "quality": "E",
+    "classicdb_id": 18542
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 191,
+  "fields": {
+    "name": "Leggings of Arcane Supremacy",
+    "quality": "E",
+    "classicdb_id": 18545
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 192,
+  "fields": {
+    "name": "Unmelting Ice Girdle",
+    "quality": "E",
+    "classicdb_id": 18547
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 193,
+  "fields": {
+    "name": "Snowblind Shoes",
+    "quality": "E",
+    "classicdb_id": 19131
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 194,
+  "fields": {
+    "name": "Cold Snap",
+    "quality": "E",
+    "classicdb_id": 19130
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 195,
+  "fields": {
+    "name": "Crystal Adorned Crown",
+    "quality": "E",
+    "classicdb_id": 19132
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 196,
+  "fields": {
+    "name": "Fel Infused Leggings",
+    "quality": "E",
+    "classicdb_id": 19133
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 197,
+  "fields": {
+    "name": "Doomhide Gauntlets",
+    "quality": "E",
+    "classicdb_id": 18544
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 198,
+  "fields": {
+    "name": "Infernal Headcage",
+    "quality": "E",
+    "classicdb_id": 18546
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 199,
+  "fields": {
+    "name": "Flayed Doomguard Belt",
+    "quality": "E",
+    "classicdb_id": 19134
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 200,
+  "fields": {
+    "name": "Blazefury Medallion",
+    "quality": "E",
+    "classicdb_id": 17111
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 201,
+  "fields": {
+    "name": "Amberseal Keeper",
+    "quality": "E",
+    "classicdb_id": 17113
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 202,
+  "fields": {
+    "name": "Empyrean Demolisher",
+    "quality": "E",
+    "classicdb_id": 17112
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 203,
+  "fields": {
+    "name": "Eskhandar's Pelt",
+    "quality": "E",
+    "classicdb_id": 18204
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 204,
+  "fields": {
+    "name": "Ring of Entropy",
+    "quality": "E",
+    "classicdb_id": 18543
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 205,
+  "fields": {
+    "name": "Blacklight Bracer",
+    "quality": "E",
+    "classicdb_id": 19135
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 206,
+  "fields": {
+    "name": "The Eye of Shadow",
+    "quality": "E",
+    "classicdb_id": 18665
+  }
 }
 ]
