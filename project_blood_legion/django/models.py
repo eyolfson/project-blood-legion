@@ -104,6 +104,8 @@ class Raid(models.Model):
 		on_delete=models.CASCADE,
 	)
 	reset = models.IntegerField()
+	start = models.DateTimeField()
+	end = models.DateTimeField()
 
 	def __str__(self):
 		return '{} (Reset {})'.format(self.zone, self.reset)
@@ -116,6 +118,7 @@ class Raid(models.Model):
 
 	class Meta:
 		ordering = ['zone', 'reset']
+		unique_together = ['zone', 'reset']
 
 class Group(models.Model):
 	raid = models.ForeignKey(

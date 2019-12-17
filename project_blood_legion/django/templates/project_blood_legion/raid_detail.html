@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
+{% load tz %}
+
 {% block title %}Blood Legion - {{ raid }}{% endblock %}
 
 {% block content %}
 
 <h1 class="title">{{ raid }}</h1>
 
+<ul>
+  <li><strong>Start:</strong> {{ raid.start|timezone:"US/Eastern"|date:"l F j Y g:i:s A e" }}</li>
+  <li><strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i:s A e" }}</li>
+</ul>
+
 {% for group in groups %}
+{% if forloop.first %}<br>{% endif %}
 <h2 class="title is-4">{{ group.name }}</h2>
 
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=group.ordered_loot %}
