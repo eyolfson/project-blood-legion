@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="{% url 'project_blood_legion:character_index' %}">Characters</a>
-          <a class="navbar-item" href="{% url 'project_blood_legion:item_index' %}">Items</a>
-          <a class="navbar-item" href="{% url 'project_blood_legion:raid_index' %}">Raids</a>
+	  {% if perms.project_blood_legion.view_character %}<a class="navbar-item" href="{% url 'project_blood_legion:character_index' %}">Characters</a>{% endif %}
+          {% if perms.project_blood_legion.view_item %}<a class="navbar-item" href="{% url 'project_blood_legion:item_index' %}">Items</a>{% endif %}
+          {% if perms.project_blood_legion.view_raid %}<a class="navbar-item" href="{% url 'project_blood_legion:raid_index' %}">Raids</a>{% endif %}
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
