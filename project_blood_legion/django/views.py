@@ -1,6 +1,7 @@
-from django.shortcuts import get_object_or_404, render
 from django.contrib.auth.decorators import login_required, permission_required
+from django.db.models import Count
 from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
 from .forms import LootForm
@@ -47,7 +48,7 @@ def item_detail(request, item_id):
 @permission_required('project_blood_legion.view_raid', raise_exception=True)
 def raid_index(request):
 	context = {
-		'raids': Raid.objects.all(),
+		'raids': Raid.objects.annotate(instance_count=Count('instance')).filter(instance_count__gte=1),
 	}
 	return render(request, 'project_blood_legion/raid_index.html', context)
 
