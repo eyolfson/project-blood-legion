@@ -13,45 +13,45 @@
   <li><strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i:s A e" }}</li>
 </ul>
 
-{% for group in groups %}
+{% for instance in instances %}
 {% if forloop.first %}<br>{% endif %}
-<h2 class="title is-4">{{ group.name }}</h2>
+<h2 class="title is-4">{{ instance.name }}</h2>
 
-{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=group.ordered_loot %}
+{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=instance.ordered_loot %}
 
-{% if group.loot_form %}
+{% if instance.loot_form %}
 <form action="{% url 'project_blood_legion:raid_detail' raid.id %}" method="post">
   {% csrf_token %}
 
   <div class="field is-horizontal">
     <div class="field-label is-normal">
-      <label for="{{ group.loot_form.item.id_for_label }}" class="label">Item:</label>
+      <label for="{{ instance.loot_form.item.id_for_label }}" class="label">Item:</label>
     </div>
     <div class="field-body">
       <div class="select">
-      {{ group.loot_form.item }}
+      {{ instance.loot_form.item }}
       </div>
     </div>
   </div>
 
   <div class="field is-horizontal">
     <div class="field-label is-normal">
-      <label for="{{ group.loot_form.boss.id_for_label }}" class="label">Boss:</label>
+      <label for="{{ instance.loot_form.boss.id_for_label }}" class="label">Boss:</label>
     </div>
     <div class="field-body">
       <div class="select">
-      {{ group.loot_form.boss }}
+      {{ instance.loot_form.boss }}
       </div>
     </div>
   </div>
 
   <div class="field is-horizontal">
     <div class="field-label is-normal">
-      <label for="{{ group.loot_form.character.id_for_label }}" class="label">Character:</label>
+      <label for="{{ instance.loot_form.character.id_for_label }}" class="label">Character:</label>
     </div>
     <div class="field-body">
       <div class="select">
-      {{ group.loot_form.character }}
+      {{ instance.loot_form.character }}
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@
     <div class="field-label">
     </div>
     <div class="field-body">
-      <input class="button is-success" type="submit" name="{{ group.prefix }}" value="Add">
+      <input class="button is-success" type="submit" name="{{ instance.prefix }}" value="Add">
     </div>
   </div>
 </form>
@@ -68,10 +68,10 @@
 
 {% endfor %}
 
-{% if raid.ungrouped_ordered_loot %}
-<h2 class="title is-4">Ungrouped</h2>
+{% if raid.uninstanced_ordered_loot %}
+<h2 class="title is-4">Uninstanced</h2>
 
-{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=raid.ungrouped_ordered_loot %}
+{% include "project_blood_legion/raid_loot_table.html" with ordered_loot=raid.uninstanced_ordered_loot %}
 {% endif %}
 
 {% endblock %}

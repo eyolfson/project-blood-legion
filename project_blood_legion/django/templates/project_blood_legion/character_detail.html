@@ -21,8 +21,8 @@
     <tr>
       <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
       <td>
-        {% if loot.group %}
-        <a href="{% url 'project_blood_legion:raid_detail' loot.group.raid.id %}">{{ loot.group.raid }}</a>
+        {% if loot.instance %}
+        <a href="{% url 'project_blood_legion:raid_detail' loot.instance.raid.id %}">{{ loot.instance.raid }}</a>
         {% elif loot.raid %}
         <a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a>
         {% else %}

@@ -55,21 +55,21 @@ def raid_index(request):
 @permission_required('project_blood_legion.view_raid', raise_exception=True)
 def raid_detail(request, raid_id):
 	raid = get_object_or_404(Raid, pk=raid_id)
-	groups = list(raid.group_set.all())
+	instances = list(raid.instance_set.all())
 	if request.user.is_authenticated and request.user.has_perm('project_blood_legion.change_loot'):
-		for group in groups:
-			group.prefix = 'loot-{}'.format(group.id)
-			if request.method == 'POST' and group.prefix in request.POST:
-				group.loot_form = LootForm(request.POST, prefix=group.prefix)
-				if group.loot_form.is_valid():
-					loot = group.loot_form.save()
-					loot.group = group
+		for instance in instances:
+			instance.prefix = 'loot-{}'.format(instance.id)
+			if request.method == 'POST' and instance.prefix in request.POST:
+				instance.loot_form = LootForm(request.POST, prefix=instance.prefix)
+				if instance.loot_form.is_valid():
+					loot = instance.loot_form.save()
+					loot.instance = instance
 					loot.save()
 					return HttpResponseRedirect(reverse('project_blood_legion:raid_detail', args=(raid_id,)))
 			else:
-				group.loot_form = LootForm(prefix=group.prefix)
+				instance.loot_form = LootForm(prefix=instance.prefix)
 	context = {
 		'raid': raid,
-		'groups': groups,
+		'instances': instances,
 	}
 	return render(request, 'project_blood_legion/raid_detail.html', context)

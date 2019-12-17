@@ -113,14 +113,14 @@ class Raid(models.Model):
 	def ordered_loot(self):
                 return self.loot_set.order_by('boss__id', 'character')
 
-	def ungrouped_ordered_loot(self):
-                return self.loot_set.filter(group=None).order_by('boss__id', 'character')
+	def uninstanced_ordered_loot(self):
+                return self.loot_set.filter(instance=None).order_by('boss__id', 'character')
 
 	class Meta:
 		ordering = ['zone', 'reset']
 		unique_together = ['zone', 'reset']
 
-class Group(models.Model):
+class Instance(models.Model):
 	raid = models.ForeignKey(
 		Raid,
 		on_delete=models.CASCADE,
@@ -194,8 +194,8 @@ class Loot(models.Model):
 		blank=True,
 		null=True,
 	)
-	group = models.ForeignKey(
-		Group,
+	instance = models.ForeignKey(
+		Instance,
 		on_delete=models.CASCADE,
 		blank=True,
 		null=True,
@@ -216,4 +216,4 @@ class Loot(models.Model):
 		ordering = ['character', 'item']
 
 class LootAdmin(admin.ModelAdmin):
-	list_display = ('item', 'character', 'group', 'raid', 'boss')
+	list_display = ('item', 'character', 'instance', 'raid', 'boss')
