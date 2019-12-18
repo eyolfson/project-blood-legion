@@ -2390,5 +2390,14 @@
     "quality": "E",
     "classicdb_id": 18665
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 207,
+  "fields": {
+    "name": "Shard of the Flame",
+    "quality": "E",
+    "classicdb_id": 17082
+  }
 }
 ]
