@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Blood Legion - Bosses{% endblock %}
+
+{% block content %}
+
+<h1 class="title">Bosses</h1>
+
+{% if bosses %}
+  <ul>
+  {% for boss in bosses %}
+    <li><a href="{% url 'project_blood_legion:boss_detail' boss.id %}">{{ boss }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No bosses exist.</p>
+{% endif %}
+
+{% endblock %}

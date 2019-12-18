@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
 from .forms import LootForm
-from .models import Character, Item, Raid
+from .models import Boss, Character, Item, Raid
 
 def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
@@ -74,3 +74,28 @@ def raid_detail(request, raid_id):
 		'instances': instances,
 	}
 	return render(request, 'project_blood_legion/raid_detail.html', context)
+
+@login_required
+@permission_required('project_blood_legion.view_boss', raise_exception=True)
+def boss_index(request):
+	context = {
+		'bosses': Boss.objects.all(),
+	}
+	return render(request, 'project_blood_legion/boss_index.html', context)
+
+@login_required
+@permission_required('project_blood_legion.view_boss', raise_exception=True)
+def boss_detail(request, boss_id):
+	boss = get_object_or_404(Boss, pk=boss_id)
+	boss_loot = boss.loot_set.filter(instance__isnull=False)
+	boss_kills = boss_loot.order_by('instance').values('instance').distinct().count()
+	boss_drops = list(boss_loot.order_by('item').values('item').distinct().annotate(count=Count('item')))
+	for drop in boss_drops:
+		drop['item'] = Item.objects.get(id=drop['item'])
+		drop['percentage'] = '{:.0%}'.format(drop['count'] / boss_kills)
+	context = {
+		'boss': boss,
+		'boss_kills': boss_kills,
+		'boss_drops': boss_drops,
+	}
+	return render(request, 'project_blood_legion/boss_detail.html', context)

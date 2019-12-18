@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Blood Legion - {{ boss }}{% endblock %}
+
+{% block content %}
+
+<h1 class="title">{{ boss }} ({{ boss_kills }} kill{{ boss_kills|pluralize }})</h1>
+
+{% if boss_drops %}
+<table class="table is-narrow">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Drops</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for drop in boss_drops %}
+    <tr>
+      <td>{% include "project_blood_legion/item_link.html" with item=drop.item %}</td>
+      <td>{{ drop.count }}</td>
+      <td>{{ drop.percentage }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>Never looted.</p>
+{% endif %}
+
+{% endblock %}
