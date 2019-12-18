@@ -9,8 +9,8 @@
 <h1 class="title">{{ raid }}</h1>
 
 <ul>
-  <li><strong>Start:</strong> {{ raid.start|timezone:"US/Eastern"|date:"l F j Y g:i:s A e" }}</li>
-  <li><strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i:s A e" }}</li>
+  <li><strong>Start:</strong> {{ raid.start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
+  <li><strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
 </ul>
 
 {% for instance in instances %}
