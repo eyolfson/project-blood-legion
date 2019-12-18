@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required, permission_required
 from django.db.models import Count
-from django.http import HttpResponseRedirect
+from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
@@ -79,7 +79,7 @@ def raid_detail(request, raid_id):
 @permission_required('project_blood_legion.view_boss', raise_exception=True)
 def boss_index(request):
 	context = {
-		'bosses': Boss.objects.all(),
+		'bosses': Boss.objects.exclude(name='Trash'),
 	}
 	return render(request, 'project_blood_legion/boss_index.html', context)
 
@@ -87,6 +87,8 @@ def boss_index(request):
 @permission_required('project_blood_legion.view_boss', raise_exception=True)
 def boss_detail(request, boss_id):
 	boss = get_object_or_404(Boss, pk=boss_id)
+	if boss.name == 'Trash':
+		raise Http404
 	boss_loot = boss.loot_set.filter(instance__isnull=False)
 	boss_kills = boss_loot.order_by('instance').values('instance').distinct().count()
 	boss_drops = list(boss_loot.order_by('item').values('item').distinct().annotate(count=Count('item')).order_by('-count', 'item'))
