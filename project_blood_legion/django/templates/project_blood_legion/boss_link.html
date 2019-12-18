@@ -1,0 +1,5 @@
+{% if boss.name != 'Trash' %}
+<a href="{% url 'project_blood_legion:boss_detail' boss.id %}">{{ boss.name }}</a>
+{% else %}
+{{ boss.name }}
+{% endif %}

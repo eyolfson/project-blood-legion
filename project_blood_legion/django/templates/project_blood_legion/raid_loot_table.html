@@ -18,7 +18,13 @@
         <span class="has-text-poor">Disenchant</span>
         {% endif %}
       </td>
-      <td>{% if loot.boss %}{{ loot.boss.name }}{% else %}Unknown{% endif %}</td>
+      <td>
+	{% if loot.boss %}
+        {% include "project_blood_legion/boss_link.html" with boss=loot.boss %}
+	{% else %}
+	Unknown
+	{% endif %}
+      </td>
     </tr>
   {% endfor %}
   </tbody>
