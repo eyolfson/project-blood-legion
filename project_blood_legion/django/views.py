@@ -89,7 +89,7 @@ def boss_detail(request, boss_id):
 	boss = get_object_or_404(Boss, pk=boss_id)
 	boss_loot = boss.loot_set.filter(instance__isnull=False)
 	boss_kills = boss_loot.order_by('instance').values('instance').distinct().count()
-	boss_drops = list(boss_loot.order_by('item').values('item').distinct().annotate(count=Count('item')))
+	boss_drops = list(boss_loot.order_by('item').values('item').distinct().annotate(count=Count('item')).order_by('-count', 'item'))
 	for drop in boss_drops:
 		drop['item'] = Item.objects.get(id=drop['item'])
 		drop['percentage'] = '{:.0%}'.format(drop['count'] / boss_kills)
