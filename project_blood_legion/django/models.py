@@ -221,6 +221,9 @@ class Member(models.Model):
 	def __str__(self):
 		return '{} ({})'.format(self.main_character, self.user)
 
+	class Meta:
+		ordering = ['main_character']
+
 class Note(models.Model):
 	character = models.OneToOneField(
 		Character,
@@ -230,3 +233,6 @@ class Note(models.Model):
 
 	def __str__(self):
 		return '{}'.format(self.character)
+
+	class Meta:
+		ordering = ['character']
