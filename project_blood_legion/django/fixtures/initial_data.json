@@ -2399,5 +2399,14 @@
     "quality": "E",
     "classicdb_id": 17082
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 208,
+  "fields": {
+    "name": "Deathbringer",
+    "quality": "E",
+    "classicdb_id": 17068
+  }
 }
 ]
