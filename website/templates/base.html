@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
           {% if perms.project_blood_legion.view_boss %}<a class="navbar-item" href="{% url 'project_blood_legion:boss_index' %}">Bosses</a>{% endif %}
         </div>
         <div class="navbar-end">
+          {% if user.is_authenticated and user.member %}
+          <a class="navbar-item has-text-{{ user.member.main_character.get_cls_display|lower }} has-text-weight-bold" href="{% url 'project_blood_legion:character_detail' user.member.main_character.id %}">{{ user.member.main_character }}</a>
+	  {% endif %}
           <div class="navbar-item">
             <div class="buttons">
               {% if user.is_authenticated %}

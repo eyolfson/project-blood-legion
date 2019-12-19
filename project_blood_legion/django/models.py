@@ -43,22 +43,12 @@ class Character(models.Model):
 		(UNDEAD, 'Undead'),
 	]
 
-	user = models.ForeignKey(
-		settings.AUTH_USER_MODEL,
-		on_delete=models.CASCADE,
-		blank=True,
-		null=True,
-	)
 	name = models.CharField(
 		max_length=100,
 		unique=True,
 	)
 	cls = models.CharField(max_length=2, choices=CLS_CHOICES)
 	race = models.CharField(max_length=2, choices=RACE_CHOICES)
-	guid = models.IntegerField(
-		blank=True,
-		null=True,
-	)
 	items = models.ManyToManyField('Item', through='Loot')
 
 	def __str__(self):
@@ -217,3 +207,26 @@ class Loot(models.Model):
 
 class LootAdmin(admin.ModelAdmin):
 	list_display = ('item', 'character', 'instance', 'raid', 'boss')
+
+class Member(models.Model):
+	user = models.OneToOneField(
+		settings.AUTH_USER_MODEL,
+		on_delete=models.CASCADE,
+	)
+	main_character = models.OneToOneField(
+		Character,
+		on_delete=models.CASCADE,
+	)
+
+	def __str__(self):
+		return '{} ({})'.format(self.main_character, self.user)
+
+class Note(models.Model):
+	character = models.OneToOneField(
+		Character,
+		on_delete=models.CASCADE,
+	)
+	text = models.TextField()
+
+	def __str__(self):
+		return '{}'.format(self.character)

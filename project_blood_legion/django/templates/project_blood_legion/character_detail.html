@@ -5,8 +5,30 @@
 {% block content %}
 
 <h1 class="title has-text-{{ character.get_cls_display|lower }}">{{ character }}</h1>
+<p class="subtitle">{{ character.get_race_display }} {{ character.get_cls_display }}</p>
+<p></p>
 
-<p>{{ character.get_race_display }} {{ character.get_cls_display }}</p>
+{% if note or note_form %}
+<h2 class="title is-4">Note</h2>
+
+{% if note %}
+<p>{{ note.text }}</p><br>
+{% endif %}
+
+{% if note_form %}
+<form action="{% url 'project_blood_legion:character_detail' character.id %}" method="post">
+  {% csrf_token %}
+  <div class="field">
+    <textarea class="textarea" placeholder="Include details about personal preferences." id="id_text" name="text"></textarea>
+  </div>
+  <div class="field">
+    <input class="button is-success" type="submit" value="Change">
+  </div>
+</form><br>
+{% endif %}
+
+{% endif %}
+<h2 class="title is-4">Items</h2>
 
 {% if character.loot_set.count %}
 <table class="table is-narrow">

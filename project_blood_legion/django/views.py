@@ -4,8 +4,8 @@ from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
-from .forms import LootForm
-from .models import Boss, Character, Item, Raid
+from .forms import LootForm, NoteForm
+from .models import Boss, Character, Item, Raid, Note, Member
 
 def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
@@ -22,8 +22,43 @@ def character_index(request):
 @permission_required('project_blood_legion.view_character', raise_exception=True)
 def character_detail(request, character_id):
 	character = get_object_or_404(Character, pk=character_id)
+
+	is_character = False
+	can_view = False
+	if request.user.is_authenticated:
+		try:
+			is_character = request.user.member.main_character == character
+		except Member.DoesNotExist:
+			pass
+		can_view = request.user.has_perm('project_blood_legion.view_note')
+
+	note = None
+	if is_character or can_view:
+		try:
+			note = character.note
+		except Note.DoesNotExist:
+			note = None
+
+	note_form = None
+	if is_character:
+		if request.method == 'POST':
+			note_form = NoteForm(request.POST)
+			if note_form.is_valid():
+				new_note = note_form.save(commit=False)
+				if note:
+					note.text = new_note.text
+					note.save()
+				else:
+					new_note.character = character
+					new_note.save()
+				return HttpResponseRedirect(reverse('project_blood_legion:character_detail', args=(character_id,)))
+		else:
+			note_form = NoteForm()
+
 	context = {
 		'character': character,
+		'note': note,
+		'note_form': note_form,
 	}
 	return render(request, 'project_blood_legion/character_detail.html', context)
 
