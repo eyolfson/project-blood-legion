@@ -538,6 +538,36 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 43,
+  "fields": {
+    "zone": 2,
+    "reset": 25,
+    "start": "2019-12-26T16:00:00Z",
+    "end": "2019-12-31T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 44,
+  "fields": {
+    "zone": 1,
+    "reset": 19,
+    "start": "2019-12-31T16:00:00Z",
+    "end": "2020-01-07T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 45,
+  "fields": {
+    "zone": 2,
+    "reset": 26,
+    "start": "2019-12-31T16:00:00Z",
+    "end": "2020-01-05T16:00:00Z"
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {

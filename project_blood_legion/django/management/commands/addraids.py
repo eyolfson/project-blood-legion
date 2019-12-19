@@ -40,7 +40,7 @@ class Command(BaseCommand):
 			raid=onyxia
 		))
 
-		until = datetime.datetime.now() + datetime.timedelta(days=7)
+		until = datetime.datetime.now() + datetime.timedelta(days=14)
 		while True:
 			entries = sorted(entries)
 			entry = entries.pop(0)
