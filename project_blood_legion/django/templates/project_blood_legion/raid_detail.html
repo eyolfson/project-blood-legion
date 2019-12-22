@@ -17,6 +17,17 @@
 {% if forloop.first %}<br>{% endif %}
 <h2 class="title is-4">{{ instance.name }}</h2>
 
+<ul>
+  <li><strong>Scheduled Start:</strong> {{ instance.scheduled_start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
+  <li>
+    <strong>Characters ({{ instance.characters.count }}):</strong>
+    {% for character in instance.ordered_characters %}
+      {% include "project_blood_legion/character_link.html" %}
+    {% endfor %}
+  </li>
+</ul>
+<br>
+
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=instance.ordered_loot %}
 
 {% if instance.loot_form %}

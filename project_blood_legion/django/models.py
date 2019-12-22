@@ -119,6 +119,10 @@ class Instance(models.Model):
 		max_length=100,
 	)
 	characters = models.ManyToManyField(Character)
+	scheduled_start = models.DateTimeField()
+
+	def ordered_characters(self):
+                return self.characters.order_by('cls', 'name')
 
 	def __str__(self):
 		return '{} → {}'.format(self.name, self.raid)
