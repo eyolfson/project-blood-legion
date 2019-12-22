@@ -83,7 +83,7 @@ def item_detail(request, item_id):
 @permission_required('project_blood_legion.view_raid', raise_exception=True)
 def raid_index(request):
 	context = {
-		'raids': Raid.objects.annotate(instance_count=Count('instance')).filter(instance_count__gte=1),
+		'raids': Raid.objects.order_by('-start').annotate(instance_count=Count('instance')).filter(instance_count__gte=1),
 	}
 	return render(request, 'project_blood_legion/raid_index.html', context)
 
