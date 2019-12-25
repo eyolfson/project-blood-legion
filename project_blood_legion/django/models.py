@@ -228,6 +228,19 @@ class Member(models.Model):
 	class Meta:
 		ordering = ['main_character']
 
+class Alt(models.Model):
+	member = models.ForeignKey(
+		Member,
+		on_delete=models.CASCADE,
+	)
+	character = models.OneToOneField(
+		Character,
+		on_delete=models.CASCADE,
+	)
+
+	def __str__(self):
+		return '{} ({})'.format(self.character, self.member.main_character)
+
 class Note(models.Model):
 	character = models.OneToOneField(
 		Character,

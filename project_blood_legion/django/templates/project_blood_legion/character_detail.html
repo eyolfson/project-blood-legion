@@ -8,6 +8,17 @@
 <p class="subtitle">{{ character.get_race_display }} {{ character.get_cls_display }}</p>
 <p></p>
 
+{% if character.member.alt_set.count %}
+<h2 class="title is-4">Alts</h2>
+
+<p>
+  {% for alt in character.member.alt_set.all %}
+  {% include "project_blood_legion/character_link.html" with character=alt.character %}
+  {% endfor %}
+</p>
+<br>
+{% endif %}
+
 {% if note or note_form %}
 <h2 class="title is-4">Note</h2>
 
