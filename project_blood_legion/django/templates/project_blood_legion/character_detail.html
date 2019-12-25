@@ -4,8 +4,16 @@
 
 {% block content %}
 
-<h1 class="title has-text-{{ character.get_cls_display|lower }}">{{ character }}</h1>
-<p class="subtitle">{{ character.get_race_display }} {{ character.get_cls_display }}</p>
+<h1 class="title">
+  <span class="has-text-{{ character.get_cls_display|lower }}">{{ character }}</span>
+  {% if character.alt %}
+  (Alt of: {% include "project_blood_legion/character_link.html" with character=character.alt.member.main_character %})
+  {% endif %}
+
+</h1>
+<p class="subtitle">
+  {{ character.get_race_display }} {{ character.get_cls_display }}
+</p>
 <p></p>
 
 {% if character.member.alt_set.count %}
