@@ -4,34 +4,35 @@
 
 {% block content %}
 
-<h1 class="title">
-  <span class="has-text-{{ character.get_cls_display|lower }}">{{ character }}</span>
-  {% if character.alt %}
-  (Alt of: {% include "project_blood_legion/character_link.html" with character=character.alt.member.main_character %})
-  {% endif %}
-
-</h1>
-<p class="subtitle">
-  {{ character.get_race_display }} {{ character.get_cls_display }}
-</p>
-<p></p>
-
-{% if character.member.alt_set.count %}
-<h2 class="title is-4">Alts</h2>
+<h1 class="title has-text-{{ character.get_cls_display|lower }}">{{ character }}</h1>
+<p class="subtitle">{{ character.get_race_display }} {{ character.get_cls_display }}</p>
 
 <p>
-  {% for alt in character.member.alt_set.all %}
-  {% include "project_blood_legion/character_link.html" with character=alt.character %}
-  {% endfor %}
+  {% if character.alt %}
+  <strong>Main:</strong> {% include "project_blood_legion/character_link.html" with character=character.alt.member.main_character %}
+    {% if character.alt.member.alt_set.count %}
+    <br><strong>Alts:</strong>
+      {% for alt in character.alt.member.alt_set.all %}
+        {% if alt.character != character %}
+          {% include "project_blood_legion/character_link.html" with character=alt.character %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+
+  {% if character.member.alt_set.count %}
+  <strong>Alts:</strong>
+    {% for alt in character.member.alt_set.all %}
+      {% include "project_blood_legion/character_link.html" with character=alt.character %}
+    {% endfor %}
+  {% endif %}
 </p>
-<br>
-{% endif %}
 
 {% if note or note_form %}
 <h2 class="title is-4">Note</h2>
 
 {% if note %}
-<p>{{ note.text }}</p><br>
+<p>{{ note.text }}</p>
 {% endif %}
 
 {% if note_form %}
@@ -43,7 +44,7 @@
   <div class="field">
     <input class="button is-success" type="submit" value="Change">
   </div>
-</form><br>
+</form>
 {% endif %}
 
 {% endif %}

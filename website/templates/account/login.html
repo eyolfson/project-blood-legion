@@ -1,0 +1,59 @@
+{% extends "account/base.html" %}
+
+{% load account socialaccount %}
+
+{% block title %}Blood Legion - Login{% endblock %}
+
+{% block content %}
+
+<h1 class="title">Login</h1>
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>Please sign in with one of your existing third party accounts.</p>
+
+
+<ul class="socialaccount_providers">
+  {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+</ul>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+<p>Or, <a href="{{ signup_url }}">sign up</a> for a <strong>{{ site.name }}</strong> account and sign in below:</p>
+{% else %}
+<p>If you have not created an account yet, then please <a href="{{ signup_url }}">sign up</a> first.</p>
+{% endif %}
+
+<div class="columns is-centered">
+  <div class="column is-three-quarters">
+
+<form class="login" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+
+  {% include "horizontal_form.html" %}
+
+  <div class="field is-horizontal">
+    <div class="field-label">
+    </div>
+    <div class="field-body">
+      <div class="field is-grouped">
+        <div class="control">
+          <input class="button is-success" type="submit" value="Submit">
+        </div>
+        <div class="control">
+          <a class="button" type="submit" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+  </div>
+</div>
+
+{% endblock %}

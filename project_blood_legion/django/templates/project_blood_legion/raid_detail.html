@@ -8,25 +8,21 @@
 
 <h1 class="title">{{ raid }}</h1>
 
-<ul>
-  <li><strong>Start:</strong> {{ raid.start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
-  <li><strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
-</ul>
+<p>
+  <strong>Start:</strong> {{ raid.start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}<br>
+  <strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}
+</p>
 
 {% for instance in instances %}
-{% if forloop.first %}<br>{% endif %}
 <h2 class="title is-4">{{ instance.name }}</h2>
 
-<ul>
-  <li><strong>Scheduled Start:</strong> {{ instance.scheduled_start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}</li>
-  <li>
-    <strong>Characters ({{ instance.characters.count }}):</strong>
-    {% for character in instance.ordered_characters %}
-      {% include "project_blood_legion/character_link.html" %}
-    {% endfor %}
-  </li>
-</ul>
-<br>
+<p>
+  <strong>Scheduled Start:</strong> {{ instance.scheduled_start|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}<br>
+  <strong>Characters ({{ instance.characters.count }}):</strong>
+  {% for character in instance.ordered_characters %}
+    {% include "project_blood_legion/character_link.html" %}
+  {% endfor %}
+</p>
 
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=instance.ordered_loot %}
 

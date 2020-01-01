@@ -14,6 +14,7 @@ INSTALLED_APPS = [
 	'django.contrib.sites',
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
+	'django.forms',
 
 	'allauth',
 	'allauth.account',
@@ -50,6 +51,8 @@ TEMPLATES = [
 		},
 	},
 ]
+
+FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
 
 WSGI_APPLICATION = 'website.wsgi.application'
 

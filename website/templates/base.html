@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </a>
               {% else %}
               <a class="button is-primary" href="{% url 'account_signup' %}">
-                <strong>Sign up</strong>
+                <strong>Sign Up</strong>
               </a>
               <a class="button is-light" href="{% url 'account_login' %}">
                 Login
@@ -65,10 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <section class="section">
       <div class="container">
-        <h1 class="title">
-          {{ title }}
-        </h1>
-        {% block content %}{% endblock %}
+	<div class="content">
+          {% block content %}{% endblock %}
+	</div>
       </div>
     </section>
   </body>

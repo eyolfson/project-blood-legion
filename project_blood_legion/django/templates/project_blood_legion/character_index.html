@@ -7,7 +7,7 @@
 <h1 class="title">Characters</h1>
 
 {% if characters %}
-  <ul>
+  <ul style="list-style: none;">
   {% for character in characters %}
     {% ifchanged %}
     <li><strong>{{ character.get_cls_display }}</strong></li>

@@ -7,7 +7,7 @@
 <h1 class="title">Raids</h1>
 
 {% if raids %}
-  <ul>
+  <ul style="list-style: none;">
   {% for raid in raids %}
     {% ifchanged %}
     <li><strong>{{ raid.start|date:"F" }}</strong></li>
