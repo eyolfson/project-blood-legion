@@ -10,7 +10,7 @@
 <p>
   {% if character.alt %}
   <strong>Main:</strong> {% include "project_blood_legion/character_link.html" with character=character.alt.member.main_character %}
-    {% if character.alt.member.alt_set.count %}
+    {% if character.alt.member.alt_set.count > 1 %}
     <br><strong>Alts:</strong>
       {% for alt in character.alt.member.alt_set.all %}
         {% if alt.character != character %}
