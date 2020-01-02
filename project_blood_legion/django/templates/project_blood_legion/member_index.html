@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Blood Legion - Members{% endblock %}
+{% block title %}Blood Legion - Members ({{ members.count }}){% endblock %}
 
 {% block content %}
 
-<h1 class="title">Members</h1>
+<h1 class="title">Members ({{ members.count }})</h1>
 
 {% if members %}
   <ul>
