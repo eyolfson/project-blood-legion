@@ -6,6 +6,8 @@
 
 {% block content %}
 
+<div class="content">
+
 <h1 class="title">{{ raid }}</h1>
 
 <p>
@@ -13,7 +15,12 @@
   <strong>End:</strong> {{ raid.end|timezone:"US/Eastern"|date:"l F j Y g:i A e" }}
 </p>
 
+</div>
+
 {% for instance in instances %}
+
+<div class="content">
+
 <h2 class="title is-4">{{ instance.name }}</h2>
 
 <p>
@@ -23,6 +30,8 @@
     {% include "project_blood_legion/character_link.html" %}
   {% endfor %}
 </p>
+
+</div>
 
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=instance.ordered_loot %}
 

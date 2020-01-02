@@ -7,7 +7,7 @@
 <h1 class="title">Bosses</h1>
 
 {% if bosses %}
-  <ul style="list-style: none;">
+  <ul>
   {% for boss in bosses %}
     <li><a href="{% url 'project_blood_legion:boss_detail' boss.id %}">{{ boss }}</a></li>
   {% endfor %}
