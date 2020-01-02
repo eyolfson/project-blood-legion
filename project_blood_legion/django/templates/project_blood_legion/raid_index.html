@@ -12,7 +12,7 @@
     {% ifchanged %}
     <li><strong>{{ raid.start|date:"F" }}</strong></li>
     {% endifchanged %}
-    <li><a href="{% url 'project_blood_legion:raid_detail' raid.id %}">{{ raid }}</a></li>
+    <li><a href="{% url 'project_blood_legion:raid_detail' raid.id %}">{{ raid }}</a> {{ raid.start|date:"M j" }} - {{ raid.end|date:"M j" }}</li>
   {% endfor %}
   </ul>
 {% else %}
