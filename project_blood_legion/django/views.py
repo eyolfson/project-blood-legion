@@ -11,6 +11,14 @@ def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
 
 @login_required
+@permission_required('project_blood_legion.view_member', raise_exception=True)
+def member_index(request):
+	context = {
+		'members': Member.objects.order_by('main_character__cls', 'main_character__name'),
+	}
+	return render(request, 'project_blood_legion/member_index.html', context)
+
+@login_required
 @permission_required('project_blood_legion.view_character', raise_exception=True)
 def character_index(request):
 	context = {
