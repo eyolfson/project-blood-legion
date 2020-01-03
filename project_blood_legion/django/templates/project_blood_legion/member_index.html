@@ -10,7 +10,7 @@
 
 {% for cls, member_list in cls_list %}
 <ul>
-  <li><strong>{{ cls }} ({{ cls_list|length }})</strong></li>
+  <li><strong>{{ cls }} ({{ member_list|length }})</strong></li>
   {% for member in member_list %}
   <li>
     {% include "project_blood_legion/character_link.html" with character=member.main_character %}
