@@ -6,17 +6,18 @@
 
 <h1 class="title">Members ({{ members.count }})</h1>
 
-{% if members %}
-  <ul>
-  {% for member in members %}
-    {% ifchanged %}
-    <li><strong>{{ member.main_character.get_cls_display }}</strong></li>
-    {% endifchanged %}
-  <li>{% include "project_blood_legion/character_link.html" with character=member.main_character %}</li>
+{% regroup members by main_character.get_cls_display as cls_list %}
+
+{% for cls, member_list in cls_list %}
+<ul>
+  <li><strong>{{ cls }} ({{ cls_list|length }})</strong></li>
+  {% for member in member_list %}
+  <li>
+    {% include "project_blood_legion/character_link.html" with character=member.main_character %}
+    ({{ member.get_rank_display }})
+  </li>
   {% endfor %}
-  </ul>
-{% else %}
-  <p>No members exist.</p>
-{% endif %}
+</ul>
+{% endfor %}
 
 {% endblock %}

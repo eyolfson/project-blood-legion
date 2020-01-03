@@ -216,6 +216,15 @@ class LootAdmin(admin.ModelAdmin):
 	list_display = ('item', 'character', 'instance', 'raid', 'boss')
 
 class Member(models.Model):
+	RANK_CHOICES = [
+		(1, 'Leader'),
+		(2, 'Officer'),
+		(3, 'Raider'),
+		(4, 'Trial'),
+		(5, 'Member'),
+		(6, 'Friend'),
+	]
+
 	user = models.OneToOneField(
 		settings.AUTH_USER_MODEL,
 		on_delete=models.CASCADE,
@@ -223,6 +232,9 @@ class Member(models.Model):
 	main_character = models.OneToOneField(
 		Character,
 		on_delete=models.CASCADE,
+	)
+	rank = models.PositiveSmallIntegerField(
+		choices=RANK_CHOICES,
 	)
 
 	def __str__(self):

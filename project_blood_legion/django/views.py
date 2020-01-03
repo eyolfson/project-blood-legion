@@ -14,7 +14,7 @@ def index(request):
 @permission_required('project_blood_legion.view_member', raise_exception=True)
 def member_index(request):
 	context = {
-		'members': Member.objects.order_by('main_character__cls', 'main_character__name'),
+		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'main_character__name'),
 	}
 	return render(request, 'project_blood_legion/member_index.html', context)
 

@@ -22,8 +22,12 @@
     {% endif %}
   {% endif %}
 
+  {% if character.member %}
+  <strong>Rank:</strong> {{ character.member.get_rank_display }}
+  {% endif %}
+
   {% if character.member.alt_set.count %}
-  <strong>Alts:</strong>
+  <br><strong>Alts:</strong>
     {% for alt in character.member.alt_set.all %}
       {% include "project_blood_legion/character_link.html" with character=alt.character %}
     {% endfor %}
