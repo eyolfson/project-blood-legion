@@ -14,7 +14,9 @@
   {% for member in member_list %}
   <li>
     {% include "project_blood_legion/character_link.html" with character=member.main_character %}
+    {% if member.rank != 3 %}
     ({{ member.get_rank_display }})
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
