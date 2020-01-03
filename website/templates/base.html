@@ -51,10 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Logout
               </a>
               {% else %}
-              <a class="button is-primary" href="{% url 'account_signup' %}">
-                <strong>Sign Up</strong>
-              </a>
-              <a class="button is-light" href="{% url 'account_login' %}">
+              <a class="button is-primary" href="{% url 'account_login' %}">
                 Login
               </a>
               {% endif %}
