@@ -168,6 +168,9 @@ class Item(models.Model):
 	def get_url(self):
 		return 'https://classicdb.ch/?item={}'.format(self.classicdb_id)
 
+	def ordered_loot(self):
+                return self.loot_set.order_by('instance__scheduled_start', 'character')
+
 	class Meta:
 		ordering = ['name']
 
