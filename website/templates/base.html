@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
           {% if not user.member %}
           <a class="navbar-item" href="https://docs.google.com/forms/d/e/1FAIpQLSd0bT2jPUqx-T8n_NxZi8Pdy0sH_xsmgVauAf_hPysAVetJ0A/viewform">Apply</a>
           {% endif %}
-	  {% if perms.project_blood_legion.view_member %}<a class="navbar-item" href="{% url 'project_blood_legion:member_index' %}">Members</a>{% endif %}
+	  <a class="navbar-item" href="{% url 'project_blood_legion:member_index' %}">Members</a>
 	  {% if perms.project_blood_legion.view_character %}<a class="navbar-item" href="{% url 'project_blood_legion:character_index' %}">Characters</a>{% endif %}
           {% if perms.project_blood_legion.view_item %}<a class="navbar-item" href="{% url 'project_blood_legion:item_index' %}">Items</a>{% endif %}
           {% if perms.project_blood_legion.view_raid %}<a class="navbar-item" href="{% url 'project_blood_legion:raid_index' %}">Raids</a>{% endif %}
