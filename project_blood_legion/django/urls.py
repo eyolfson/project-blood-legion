@@ -6,7 +6,7 @@ app_name = 'project_blood_legion'
 
 urlpatterns = [
 	path('', views.index, name='index'),
-	path('member/', views.member_index, name='member_index'),
+	path('roster/', views.roster, name='roster'),
 	path('character/', views.character_index, name='character_index'),
 	path('character/<int:character_id>/', views.character_detail, name='character_detail'),
 	path('item/', views.item_index, name='item_index'),

@@ -10,11 +10,11 @@ from .models import Boss, Character, Item, Raid, Note, Member
 def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
 
-def member_index(request):
+def roster(request):
 	context = {
 		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'main_character__name'),
 	}
-	return render(request, 'project_blood_legion/member_index.html', context)
+	return render(request, 'project_blood_legion/roster.html', context)
 
 @login_required
 @permission_required('project_blood_legion.view_character', raise_exception=True)
