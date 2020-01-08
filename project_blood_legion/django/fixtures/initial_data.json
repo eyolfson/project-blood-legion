@@ -618,6 +618,26 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 51,
+  "fields": {
+    "zone": 2,
+    "reset": 30,
+    "start": "2020-01-20T16:00:00Z",
+    "end": "2020-01-25T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 52,
+  "fields": {
+    "zone": 1,
+    "reset": 22,
+    "start": "2020-01-21T16:00:00Z",
+    "end": "2020-01-28T16:00:00Z"
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {
