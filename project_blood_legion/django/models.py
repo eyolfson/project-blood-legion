@@ -237,6 +237,9 @@ class Member(models.Model):
 		choices=RANK_CHOICES,
 	)
 
+	def is_officer(self):
+		return self.rank in [1, 2]
+
 	def __str__(self):
 		return '{} ({})'.format(self.main_character, self.user)
 
@@ -268,3 +271,21 @@ class Note(models.Model):
 
 	class Meta:
 		ordering = ['character']
+
+class Question(models.Model):
+	title = models.CharField(max_length=120)
+	body = models.TextField()
+
+	def __str__(self):
+		return self.title
+
+class Answer(models.Model):
+	question = models.ForeignKey(Question, on_delete=models.CASCADE)
+	choice = models.BooleanField()
+	member = models.OneToOneField(
+		Member,
+		on_delete=models.CASCADE,
+	)
+
+	def __str__(self):
+		return '{} → {}'.format(self.question, self.member)

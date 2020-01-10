@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Blood Legion - {{ question }}{% endblock %}
+
+{% block content %}
+
+<h1 class="title">{{ question }}</h1>
+
+<div class="content">
+
+{{ question.body|safe }}
+
+
+<form action="{% url 'project_blood_legion:question_detail' question.id %}" method="post">
+  {% csrf_token %}
+
+  <div class="field is-grouped">
+  <p class="control">
+    <input class="button{% if answer and answer.choice %} is-success{% endif %}" type="submit" name="choice" value="Yes">
+  </p>
+  <p class="control">
+    <input class="button{% if answer and not answer.choice %} is-danger{% endif %}" type="submit" name="choice" value="No">
+  </p>
+</div>
+
+</form>
+
+</div>
+
+
+{% if answers %}
+
+<h2 class="title">Answers</h2>
+
+{% regroup answers by choice as choice_list %}
+
+{% for choice, answer_list in choice_list %}
+<ul>
+  <li><strong>{% if choice %}Yes{% else %}No{% endif %} ({{ answer_list|length }})</strong></li>
+  {% for entry in answer_list %}
+  <li>
+    {% include "project_blood_legion/character_link.html" with character=entry.member.main_character %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% endif %}
+
+{% endblock %}

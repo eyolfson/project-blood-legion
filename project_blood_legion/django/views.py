@@ -1,11 +1,19 @@
 from django.contrib.auth.decorators import login_required, permission_required
+from django.core.exceptions import PermissionDenied
 from django.db.models import Count
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
 from .forms import LootForm, NoteForm
-from .models import Boss, Character, Item, Raid, Note, Member
+from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer
+
+def get_member_or_deny(request):
+	try:
+		return request.user.member
+	except Member.DoesNotExist:
+		pass
+	raise PermissionDenied
 
 def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
@@ -142,3 +150,39 @@ def boss_detail(request, boss_id):
 		'boss_drops': boss_drops,
 	}
 	return render(request, 'project_blood_legion/boss_detail.html', context)
+
+@login_required
+def question_index(request):
+	member = get_member_or_deny(request)
+	context = {
+		'questions': Question.objects.all(),
+		'member': member,
+	}
+	return render(request, 'project_blood_legion/question_index.html', context)
+
+@login_required
+def question_detail(request, question_id):
+	member = get_member_or_deny(request)
+	question = get_object_or_404(Question, pk=question_id)
+	answer = None
+	try:
+		answer = Answer.objects.get(question=question, member=member)
+	except Answer.DoesNotExist:
+		pass
+
+	if request.method == 'POST' and 'choice' in request.POST:
+		if request.POST['choice'] == 'Yes':
+			answer.choice = True
+		elif request.POST['choice'] == 'No':
+			answer.choice = False
+		answer.save()
+		return HttpResponseRedirect(reverse('project_blood_legion:question_detail', args=(question_id,)))
+
+	context = {
+		'question': question,
+		'answer': answer,
+	}
+	if member.is_officer:
+		answers = Answer.objects.filter(question=question).order_by('choice')
+		context['answers'] = answers
+	return render(request, 'project_blood_legion/question_detail.html', context)

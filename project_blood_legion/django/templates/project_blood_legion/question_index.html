@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Blood Legion - Questions{% endblock %}
+
+{% block content %}
+
+<h1 class="title">Questions</h1>
+
+<div class="content">
+
+{% if questions %}
+  <ul>
+  {% for question in questions %}
+    <li><a href="{% url 'project_blood_legion:question_detail' question.id %}">{{ question }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No questions exist.</p>
+{% endif %}
+
+</div>
+
+{% endblock %}

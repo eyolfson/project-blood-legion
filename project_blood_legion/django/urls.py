@@ -15,4 +15,6 @@ urlpatterns = [
 	path('raid/<int:raid_id>/', views.raid_detail, name='raid_detail'),
 	path('boss/', views.boss_index, name='boss_index'),
 	path('boss/<int:boss_id>/', views.boss_detail, name='boss_detail'),
+	path('question/', views.question_index, name='question_index'),
+	path('question/<int:question_id>/', views.question_detail, name='question_detail'),
 ]
