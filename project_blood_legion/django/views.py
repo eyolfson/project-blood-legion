@@ -185,6 +185,6 @@ def question_detail(request, question_id):
 		'answer': answer,
 	}
 	if member.is_officer():
-		answers = Answer.objects.filter(question=question).order_by('choice')
+		answers = Answer.objects.filter(question=question).order_by('choice').order_by('member__main_character__cls', 'member__main_character__name')
 		context['answers'] = answers
 	return render(request, 'project_blood_legion/question_detail.html', context)
