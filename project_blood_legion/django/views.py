@@ -171,6 +171,8 @@ def question_detail(request, question_id):
 		pass
 
 	if request.method == 'POST' and 'choice' in request.POST:
+		if answer is None:
+			answer = Answer.objects.create(question=question, member=member, choice=False)
 		if request.POST['choice'] == 'Yes':
 			answer.choice = True
 		elif request.POST['choice'] == 'No':
