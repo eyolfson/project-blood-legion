@@ -2508,5 +2508,14 @@
     "quality": "E",
     "classicdb_id": 17068
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 209,
+  "fields": {
+    "name": "Onyxia Scale Cloak",
+    "quality": "R",
+    "classicdb_id": 15138
+  }
 }
 ]
