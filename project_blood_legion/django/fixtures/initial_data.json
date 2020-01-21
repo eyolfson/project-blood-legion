@@ -14,6 +14,13 @@
   }
 },
 {
+  "model": "project_blood_legion.zone",
+  "pk": 3,
+  "fields": {
+    "name": "Blackwing Lair"
+  }
+},
+{
   "model": "project_blood_legion.boss",
   "pk": 1,
   "fields": {
@@ -114,6 +121,78 @@
   "pk": 13,
   "fields": {
     "zone": 2,
+    "name": "Trash"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 14,
+  "fields": {
+    "zone": 3,
+    "name": "Razorgore the Untamed"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 15,
+  "fields": {
+    "zone": 3,
+    "name": "Vaelastrasz the Corrupt"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 16,
+  "fields": {
+    "zone": 3,
+    "name": "Broodlord Lashlayer"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 17,
+  "fields": {
+    "zone": 3,
+    "name": "Firemaw"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 18,
+  "fields": {
+    "zone": 3,
+    "name": "Ebonroc"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 19,
+  "fields": {
+    "zone": 3,
+    "name": "Flamegor"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 20,
+  "fields": {
+    "zone": 3,
+    "name": "Chromaggus"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 21,
+  "fields": {
+    "zone": 3,
+    "name": "Nefarian"
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 22,
+  "fields": {
+    "zone": 3,
     "name": "Trash"
   }
 },
@@ -704,6 +783,16 @@
     "zone": 1,
     "reset": 25,
     "start": "2020-02-11T16:00:00Z",
+    "end": "2020-02-18T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 60,
+  "fields": {
+    "zone": 3,
+    "reset": 1,
+    "start": "2020-02-12T23:00:00Z",
     "end": "2020-02-18T16:00:00Z"
   }
 },

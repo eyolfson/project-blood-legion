@@ -40,6 +40,20 @@ class Command(BaseCommand):
 			raid=onyxia
 		))
 
+		bwl_zone = Zone.objects.get(name="Blackwing Lair")
+		bwl_release = datetime.datetime(2020, 2, 12, 18, 0, 0)
+		bwl_first_reset = datetime.datetime(2020, 2, 18, 11, 0, 0)
+		bwl, _ = Raid.objects.get_or_create(zone=bwl_zone, reset=1, defaults={
+			'start': eastern_tz.localize(bwl_release),
+			'end': eastern_tz.localize(bwl_first_reset)
+		})
+		entries.append(Entry(
+			next_reset=bwl_first_reset,
+			zone_id=bwl_zone.id,
+			reset_frequency=7,
+			raid=bwl
+		))
+
 		until = datetime.datetime.now() + datetime.timedelta(days=14)
 		while True:
 			entries = sorted(entries)
