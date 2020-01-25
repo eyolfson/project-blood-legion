@@ -2676,5 +2676,284 @@
     "quality": "R",
     "classicdb_id": 15138
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 210,
+  "fields": {
+    "name": "Thunderfury, Blessed Blade of the Windseeker",
+    "quality": "L",
+    "classicdb_id": 19019
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 211,
+  "fields": {
+    "name": "Stormrage Belt",
+    "quality": "E",
+    "classicdb_id": 16903
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 212,
+  "fields": {
+    "name": "Stormrage Boots",
+    "quality": "E",
+    "classicdb_id": 16898
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 213,
+  "fields": {
+    "name": "Stormrage Bracers",
+    "quality": "E",
+    "classicdb_id": 16904
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 214,
+  "fields": {
+    "name": "Stormrage Chestguard",
+    "quality": "E",
+    "classicdb_id": 16897
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 215,
+  "fields": {
+    "name": "Stormrage Handguards",
+    "quality": "E",
+    "classicdb_id": 16899
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 216,
+  "fields": {
+    "name": "Stormrage Pauldrons",
+    "quality": "E",
+    "classicdb_id": 16902
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 217,
+  "fields": {
+    "name": "Dragonstalker's Belt",
+    "quality": "E",
+    "classicdb_id": 16936
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 218,
+  "fields": {
+    "name": "Dragonstalker's Bracers",
+    "quality": "E",
+    "classicdb_id": 16935
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 219,
+  "fields": {
+    "name": "Dragonstalker's Breastplate",
+    "quality": "E",
+    "classicdb_id": 16942
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 220,
+  "fields": {
+    "name": "Dragonstalker's Gauntlets",
+    "quality": "E",
+    "classicdb_id": 16940
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 221,
+  "fields": {
+    "name": "Dragonstalker's Greaves",
+    "quality": "E",
+    "classicdb_id": 16941
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 222,
+  "fields": {
+    "name": "Dragonstalker's Spaulders",
+    "quality": "E",
+    "classicdb_id": 16937
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 223,
+  "fields": {
+    "name": "Netherwind Mantle",
+    "quality": "E",
+    "classicdb_id": 16917
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 224,
+  "fields": {
+    "name": "Netherwind Belt",
+    "quality": "E",
+    "classicdb_id": 16818
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 225,
+  "fields": {
+    "name": "Netherwind Bindings",
+    "quality": "E",
+    "classicdb_id": 16918
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 226,
+  "fields": {
+    "name": "Netherwind Boots",
+    "quality": "E",
+    "classicdb_id": 16912
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 227,
+  "fields": {
+    "name": "Netherwind Gloves",
+    "quality": "E",
+    "classicdb_id": 16913
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 228,
+  "fields": {
+    "name": "Netherwind Robes",
+    "quality": "E",
+    "classicdb_id": 16916
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 229,
+  "fields": {
+    "name": "Judgement Belt",
+    "quality": "E",
+    "classicdb_id": 16952
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 230,
+  "fields": {
+    "name": "Judgement Bindings",
+    "quality": "E",
+    "classicdb_id": 16951
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 231,
+  "fields": {
+    "name": "Judgement Breastplate",
+    "quality": "E",
+    "classicdb_id": 16958
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 232,
+  "fields": {
+    "name": "Judgement Gauntlets",
+    "quality": "E",
+    "classicdb_id": 16956
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 233,
+  "fields": {
+    "name": "Judgement Sabatons",
+    "quality": "E",
+    "classicdb_id": 16957
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 234,
+  "fields": {
+    "name": "Judgement Spaulders",
+    "quality": "E",
+    "classicdb_id": 16953
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 235,
+  "fields": {
+    "name": "Belt of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16925
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 236,
+  "fields": {
+    "name": "Bindings of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16926
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 237,
+  "fields": {
+    "name": "Boots of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16919
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 238,
+  "fields": {
+    "name": "Handguards of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16920
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 239,
+  "fields": {
+    "name": "Pauldrons of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16924
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 240,
+  "fields": {
+    "name": "Robes of Transcendence",
+    "quality": "E",
+    "classicdb_id": 16923
+  }
 }
 ]
