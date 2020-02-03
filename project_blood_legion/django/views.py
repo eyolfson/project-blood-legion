@@ -152,15 +152,15 @@ def boss_detail(request, boss_id):
 	return render(request, 'project_blood_legion/boss_detail.html', context)
 
 @login_required
+@permission_required('project_blood_legion.view_question', raise_exception=True)
 def question_index(request):
-	member = get_member_or_deny(request)
 	context = {
 		'questions': Question.objects.all(),
-		'member': member,
 	}
 	return render(request, 'project_blood_legion/question_index.html', context)
 
 @login_required
+@permission_required('project_blood_legion.view_question', raise_exception=True)
 def question_detail(request, question_id):
 	member = get_member_or_deny(request)
 	question = get_object_or_404(Question, pk=question_id)
@@ -184,7 +184,7 @@ def question_detail(request, question_id):
 		'question': question,
 		'answer': answer,
 	}
-	if member.is_officer():
+	if request.user.has_perm('project_blood_legion.view_answer'):
 		answers = Answer.objects.filter(question=question).order_by('-choice', 'member__main_character__cls', 'member__main_character__name')
 		context['answers'] = answers
 	return render(request, 'project_blood_legion/question_detail.html', context)

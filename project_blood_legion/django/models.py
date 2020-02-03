@@ -237,9 +237,6 @@ class Member(models.Model):
 		choices=RANK_CHOICES,
 	)
 
-	def is_officer(self):
-		return self.rank in [1, 2]
-
 	def __str__(self):
 		return '{} ({})'.format(self.main_character, self.user)
 
