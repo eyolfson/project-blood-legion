@@ -38,7 +38,7 @@
 <h2 class="title is-4">Note</h2>
 
 {% if note %}
-<p>{{ note.text }}</p>
+  {{ note.text|safe }}
 {% endif %}
 
 {% if note_form %}

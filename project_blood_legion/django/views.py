@@ -4,6 +4,10 @@ from django.db.models import Count
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
+from django.utils.html import escape
+
+import markdown
+from markdown.extensions.toc import TocExtension
 
 from .forms import LootForm, NoteForm
 from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer
@@ -60,7 +64,15 @@ def character_detail(request, character_id):
 			if note_form.is_valid():
 				new_note = note_form.save(commit=False)
 				if note:
-					note.text = new_note.text
+					note.text = markdown.markdown(
+						escape(new_note.text),
+						extensions=[
+							TocExtension(baselevel=3),
+							'nl2br',
+							'tables',
+						],
+						output='html5',
+					)
 					note.save()
 				else:
 					new_note.character = character
