@@ -7,7 +7,7 @@ A website for World of Warcraft Classic guilds
     python -m venv venv
     source venv/bin/activate
     pip install --upgrade pip
-    pip install requirements.txt
+    pip install -r requirements.txt
     git submodule update --init --recursive
     python -m project_blood_legion --update-css
     python manage.py migrate
