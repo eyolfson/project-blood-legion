@@ -6,14 +6,18 @@
 
 <h1 class="title">Bosses</h1>
 
-{% if bosses %}
-  <ul>
-  {% for boss in bosses %}
-    <li><a href="{% url 'project_blood_legion:boss_detail' boss.id %}">{{ boss }}</a></li>
-  {% endfor %}
-  </ul>
-{% else %}
-  <p>No bosses exist.</p>
-{% endif %}
+{% regroup bosses by zone as zone_list %}
+
+{% for zone, zone_bosses in zone_list %}
+{% if not forloop.first %}<br>{% endif %}
+<h2 class="title is-size-4">{{ zone }}</h2>
+
+<ul>
+{% for boss in zone_bosses %}
+  <li><a href="{% url 'project_blood_legion:boss_detail' boss.id %}">{{ boss.name }}</a></li>
+{% endfor %}
+</ul>
+
+{% endfor %}
 
 {% endblock %}

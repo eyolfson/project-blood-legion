@@ -10,7 +10,7 @@ import markdown
 from markdown.extensions.toc import TocExtension
 
 from .forms import LootForm, NoteForm
-from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer
+from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer, Instance
 
 def get_member_or_deny(request):
 	try:
@@ -140,7 +140,7 @@ def raid_detail(request, raid_id):
 @permission_required('project_blood_legion.view_boss', raise_exception=True)
 def boss_index(request):
 	context = {
-		'bosses': Boss.objects.exclude(name='Trash'),
+		'bosses': Boss.objects.all(),
 	}
 	return render(request, 'project_blood_legion/boss_index.html', context)
 
@@ -148,10 +148,15 @@ def boss_index(request):
 @permission_required('project_blood_legion.view_boss', raise_exception=True)
 def boss_detail(request, boss_id):
 	boss = get_object_or_404(Boss, pk=boss_id)
-	if boss.name == 'Trash':
-		raise Http404
 	boss_loot = boss.loot_set.filter(instance__isnull=False)
-	boss_kills = boss_loot.order_by('instance').values('instance').distinct().count()
+	if boss.name == 'Trash':
+		from django.utils import timezone
+		boss_kills = Instance.objects.filter(
+			scheduled_start__lte=timezone.now(),
+			raid__in=boss.zone.raid_set.all()
+		).count()
+	else:
+		boss_kills = boss_loot.order_by('instance').values('instance').distinct().count()
 	boss_drops = list(boss_loot.order_by('item').values('item').distinct().annotate(count=Count('item')).order_by('-count', 'item'))
 	for drop in boss_drops:
 		drop['item'] = Item.objects.get(id=drop['item'])

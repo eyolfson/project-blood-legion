@@ -25,7 +25,8 @@
   "pk": 1,
   "fields": {
     "zone": 1,
-    "name": "Lucifron"
+    "name": "Lucifron",
+    "items": []
   }
 },
 {
@@ -33,7 +34,8 @@
   "pk": 2,
   "fields": {
     "zone": 1,
-    "name": "Magmadar"
+    "name": "Magmadar",
+    "items": []
   }
 },
 {
@@ -41,7 +43,8 @@
   "pk": 3,
   "fields": {
     "zone": 1,
-    "name": "Gehennas"
+    "name": "Gehennas",
+    "items": []
   }
 },
 {
@@ -49,7 +52,8 @@
   "pk": 4,
   "fields": {
     "zone": 1,
-    "name": "Garr"
+    "name": "Garr",
+    "items": []
   }
 },
 {
@@ -57,7 +61,8 @@
   "pk": 5,
   "fields": {
     "zone": 1,
-    "name": "Baron Geddon"
+    "name": "Baron Geddon",
+    "items": []
   }
 },
 {
@@ -65,7 +70,8 @@
   "pk": 6,
   "fields": {
     "zone": 1,
-    "name": "Shazzrah"
+    "name": "Shazzrah",
+    "items": []
   }
 },
 {
@@ -73,7 +79,8 @@
   "pk": 7,
   "fields": {
     "zone": 1,
-    "name": "Sulfuron Harbinger"
+    "name": "Sulfuron Harbinger",
+    "items": []
   }
 },
 {
@@ -81,7 +88,8 @@
   "pk": 8,
   "fields": {
     "zone": 1,
-    "name": "Golemagg the Incinerator"
+    "name": "Golemagg the Incinerator",
+    "items": []
   }
 },
 {
@@ -89,7 +97,8 @@
   "pk": 9,
   "fields": {
     "zone": 1,
-    "name": "Majordomo Executus"
+    "name": "Majordomo Executus",
+    "items": []
   }
 },
 {
@@ -97,7 +106,8 @@
   "pk": 10,
   "fields": {
     "zone": 1,
-    "name": "Ragnaros"
+    "name": "Ragnaros",
+    "items": []
   }
 },
 {
@@ -105,7 +115,8 @@
   "pk": 11,
   "fields": {
     "zone": 2,
-    "name": "Onyxia"
+    "name": "Onyxia",
+    "items": []
   }
 },
 {
@@ -113,15 +124,8 @@
   "pk": 12,
   "fields": {
     "zone": 1,
-    "name": "Trash"
-  }
-},
-{
-  "model": "project_blood_legion.boss",
-  "pk": 13,
-  "fields": {
-    "zone": 2,
-    "name": "Trash"
+    "name": "Trash",
+    "items": []
   }
 },
 {
@@ -129,7 +133,24 @@
   "pk": 14,
   "fields": {
     "zone": 3,
-    "name": "Razorgore the Untamed"
+    "name": "Razorgore the Untamed",
+    "items": [
+      266,
+      236,
+      245,
+      259,
+      248,
+      218,
+      268,
+      230,
+      269,
+      255,
+      225,
+      270,
+      213,
+      267,
+      271
+    ]
   }
 },
 {
@@ -137,7 +158,24 @@
   "pk": 15,
   "fields": {
     "zone": 3,
-    "name": "Vaelastrasz the Corrupt"
+    "name": "Vaelastrasz the Corrupt",
+    "items": [
+      247,
+      235,
+      243,
+      276,
+      217,
+      275,
+      229,
+      272,
+      253,
+      224,
+      274,
+      277,
+      273,
+      211,
+      264
+    ]
   }
 },
 {
@@ -145,7 +183,24 @@
   "pk": 16,
   "fields": {
     "zone": 3,
-    "name": "Broodlord Lashlayer"
+    "name": "Broodlord Lashlayer",
+    "items": [
+      280,
+      244,
+      237,
+      281,
+      221,
+      252,
+      282,
+      233,
+      278,
+      283,
+      254,
+      226,
+      263,
+      212,
+      279
+    ]
   }
 },
 {
@@ -153,7 +208,32 @@
   "pk": 17,
   "fields": {
     "zone": 3,
-    "name": "Firemaw"
+    "name": "Firemaw",
+    "items": [
+      292,
+      246,
+      294,
+      295,
+      220,
+      289,
+      285,
+      293,
+      251,
+      261,
+      238,
+      232,
+      296,
+      291,
+      256,
+      227,
+      297,
+      287,
+      286,
+      290,
+      288,
+      215,
+      284
+    ]
   }
 },
 {
@@ -161,7 +241,30 @@
   "pk": 18,
   "fields": {
     "zone": 3,
-    "name": "Ebonroc"
+    "name": "Ebonroc",
+    "items": [
+      298,
+      299,
+      246,
+      303,
+      220,
+      300,
+      289,
+      285,
+      301,
+      251,
+      261,
+      238,
+      232,
+      302,
+      256,
+      227,
+      287,
+      286,
+      288,
+      215,
+      284
+    ]
   }
 },
 {
@@ -169,7 +272,30 @@
   "pk": 19,
   "fields": {
     "zone": 3,
-    "name": "Flamegor"
+    "name": "Flamegor",
+    "items": [
+      246,
+      305,
+      308,
+      220,
+      289,
+      285,
+      306,
+      251,
+      261,
+      238,
+      309,
+      232,
+      256,
+      227,
+      287,
+      286,
+      288,
+      304,
+      215,
+      307,
+      284
+    ]
   }
 },
 {
@@ -177,7 +303,31 @@
   "pk": 20,
   "fields": {
     "zone": 3,
-    "name": "Chromaggus"
+    "name": "Chromaggus",
+    "items": [
+      310,
+      321,
+      241,
+      312,
+      318,
+      319,
+      222,
+      322,
+      315,
+      317,
+      250,
+      316,
+      234,
+      258,
+      223,
+      239,
+      262,
+      320,
+      314,
+      216,
+      313,
+      311
+    ]
   }
 },
 {
@@ -185,7 +335,31 @@
   "pk": 21,
   "fields": {
     "zone": 3,
-    "name": "Nefarian"
+    "name": "Nefarian",
+    "items": [
+      327,
+      333,
+      242,
+      325,
+      249,
+      260,
+      324,
+      334,
+      219,
+      323,
+      231,
+      335,
+      330,
+      328,
+      257,
+      228,
+      331,
+      329,
+      240,
+      332,
+      214,
+      326
+    ]
   }
 },
 {
@@ -193,7 +367,19 @@
   "pk": 22,
   "fields": {
     "zone": 3,
-    "name": "Trash"
+    "name": "Trash",
+    "items": [
+      340,
+      338,
+      336,
+      342,
+      343,
+      344,
+      265,
+      341,
+      337,
+      339
+    ]
   }
 },
 {
@@ -797,12 +983,43 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 61,
+  "fields": {
+    "zone": 2,
+    "reset": 35,
+    "start": "2020-02-14T16:00:00Z",
+    "end": "2020-02-19T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 62,
+  "fields": {
+    "zone": 1,
+    "reset": 26,
+    "start": "2020-02-18T16:00:00Z",
+    "end": "2020-02-25T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 63,
+  "fields": {
+    "zone": 3,
+    "reset": 2,
+    "start": "2020-02-18T16:00:00Z",
+    "end": "2020-02-25T16:00:00Z"
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {
     "name": "Arcanist Boots",
     "quality": "E",
-    "classicdb_id": 16800
+    "classic_item_id": 16800,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -811,7 +1028,8 @@
   "fields": {
     "name": "Felheart Gloves",
     "quality": "E",
-    "classicdb_id": 16805
+    "classic_item_id": 16805,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -820,7 +1038,8 @@
   "fields": {
     "name": "Cenarion Boots",
     "quality": "E",
-    "classicdb_id": 16829
+    "classic_item_id": 16829,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -829,7 +1048,8 @@
   "fields": {
     "name": "Earthfury Boots",
     "quality": "E",
-    "classicdb_id": 16837
+    "classic_item_id": 16837,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -838,7 +1058,8 @@
   "fields": {
     "name": "Lawbringer Boots",
     "quality": "E",
-    "classicdb_id": 16859
+    "classic_item_id": 16859,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -847,7 +1068,8 @@
   "fields": {
     "name": "Gauntlets of Might",
     "quality": "E",
-    "classicdb_id": 16863
+    "classic_item_id": 16863,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -856,7 +1078,8 @@
   "fields": {
     "name": "Helm of the Lifegiver",
     "quality": "E",
-    "classicdb_id": 18870
+    "classic_item_id": 18870,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -865,7 +1088,8 @@
   "fields": {
     "name": "Choker of Enlightenment",
     "quality": "E",
-    "classicdb_id": 17109
+    "classic_item_id": 17109,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -874,7 +1098,8 @@
   "fields": {
     "name": "Robe of Volatile Power",
     "quality": "E",
-    "classicdb_id": 19145
+    "classic_item_id": 19145,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -883,7 +1108,8 @@
   "fields": {
     "name": "Wristguards of Stability",
     "quality": "E",
-    "classicdb_id": 19146
+    "classic_item_id": 19146,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -892,7 +1118,8 @@
   "fields": {
     "name": "Manastorm Leggings",
     "quality": "E",
-    "classicdb_id": 18872
+    "classic_item_id": 18872,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -901,7 +1128,8 @@
   "fields": {
     "name": "Salamander Scale Pants",
     "quality": "E",
-    "classicdb_id": 18875
+    "classic_item_id": 18875,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -910,7 +1138,8 @@
   "fields": {
     "name": "Flamewaker Legplates",
     "quality": "E",
-    "classicdb_id": 18861
+    "classic_item_id": 18861,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -919,7 +1148,8 @@
   "fields": {
     "name": "Heavy Dark Iron Ring",
     "quality": "E",
-    "classicdb_id": 18879
+    "classic_item_id": 18879,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -928,7 +1158,8 @@
   "fields": {
     "name": "Ring of Spell Power",
     "quality": "E",
-    "classicdb_id": 19147
+    "classic_item_id": 19147,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -937,7 +1168,8 @@
   "fields": {
     "name": "Crimson Shocker",
     "quality": "E",
-    "classicdb_id": 17077
+    "classic_item_id": 17077,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -946,7 +1178,8 @@
   "fields": {
     "name": "Sorcerous Dagger",
     "quality": "E",
-    "classicdb_id": 18878
+    "classic_item_id": 18878,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -955,7 +1188,8 @@
   "fields": {
     "name": "Tome of Tranquilizing Shot",
     "quality": "U",
-    "classicdb_id": 16665
+    "classic_item_id": 16665,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -964,7 +1198,8 @@
   "fields": {
     "name": "Pants of Prophecy",
     "quality": "E",
-    "classicdb_id": 16814
+    "classic_item_id": 16814,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -973,7 +1208,8 @@
   "fields": {
     "name": "Arcanist Leggings",
     "quality": "E",
-    "classicdb_id": 16796
+    "classic_item_id": 16796,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -982,7 +1218,8 @@
   "fields": {
     "name": "Felheart Pants",
     "quality": "E",
-    "classicdb_id": 16810
+    "classic_item_id": 16810,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -991,7 +1228,8 @@
   "fields": {
     "name": "Nightslayer Pants",
     "quality": "E",
-    "classicdb_id": 16822
+    "classic_item_id": 16822,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1000,7 +1238,8 @@
   "fields": {
     "name": "Cenarion Leggings",
     "quality": "E",
-    "classicdb_id": 16835
+    "classic_item_id": 16835,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1009,7 +1248,8 @@
   "fields": {
     "name": "Giantstalker's Leggings",
     "quality": "E",
-    "classicdb_id": 16847
+    "classic_item_id": 16847,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1018,7 +1258,8 @@
   "fields": {
     "name": "Earthfury Legguards",
     "quality": "E",
-    "classicdb_id": 16843
+    "classic_item_id": 16843,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1027,7 +1268,8 @@
   "fields": {
     "name": "Lawbringer Legplates",
     "quality": "E",
-    "classicdb_id": 16855
+    "classic_item_id": 16855,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1036,7 +1278,8 @@
   "fields": {
     "name": "Legplates of Might",
     "quality": "E",
-    "classicdb_id": 16867
+    "classic_item_id": 16867,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1045,7 +1288,8 @@
   "fields": {
     "name": "Eskhandar's Right Claw",
     "quality": "E",
-    "classicdb_id": 18203
+    "classic_item_id": 18203,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1054,7 +1298,8 @@
   "fields": {
     "name": "Medallion of Steadfast Might",
     "quality": "E",
-    "classicdb_id": 17065
+    "classic_item_id": 17065,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1063,7 +1308,8 @@
   "fields": {
     "name": "Deep Earth Spaulders",
     "quality": "E",
-    "classicdb_id": 18829
+    "classic_item_id": 18829,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1072,7 +1318,8 @@
   "fields": {
     "name": "Aged Core Leather Gloves",
     "quality": "E",
-    "classicdb_id": 18823
+    "classic_item_id": 18823,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1081,7 +1328,8 @@
   "fields": {
     "name": "Flameguard Gauntlets",
     "quality": "E",
-    "classicdb_id": 19143
+    "classic_item_id": 19143,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1090,7 +1338,8 @@
   "fields": {
     "name": "Mana Igniting Cord",
     "quality": "E",
-    "classicdb_id": 19136
+    "classic_item_id": 19136,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1099,7 +1348,8 @@
   "fields": {
     "name": "Sabatons of the Flamewalker",
     "quality": "E",
-    "classicdb_id": 19144
+    "classic_item_id": 19144,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1108,7 +1358,8 @@
   "fields": {
     "name": "Magma Tempered Boots",
     "quality": "E",
-    "classicdb_id": 18824
+    "classic_item_id": 18824,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1117,7 +1368,8 @@
   "fields": {
     "name": "Quick Strike Ring",
     "quality": "E",
-    "classicdb_id": 18821
+    "classic_item_id": 18821,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1126,7 +1378,8 @@
   "fields": {
     "name": "Talisman of Ephemeral Power",
     "quality": "E",
-    "classicdb_id": 18820
+    "classic_item_id": 18820,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1135,7 +1388,8 @@
   "fields": {
     "name": "Fire Runed Grimoire",
     "quality": "E",
-    "classicdb_id": 19142
+    "classic_item_id": 19142,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1144,7 +1398,8 @@
   "fields": {
     "name": "Striker's Mark",
     "quality": "E",
-    "classicdb_id": 17069
+    "classic_item_id": 17069,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1153,7 +1408,8 @@
   "fields": {
     "name": "Earthshaker",
     "quality": "E",
-    "classicdb_id": 17073
+    "classic_item_id": 17073,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1162,7 +1418,8 @@
   "fields": {
     "name": "Obsidian Edged Blade",
     "quality": "E",
-    "classicdb_id": 18822
+    "classic_item_id": 18822,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1171,7 +1428,8 @@
   "fields": {
     "name": "Plans: Elemental Sharpening Stone",
     "quality": "R",
-    "classicdb_id": 18264
+    "classic_item_id": 18264,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1180,7 +1438,8 @@
   "fields": {
     "name": "Cloak of the Shrouded Mists",
     "quality": "E",
-    "classicdb_id": 17102
+    "classic_item_id": 17102,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1189,7 +1448,8 @@
   "fields": {
     "name": "Dragon's Blood Cape",
     "quality": "E",
-    "classicdb_id": 17107
+    "classic_item_id": 17107,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1198,7 +1458,8 @@
   "fields": {
     "name": "Bloodfang Pants",
     "quality": "E",
-    "classicdb_id": 16909
+    "classic_item_id": 16909,
+    "classicdb_item_id_suffix": "-7"
   }
 },
 {
@@ -1207,7 +1468,8 @@
   "fields": {
     "name": "Belt of Might",
     "quality": "E",
-    "classicdb_id": 16864
+    "classic_item_id": 16864,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1216,7 +1478,8 @@
   "fields": {
     "name": "Bracers of Might",
     "quality": "E",
-    "classicdb_id": 16861
+    "classic_item_id": 16861,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1225,7 +1488,8 @@
   "fields": {
     "name": "Breastplate of Might",
     "quality": "E",
-    "classicdb_id": 16865
+    "classic_item_id": 16865,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1234,7 +1498,8 @@
   "fields": {
     "name": "Helm of Might",
     "quality": "E",
-    "classicdb_id": 16866
+    "classic_item_id": 16866,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1243,7 +1508,8 @@
   "fields": {
     "name": "Pauldrons of Might",
     "quality": "E",
-    "classicdb_id": 16868
+    "classic_item_id": 16868,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1252,7 +1518,8 @@
   "fields": {
     "name": "Sabatons of Might",
     "quality": "E",
-    "classicdb_id": 16862
+    "classic_item_id": 16862,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1261,7 +1528,8 @@
   "fields": {
     "name": "Helm of Wrath",
     "quality": "E",
-    "classicdb_id": 16963
+    "classic_item_id": 16963,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1270,7 +1538,8 @@
   "fields": {
     "name": "Legplates of Wrath",
     "quality": "E",
-    "classicdb_id": 16962
+    "classic_item_id": 16962,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1279,7 +1548,8 @@
   "fields": {
     "name": "Bloodfang Hood",
     "quality": "E",
-    "classicdb_id": 16908
+    "classic_item_id": 16908,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1288,7 +1558,8 @@
   "fields": {
     "name": "Dragonstalker's Helm",
     "quality": "E",
-    "classicdb_id": 16939
+    "classic_item_id": 16939,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1297,7 +1568,8 @@
   "fields": {
     "name": "Dragonstalker's Legguards",
     "quality": "E",
-    "classicdb_id": 16938
+    "classic_item_id": 16938,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1306,7 +1578,8 @@
   "fields": {
     "name": "Crown of Destruction",
     "quality": "E",
-    "classicdb_id": 18817
+    "classic_item_id": 18817,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1315,7 +1588,8 @@
   "fields": {
     "name": "Azuresong Mageblade",
     "quality": "E",
-    "classicdb_id": 17103
+    "classic_item_id": 17103,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1324,7 +1598,8 @@
   "fields": {
     "name": "Eye of Sulfuras",
     "quality": "L",
-    "classicdb_id": 17204
+    "classic_item_id": 17204,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1333,7 +1608,8 @@
   "fields": {
     "name": "Ancient Petrified Leaf",
     "quality": "E",
-    "classicdb_id": 18703
+    "classic_item_id": 18703,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1342,7 +1618,8 @@
   "fields": {
     "name": "The Eye of Divinity",
     "quality": "E",
-    "classicdb_id": 18646
+    "classic_item_id": 18646,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1351,7 +1628,8 @@
   "fields": {
     "name": "Drillborer Disk",
     "quality": "E",
-    "classicdb_id": 17066
+    "classic_item_id": 17066,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1360,7 +1638,8 @@
   "fields": {
     "name": "Bindings of the Windseeker",
     "quality": "L",
-    "classicdb_id": 18563
+    "classic_item_id": 18563,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1369,7 +1648,8 @@
   "fields": {
     "name": "Bindings of the Windseeker",
     "quality": "L",
-    "classicdb_id": 18564
+    "classic_item_id": 18564,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1378,7 +1658,8 @@
   "fields": {
     "name": "Spinal Reaper",
     "quality": "E",
-    "classicdb_id": 17104
+    "classic_item_id": 17104,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1387,7 +1668,8 @@
   "fields": {
     "name": "Nightslayer Belt",
     "quality": "E",
-    "classicdb_id": 16827
+    "classic_item_id": 16827,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1396,7 +1678,8 @@
   "fields": {
     "name": "Nightslayer Boots",
     "quality": "E",
-    "classicdb_id": 16824
+    "classic_item_id": 16824,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1405,7 +1688,8 @@
   "fields": {
     "name": "Nightslayer Bracelets",
     "quality": "E",
-    "classicdb_id": 16825
+    "classic_item_id": 16825,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1414,7 +1698,8 @@
   "fields": {
     "name": "Nightslayer Chestpiece",
     "quality": "E",
-    "classicdb_id": 16820
+    "classic_item_id": 16820,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1423,7 +1708,8 @@
   "fields": {
     "name": "Nightslayer Cover",
     "quality": "E",
-    "classicdb_id": 16821
+    "classic_item_id": 16821,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1432,7 +1718,8 @@
   "fields": {
     "name": "Nightslayer Gloves",
     "quality": "E",
-    "classicdb_id": 16826
+    "classic_item_id": 16826,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1441,7 +1728,8 @@
   "fields": {
     "name": "Nightslayer Shoulder Pads",
     "quality": "E",
-    "classicdb_id": 16823
+    "classic_item_id": 16823,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1450,7 +1738,8 @@
   "fields": {
     "name": "Band of Accuria",
     "quality": "E",
-    "classicdb_id": 17063
+    "classic_item_id": 17063,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1459,7 +1748,8 @@
   "fields": {
     "name": "Brutality Blade",
     "quality": "E",
-    "classicdb_id": 18832
+    "classic_item_id": 18832,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1468,7 +1758,8 @@
   "fields": {
     "name": "Head of Onyxia",
     "quality": "E",
-    "classicdb_id": 18423
+    "classic_item_id": 18423,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1477,7 +1768,8 @@
   "fields": {
     "name": "Vis'kag the Bloodletter",
     "quality": "E",
-    "classicdb_id": 17075
+    "classic_item_id": 17075,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1486,7 +1778,8 @@
   "fields": {
     "name": "Boots of Prophecy",
     "quality": "E",
-    "classicdb_id": 16811
+    "classic_item_id": 16811,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1495,7 +1788,8 @@
   "fields": {
     "name": "Circlet of Prophecy",
     "quality": "E",
-    "classicdb_id": 16813
+    "classic_item_id": 16813,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1504,7 +1798,8 @@
   "fields": {
     "name": "Girdle of Prophecy",
     "quality": "E",
-    "classicdb_id": 16817
+    "classic_item_id": 16817,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1513,7 +1808,8 @@
   "fields": {
     "name": "Gloves of Prophecy",
     "quality": "E",
-    "classicdb_id": 16812
+    "classic_item_id": 16812,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1522,7 +1818,8 @@
   "fields": {
     "name": "Mantle of Prophecy",
     "quality": "E",
-    "classicdb_id": 16816
+    "classic_item_id": 16816,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1531,7 +1828,8 @@
   "fields": {
     "name": "Robes of Prophecy",
     "quality": "E",
-    "classicdb_id": 16815
+    "classic_item_id": 16815,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1540,7 +1838,8 @@
   "fields": {
     "name": "Vambraces of Prophecy",
     "quality": "E",
-    "classicdb_id": 16819
+    "classic_item_id": 16819,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1549,7 +1848,8 @@
   "fields": {
     "name": "Leggings of Transcendence",
     "quality": "E",
-    "classicdb_id": 16922
+    "classic_item_id": 16922,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1558,7 +1858,8 @@
   "fields": {
     "name": "Halo of Transcendence",
     "quality": "E",
-    "classicdb_id": 16921
+    "classic_item_id": 16921,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1567,7 +1868,8 @@
   "fields": {
     "name": "Arcanist Belt",
     "quality": "E",
-    "classicdb_id": 16802
+    "classic_item_id": 16802,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1576,7 +1878,8 @@
   "fields": {
     "name": "Arcanist Bindings",
     "quality": "E",
-    "classicdb_id": 16799
+    "classic_item_id": 16799,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1585,7 +1888,8 @@
   "fields": {
     "name": "Arcanist Crown",
     "quality": "E",
-    "classicdb_id": 16795
+    "classic_item_id": 16795,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1594,7 +1898,8 @@
   "fields": {
     "name": "Arcanist Gloves",
     "quality": "E",
-    "classicdb_id": 16801
+    "classic_item_id": 16801,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1603,7 +1908,8 @@
   "fields": {
     "name": "Arcanist Mantle",
     "quality": "E",
-    "classicdb_id": 16797
+    "classic_item_id": 16797,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1612,7 +1918,8 @@
   "fields": {
     "name": "Arcanist Robes",
     "quality": "E",
-    "classicdb_id": 16798
+    "classic_item_id": 16798,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1621,7 +1928,8 @@
   "fields": {
     "name": "Felheart Belt",
     "quality": "E",
-    "classicdb_id": 16806
+    "classic_item_id": 16806,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1630,7 +1938,8 @@
   "fields": {
     "name": "Felheart Bracers",
     "quality": "E",
-    "classicdb_id": 16804
+    "classic_item_id": 16804,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1639,7 +1948,8 @@
   "fields": {
     "name": "Felheart Robes",
     "quality": "E",
-    "classicdb_id": 16809
+    "classic_item_id": 16809,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1648,7 +1958,8 @@
   "fields": {
     "name": "Felheart Shoulder Pads",
     "quality": "E",
-    "classicdb_id": 16807
+    "classic_item_id": 16807,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1657,7 +1968,8 @@
   "fields": {
     "name": "Felheart Horns",
     "quality": "E",
-    "classicdb_id": 16808
+    "classic_item_id": 16808,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1666,7 +1978,8 @@
   "fields": {
     "name": "Felheart Slippers",
     "quality": "E",
-    "classicdb_id": 16803
+    "classic_item_id": 16803,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1675,7 +1988,8 @@
   "fields": {
     "name": "Schematic: Force Reactive Disk",
     "quality": "R",
-    "classicdb_id": 18291
+    "classic_item_id": 18291,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1684,7 +1998,8 @@
   "fields": {
     "name": "Lawbringer Belt",
     "quality": "E",
-    "classicdb_id": 16858
+    "classic_item_id": 16858,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1693,7 +2008,8 @@
   "fields": {
     "name": "Lawbringer Bracers",
     "quality": "E",
-    "classicdb_id": 16857
+    "classic_item_id": 16857,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1702,7 +2018,8 @@
   "fields": {
     "name": "Lawbringer Chestguard",
     "quality": "E",
-    "classicdb_id": 16853
+    "classic_item_id": 16853,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1711,7 +2028,8 @@
   "fields": {
     "name": "Lawbringer Gauntlets",
     "quality": "E",
-    "classicdb_id": 16860
+    "classic_item_id": 16860,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1720,7 +2038,8 @@
   "fields": {
     "name": "Lawbringer Helm",
     "quality": "E",
-    "classicdb_id": 16854
+    "classic_item_id": 16854,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1729,7 +2048,8 @@
   "fields": {
     "name": "Lawbringer Spaulders",
     "quality": "E",
-    "classicdb_id": 16856
+    "classic_item_id": 16856,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1738,7 +2058,8 @@
   "fields": {
     "name": "Giantstalker's Belt",
     "quality": "E",
-    "classicdb_id": 16851
+    "classic_item_id": 16851,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1747,7 +2068,8 @@
   "fields": {
     "name": "Giantstalker's Boots",
     "quality": "E",
-    "classicdb_id": 16849
+    "classic_item_id": 16849,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1756,7 +2078,8 @@
   "fields": {
     "name": "Giantstalker's Bracers",
     "quality": "E",
-    "classicdb_id": 16850
+    "classic_item_id": 16850,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1765,7 +2088,8 @@
   "fields": {
     "name": "Giantstalker's Breastplate",
     "quality": "E",
-    "classicdb_id": 16845
+    "classic_item_id": 16845,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1774,7 +2098,8 @@
   "fields": {
     "name": "Giantstalker's Epaulets",
     "quality": "E",
-    "classicdb_id": 16848
+    "classic_item_id": 16848,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1783,7 +2108,8 @@
   "fields": {
     "name": "Giantstalker's Gloves",
     "quality": "E",
-    "classicdb_id": 16852
+    "classic_item_id": 16852,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1792,7 +2118,8 @@
   "fields": {
     "name": "Giantstalker's Helmet",
     "quality": "E",
-    "classicdb_id": 16846
+    "classic_item_id": 16846,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1801,7 +2128,8 @@
   "fields": {
     "name": "Formula: Enchant Weapon - Spell Power",
     "quality": "R",
-    "classicdb_id": 18259
+    "classic_item_id": 18259,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1810,7 +2138,8 @@
   "fields": {
     "name": "Cenarion Belt",
     "quality": "E",
-    "classicdb_id": 16828
+    "classic_item_id": 16828,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1819,7 +2148,8 @@
   "fields": {
     "name": "Cenarion Bracers",
     "quality": "E",
-    "classicdb_id": 16830
+    "classic_item_id": 16830,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1828,7 +2158,8 @@
   "fields": {
     "name": "Cenarion Vestments",
     "quality": "E",
-    "classicdb_id": 16833
+    "classic_item_id": 16833,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1837,7 +2168,8 @@
   "fields": {
     "name": "Cenarion Gloves",
     "quality": "E",
-    "classicdb_id": 16831
+    "classic_item_id": 16831,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1846,7 +2178,8 @@
   "fields": {
     "name": "Cenarion Helm",
     "quality": "E",
-    "classicdb_id": 16834
+    "classic_item_id": 16834,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1855,7 +2188,8 @@
   "fields": {
     "name": "Cenarion Spaulders",
     "quality": "E",
-    "classicdb_id": 16836
+    "classic_item_id": 16836,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1864,7 +2198,8 @@
   "fields": {
     "name": "Sash of Whispered Secrets",
     "quality": "E",
-    "classicdb_id": 18809
+    "classic_item_id": 18809,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1873,7 +2208,8 @@
   "fields": {
     "name": "Gloves of the Hypnotic Flame",
     "quality": "E",
-    "classicdb_id": 18808
+    "classic_item_id": 18808,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1882,7 +2218,8 @@
   "fields": {
     "name": "Band of Sulfuras",
     "quality": "E",
-    "classicdb_id": 19138
+    "classic_item_id": 19138,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1891,7 +2228,8 @@
   "fields": {
     "name": "Mature Black Dragon Sinew",
     "quality": "E",
-    "classicdb_id": 18705
+    "classic_item_id": 18705,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1900,7 +2238,8 @@
   "fields": {
     "name": "Stormrage Legguards",
     "quality": "E",
-    "classicdb_id": 16901
+    "classic_item_id": 16901,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1909,7 +2248,8 @@
   "fields": {
     "name": "Stormrage Cover",
     "quality": "E",
-    "classicdb_id": 16900
+    "classic_item_id": 16900,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1918,7 +2258,8 @@
   "fields": {
     "name": "Shard of the Scale",
     "quality": "E",
-    "classicdb_id": 17064
+    "classic_item_id": 17064,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1927,7 +2268,8 @@
   "fields": {
     "name": "Ring of Binding",
     "quality": "E",
-    "classicdb_id": 18813
+    "classic_item_id": 18813,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1936,7 +2278,8 @@
   "fields": {
     "name": "Gutgore Ripper",
     "quality": "E",
-    "classicdb_id": 17071
+    "classic_item_id": 17071,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1945,7 +2288,8 @@
   "fields": {
     "name": "Shadowstrike",
     "quality": "E",
-    "classicdb_id": 17074
+    "classic_item_id": 17074,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1954,7 +2298,8 @@
   "fields": {
     "name": "Staff of Dominance",
     "quality": "E",
-    "classicdb_id": 18842
+    "classic_item_id": 18842,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1963,7 +2308,8 @@
   "fields": {
     "name": "Finkle's Lava Dredger",
     "quality": "E",
-    "classicdb_id": 18803
+    "classic_item_id": 18803,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1972,7 +2318,8 @@
   "fields": {
     "name": "Cauterizing Band",
     "quality": "E",
-    "classicdb_id": 19140
+    "classic_item_id": 19140,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1981,7 +2328,8 @@
   "fields": {
     "name": "Netherwind Crown",
     "quality": "E",
-    "classicdb_id": 16914
+    "classic_item_id": 16914,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1990,7 +2338,8 @@
   "fields": {
     "name": "Netherwind Pants",
     "quality": "E",
-    "classicdb_id": 16915
+    "classic_item_id": 16915,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -1999,7 +2348,8 @@
   "fields": {
     "name": "Essence of the Pure Flame",
     "quality": "E",
-    "classicdb_id": 18815
+    "classic_item_id": 18815,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2008,7 +2358,8 @@
   "fields": {
     "name": "Ancient Cornerstone Grimoire",
     "quality": "E",
-    "classicdb_id": 17067
+    "classic_item_id": 17067,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2017,7 +2368,8 @@
   "fields": {
     "name": "Nemesis Skullcap",
     "quality": "E",
-    "classicdb_id": 16929
+    "classic_item_id": 16929,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2026,7 +2378,8 @@
   "fields": {
     "name": "Nemesis Leggings",
     "quality": "E",
-    "classicdb_id": 16930
+    "classic_item_id": 16930,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2035,7 +2388,8 @@
   "fields": {
     "name": "Seal of the Archmagus",
     "quality": "E",
-    "classicdb_id": 17110
+    "classic_item_id": 17110,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2044,7 +2398,8 @@
   "fields": {
     "name": "Aurastone Hammer",
     "quality": "E",
-    "classicdb_id": 17105
+    "classic_item_id": 17105,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2053,7 +2408,8 @@
   "fields": {
     "name": "Pattern: Flarecore Wraps",
     "quality": "R",
-    "classicdb_id": 18265
+    "classic_item_id": 18265,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2062,7 +2418,8 @@
   "fields": {
     "name": "Schematic: Core Marksman Rifle",
     "quality": "R",
-    "classicdb_id": 18292
+    "classic_item_id": 18292,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2071,7 +2428,8 @@
   "fields": {
     "name": "Wristguards of True Flight",
     "quality": "E",
-    "classicdb_id": 18812
+    "classic_item_id": 18812,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2080,7 +2438,8 @@
   "fields": {
     "name": "Malistar's Defender",
     "quality": "E",
-    "classicdb_id": 17106
+    "classic_item_id": 17106,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2089,7 +2448,8 @@
   "fields": {
     "name": "Judgement Legplates",
     "quality": "E",
-    "classicdb_id": 16954
+    "classic_item_id": 16954,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2098,7 +2458,8 @@
   "fields": {
     "name": "Judgement Crown",
     "quality": "E",
-    "classicdb_id": 16955
+    "classic_item_id": 16955,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2107,7 +2468,8 @@
   "fields": {
     "name": "Choker of the Fire Lord",
     "quality": "E",
-    "classicdb_id": 18814
+    "classic_item_id": 18814,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2116,7 +2478,8 @@
   "fields": {
     "name": "Bonereaver's Edge",
     "quality": "E",
-    "classicdb_id": 17076
+    "classic_item_id": 17076,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2125,7 +2488,8 @@
   "fields": {
     "name": "Blastershot Launcher",
     "quality": "E",
-    "classicdb_id": 17072
+    "classic_item_id": 17072,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2134,7 +2498,8 @@
   "fields": {
     "name": "Core Forged Greaves",
     "quality": "E",
-    "classicdb_id": 18806
+    "classic_item_id": 18806,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2143,7 +2508,8 @@
   "fields": {
     "name": "Fireguard Shoulders",
     "quality": "E",
-    "classicdb_id": 19139
+    "classic_item_id": 19139,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2152,7 +2518,8 @@
   "fields": {
     "name": "Core Hound Tooth",
     "quality": "E",
-    "classicdb_id": 18805
+    "classic_item_id": 18805,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2161,7 +2528,8 @@
   "fields": {
     "name": "Eskhandar's Collar",
     "quality": "E",
-    "classicdb_id": 18205
+    "classic_item_id": 18205,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2170,7 +2538,8 @@
   "fields": {
     "name": "Sapphiron Drape",
     "quality": "E",
-    "classicdb_id": 17078
+    "classic_item_id": 17078,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2179,7 +2548,8 @@
   "fields": {
     "name": "Wild Growth Spaulders",
     "quality": "E",
-    "classicdb_id": 18810
+    "classic_item_id": 18810,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2188,7 +2558,8 @@
   "fields": {
     "name": "Fireproof Cloak",
     "quality": "E",
-    "classicdb_id": 18811
+    "classic_item_id": 18811,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2197,7 +2568,8 @@
   "fields": {
     "name": "Perdition's Blade",
     "quality": "E",
-    "classicdb_id": 18816
+    "classic_item_id": 18816,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2206,7 +2578,8 @@
   "fields": {
     "name": "Quel'Serrar",
     "quality": "E",
-    "classicdb_id": 18348
+    "classic_item_id": 18348,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2215,7 +2588,8 @@
   "fields": {
     "name": "Force Reactive Disk",
     "quality": "E",
-    "classicdb_id": 18168
+    "classic_item_id": 18168,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2224,7 +2598,8 @@
   "fields": {
     "name": "Onslaught Girdle",
     "quality": "E",
-    "classicdb_id": 19137
+    "classic_item_id": 19137,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2233,7 +2608,8 @@
   "fields": {
     "name": "Earthfury Belt",
     "quality": "E",
-    "classicdb_id": 16838
+    "classic_item_id": 16838,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2242,7 +2618,8 @@
   "fields": {
     "name": "Earthfury Bracers",
     "quality": "E",
-    "classicdb_id": 16840
+    "classic_item_id": 16840,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2251,7 +2628,8 @@
   "fields": {
     "name": "Earthfury Vestments",
     "quality": "E",
-    "classicdb_id": 16841
+    "classic_item_id": 16841,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2260,7 +2638,8 @@
   "fields": {
     "name": "Earthfury Epaulets",
     "quality": "E",
-    "classicdb_id": 16844
+    "classic_item_id": 16844,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2269,7 +2648,8 @@
   "fields": {
     "name": "Earthfury Gauntlets",
     "quality": "E",
-    "classicdb_id": 16839
+    "classic_item_id": 16839,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2278,7 +2658,8 @@
   "fields": {
     "name": "Earthfury Helmet",
     "quality": "E",
-    "classicdb_id": 16842
+    "classic_item_id": 16842,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2287,7 +2668,8 @@
   "fields": {
     "name": "Sulfuras, Hand of Ragnaros",
     "quality": "L",
-    "classicdb_id": 17182
+    "classic_item_id": 17182,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2296,7 +2678,8 @@
   "fields": {
     "name": "Legplates of Ten Storms",
     "quality": "E",
-    "classicdb_id": 16946
+    "classic_item_id": 16946,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2305,7 +2688,8 @@
   "fields": {
     "name": "Helmet of Ten Storms",
     "quality": "E",
-    "classicdb_id": 16947
+    "classic_item_id": 16947,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2314,7 +2698,8 @@
   "fields": {
     "name": "Savage Gladiator Chain",
     "quality": "E",
-    "classicdb_id": 11726
+    "classic_item_id": 11726,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2323,7 +2708,8 @@
   "fields": {
     "name": "Cloudkeeper Legplates",
     "quality": "E",
-    "classicdb_id": 14554
+    "classic_item_id": 14554,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2332,7 +2718,8 @@
   "fields": {
     "name": "Edgemaster's Handguards",
     "quality": "E",
-    "classicdb_id": 14551
+    "classic_item_id": 14551,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2341,7 +2728,8 @@
   "fields": {
     "name": "Stronghold Gauntlets",
     "quality": "E",
-    "classicdb_id": 12639
+    "classic_item_id": 12639,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2350,7 +2738,8 @@
   "fields": {
     "name": "Breastplate of the Chromatic Flight",
     "quality": "E",
-    "classicdb_id": 12895
+    "classic_item_id": 12895,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2359,7 +2748,8 @@
   "fields": {
     "name": "Myrmidon's Signet",
     "quality": "E",
-    "classicdb_id": 2246
+    "classic_item_id": 2246,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2368,7 +2758,8 @@
   "fields": {
     "name": "Onyxia Tooth Pendant",
     "quality": "E",
-    "classicdb_id": 18404
+    "classic_item_id": 18404,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2377,7 +2768,8 @@
   "fields": {
     "name": "Dragonslayer's Signet",
     "quality": "E",
-    "classicdb_id": 18403
+    "classic_item_id": 18403,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2386,7 +2778,8 @@
   "fields": {
     "name": "Onyxia Blood Talisman",
     "quality": "E",
-    "classicdb_id": 18406
+    "classic_item_id": 18406,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2395,7 +2788,8 @@
   "fields": {
     "name": "Pattern: Core Armor Kit",
     "quality": "R",
-    "classicdb_id": 18252
+    "classic_item_id": 18252,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2404,7 +2798,8 @@
   "fields": {
     "name": "Schematic: Biznicks 247x128 Accurascope",
     "quality": "R",
-    "classicdb_id": 18290
+    "classic_item_id": 18290,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2413,7 +2808,8 @@
   "fields": {
     "name": "Pattern: Core Felcloth Bag",
     "quality": "R",
-    "classicdb_id": 21371
+    "classic_item_id": 21371,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2422,7 +2818,8 @@
   "fields": {
     "name": "Recipe: Major Rejuvenation Potion",
     "quality": "R",
-    "classicdb_id": 18257
+    "classic_item_id": 18257,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2431,7 +2828,8 @@
   "fields": {
     "name": "Formula: Enchant Weapon - Healing Power",
     "quality": "R",
-    "classicdb_id": 18260
+    "classic_item_id": 18260,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2440,7 +2838,8 @@
   "fields": {
     "name": "Sulfuron Ingot",
     "quality": "E",
-    "classicdb_id": 17203
+    "classic_item_id": 17203,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2449,7 +2848,8 @@
   "fields": {
     "name": "Onyxia Hide Backpack",
     "quality": "U",
-    "classicdb_id": 17966
+    "classic_item_id": 17966,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2458,7 +2858,8 @@
   "fields": {
     "name": "Mature Blue Dragon Sinew",
     "quality": "E",
-    "classicdb_id": 18704
+    "classic_item_id": 18704,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2467,7 +2868,8 @@
   "fields": {
     "name": "Fang of the Mystics",
     "quality": "E",
-    "classicdb_id": 17070
+    "classic_item_id": 17070,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2476,7 +2878,8 @@
   "fields": {
     "name": "Eskhandar's Left Claw",
     "quality": "E",
-    "classicdb_id": 18202
+    "classic_item_id": 18202,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2485,7 +2888,8 @@
   "fields": {
     "name": "Drape of Benediction",
     "quality": "E",
-    "classicdb_id": 18208
+    "classic_item_id": 18208,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2494,7 +2898,8 @@
   "fields": {
     "name": "Puissant Cape",
     "quality": "E",
-    "classicdb_id": 18541
+    "classic_item_id": 18541,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2503,7 +2908,8 @@
   "fields": {
     "name": "Typhoon",
     "quality": "E",
-    "classicdb_id": 18542
+    "classic_item_id": 18542,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2512,7 +2918,8 @@
   "fields": {
     "name": "Leggings of Arcane Supremacy",
     "quality": "E",
-    "classicdb_id": 18545
+    "classic_item_id": 18545,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2521,7 +2928,8 @@
   "fields": {
     "name": "Unmelting Ice Girdle",
     "quality": "E",
-    "classicdb_id": 18547
+    "classic_item_id": 18547,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2530,7 +2938,8 @@
   "fields": {
     "name": "Snowblind Shoes",
     "quality": "E",
-    "classicdb_id": 19131
+    "classic_item_id": 19131,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2539,7 +2948,8 @@
   "fields": {
     "name": "Cold Snap",
     "quality": "E",
-    "classicdb_id": 19130
+    "classic_item_id": 19130,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2548,7 +2958,8 @@
   "fields": {
     "name": "Crystal Adorned Crown",
     "quality": "E",
-    "classicdb_id": 19132
+    "classic_item_id": 19132,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2557,7 +2968,8 @@
   "fields": {
     "name": "Fel Infused Leggings",
     "quality": "E",
-    "classicdb_id": 19133
+    "classic_item_id": 19133,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2566,7 +2978,8 @@
   "fields": {
     "name": "Doomhide Gauntlets",
     "quality": "E",
-    "classicdb_id": 18544
+    "classic_item_id": 18544,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2575,7 +2988,8 @@
   "fields": {
     "name": "Infernal Headcage",
     "quality": "E",
-    "classicdb_id": 18546
+    "classic_item_id": 18546,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2584,7 +2998,8 @@
   "fields": {
     "name": "Flayed Doomguard Belt",
     "quality": "E",
-    "classicdb_id": 19134
+    "classic_item_id": 19134,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2593,7 +3008,8 @@
   "fields": {
     "name": "Blazefury Medallion",
     "quality": "E",
-    "classicdb_id": 17111
+    "classic_item_id": 17111,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2602,7 +3018,8 @@
   "fields": {
     "name": "Amberseal Keeper",
     "quality": "E",
-    "classicdb_id": 17113
+    "classic_item_id": 17113,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2611,7 +3028,8 @@
   "fields": {
     "name": "Empyrean Demolisher",
     "quality": "E",
-    "classicdb_id": 17112
+    "classic_item_id": 17112,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2620,7 +3038,8 @@
   "fields": {
     "name": "Eskhandar's Pelt",
     "quality": "E",
-    "classicdb_id": 18204
+    "classic_item_id": 18204,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2629,7 +3048,8 @@
   "fields": {
     "name": "Ring of Entropy",
     "quality": "E",
-    "classicdb_id": 18543
+    "classic_item_id": 18543,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2638,7 +3058,8 @@
   "fields": {
     "name": "Blacklight Bracer",
     "quality": "E",
-    "classicdb_id": 19135
+    "classic_item_id": 19135,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2647,7 +3068,8 @@
   "fields": {
     "name": "The Eye of Shadow",
     "quality": "E",
-    "classicdb_id": 18665
+    "classic_item_id": 18665,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2656,7 +3078,8 @@
   "fields": {
     "name": "Shard of the Flame",
     "quality": "E",
-    "classicdb_id": 17082
+    "classic_item_id": 17082,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2665,7 +3088,8 @@
   "fields": {
     "name": "Deathbringer",
     "quality": "E",
-    "classicdb_id": 17068
+    "classic_item_id": 17068,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2674,7 +3098,8 @@
   "fields": {
     "name": "Onyxia Scale Cloak",
     "quality": "R",
-    "classicdb_id": 15138
+    "classic_item_id": 15138,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2683,7 +3108,8 @@
   "fields": {
     "name": "Thunderfury, Blessed Blade of the Windseeker",
     "quality": "L",
-    "classicdb_id": 19019
+    "classic_item_id": 19019,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2692,7 +3118,8 @@
   "fields": {
     "name": "Stormrage Belt",
     "quality": "E",
-    "classicdb_id": 16903
+    "classic_item_id": 16903,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2701,7 +3128,8 @@
   "fields": {
     "name": "Stormrage Boots",
     "quality": "E",
-    "classicdb_id": 16898
+    "classic_item_id": 16898,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2710,7 +3138,8 @@
   "fields": {
     "name": "Stormrage Bracers",
     "quality": "E",
-    "classicdb_id": 16904
+    "classic_item_id": 16904,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2719,7 +3148,8 @@
   "fields": {
     "name": "Stormrage Chestguard",
     "quality": "E",
-    "classicdb_id": 16897
+    "classic_item_id": 16897,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2728,7 +3158,8 @@
   "fields": {
     "name": "Stormrage Handguards",
     "quality": "E",
-    "classicdb_id": 16899
+    "classic_item_id": 16899,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2737,7 +3168,8 @@
   "fields": {
     "name": "Stormrage Pauldrons",
     "quality": "E",
-    "classicdb_id": 16902
+    "classic_item_id": 16902,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2746,7 +3178,8 @@
   "fields": {
     "name": "Dragonstalker's Belt",
     "quality": "E",
-    "classicdb_id": 16936
+    "classic_item_id": 16936,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2755,7 +3188,8 @@
   "fields": {
     "name": "Dragonstalker's Bracers",
     "quality": "E",
-    "classicdb_id": 16935
+    "classic_item_id": 16935,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2764,7 +3198,8 @@
   "fields": {
     "name": "Dragonstalker's Breastplate",
     "quality": "E",
-    "classicdb_id": 16942
+    "classic_item_id": 16942,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2773,7 +3208,8 @@
   "fields": {
     "name": "Dragonstalker's Gauntlets",
     "quality": "E",
-    "classicdb_id": 16940
+    "classic_item_id": 16940,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2782,7 +3218,8 @@
   "fields": {
     "name": "Dragonstalker's Greaves",
     "quality": "E",
-    "classicdb_id": 16941
+    "classic_item_id": 16941,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2791,7 +3228,8 @@
   "fields": {
     "name": "Dragonstalker's Spaulders",
     "quality": "E",
-    "classicdb_id": 16937
+    "classic_item_id": 16937,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2800,7 +3238,8 @@
   "fields": {
     "name": "Netherwind Mantle",
     "quality": "E",
-    "classicdb_id": 16917
+    "classic_item_id": 16917,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2809,7 +3248,8 @@
   "fields": {
     "name": "Netherwind Belt",
     "quality": "E",
-    "classicdb_id": 16818
+    "classic_item_id": 16818,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2818,7 +3258,8 @@
   "fields": {
     "name": "Netherwind Bindings",
     "quality": "E",
-    "classicdb_id": 16918
+    "classic_item_id": 16918,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2827,7 +3268,8 @@
   "fields": {
     "name": "Netherwind Boots",
     "quality": "E",
-    "classicdb_id": 16912
+    "classic_item_id": 16912,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2836,7 +3278,8 @@
   "fields": {
     "name": "Netherwind Gloves",
     "quality": "E",
-    "classicdb_id": 16913
+    "classic_item_id": 16913,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2845,7 +3288,8 @@
   "fields": {
     "name": "Netherwind Robes",
     "quality": "E",
-    "classicdb_id": 16916
+    "classic_item_id": 16916,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2854,7 +3298,8 @@
   "fields": {
     "name": "Judgement Belt",
     "quality": "E",
-    "classicdb_id": 16952
+    "classic_item_id": 16952,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2863,7 +3308,8 @@
   "fields": {
     "name": "Judgement Bindings",
     "quality": "E",
-    "classicdb_id": 16951
+    "classic_item_id": 16951,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2872,7 +3318,8 @@
   "fields": {
     "name": "Judgement Breastplate",
     "quality": "E",
-    "classicdb_id": 16958
+    "classic_item_id": 16958,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2881,7 +3328,8 @@
   "fields": {
     "name": "Judgement Gauntlets",
     "quality": "E",
-    "classicdb_id": 16956
+    "classic_item_id": 16956,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2890,7 +3338,8 @@
   "fields": {
     "name": "Judgement Sabatons",
     "quality": "E",
-    "classicdb_id": 16957
+    "classic_item_id": 16957,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2899,7 +3348,8 @@
   "fields": {
     "name": "Judgement Spaulders",
     "quality": "E",
-    "classicdb_id": 16953
+    "classic_item_id": 16953,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2908,7 +3358,8 @@
   "fields": {
     "name": "Belt of Transcendence",
     "quality": "E",
-    "classicdb_id": 16925
+    "classic_item_id": 16925,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2917,7 +3368,8 @@
   "fields": {
     "name": "Bindings of Transcendence",
     "quality": "E",
-    "classicdb_id": 16926
+    "classic_item_id": 16926,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2926,7 +3378,8 @@
   "fields": {
     "name": "Boots of Transcendence",
     "quality": "E",
-    "classicdb_id": 16919
+    "classic_item_id": 16919,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2935,7 +3388,8 @@
   "fields": {
     "name": "Handguards of Transcendence",
     "quality": "E",
-    "classicdb_id": 16920
+    "classic_item_id": 16920,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2944,7 +3398,8 @@
   "fields": {
     "name": "Pauldrons of Transcendence",
     "quality": "E",
-    "classicdb_id": 16924
+    "classic_item_id": 16924,
+    "classicdb_item_id_suffix": ""
   }
 },
 {
@@ -2953,7 +3408,1048 @@
   "fields": {
     "name": "Robes of Transcendence",
     "quality": "E",
-    "classicdb_id": 16923
+    "classic_item_id": 16923,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 241,
+  "fields": {
+    "name": "Bloodfang Spaulders",
+    "quality": "E",
+    "classic_item_id": 16832,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 242,
+  "fields": {
+    "name": "Bloodfang Chestpiece",
+    "quality": "E",
+    "classic_item_id": 16905,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 243,
+  "fields": {
+    "name": "Bloodfang Belt",
+    "quality": "E",
+    "classic_item_id": 16910,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 244,
+  "fields": {
+    "name": "Bloodfang Boots",
+    "quality": "E",
+    "classic_item_id": 16906,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 245,
+  "fields": {
+    "name": "Bloodfang Bracers",
+    "quality": "E",
+    "classic_item_id": 16911,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 246,
+  "fields": {
+    "name": "Bloodfang Gloves",
+    "quality": "E",
+    "classic_item_id": 16907,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 247,
+  "fields": {
+    "name": "Belt of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16944,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 248,
+  "fields": {
+    "name": "Bracers of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16943,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 249,
+  "fields": {
+    "name": "Breastplate of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16950,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 250,
+  "fields": {
+    "name": "Epaulets of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16945,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 251,
+  "fields": {
+    "name": "Gauntlets of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16948,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 252,
+  "fields": {
+    "name": "Greaves of Ten Storms",
+    "quality": "E",
+    "classic_item_id": 16949,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 253,
+  "fields": {
+    "name": "Nemesis Belt",
+    "quality": "E",
+    "classic_item_id": 16933,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 254,
+  "fields": {
+    "name": "Nemesis Boots",
+    "quality": "E",
+    "classic_item_id": 16927,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 255,
+  "fields": {
+    "name": "Nemesis Bracers",
+    "quality": "E",
+    "classic_item_id": 16934,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 256,
+  "fields": {
+    "name": "Nemesis Gloves",
+    "quality": "E",
+    "classic_item_id": 16928,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 257,
+  "fields": {
+    "name": "Nemesis Robes",
+    "quality": "E",
+    "classic_item_id": 16931,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 258,
+  "fields": {
+    "name": "Nemesis Spaulders",
+    "quality": "E",
+    "classic_item_id": 16932,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 259,
+  "fields": {
+    "name": "Bracelets of Wrath",
+    "quality": "E",
+    "classic_item_id": 16959,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 260,
+  "fields": {
+    "name": "Breastplate of Wrath",
+    "quality": "E",
+    "classic_item_id": 16966,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 261,
+  "fields": {
+    "name": "Gauntlets of Wrath",
+    "quality": "E",
+    "classic_item_id": 16964,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 262,
+  "fields": {
+    "name": "Pauldrons of Wrath",
+    "quality": "E",
+    "classic_item_id": 16961,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 263,
+  "fields": {
+    "name": "Sabatons of Wrath",
+    "quality": "E",
+    "classic_item_id": 16965,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 264,
+  "fields": {
+    "name": "Waistband of Wrath",
+    "quality": "E",
+    "classic_item_id": 16960,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 265,
+  "fields": {
+    "name": "Elementium Ore",
+    "quality": "E",
+    "classic_item_id": 18562,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 266,
+  "fields": {
+    "name": "Arcane Infused Gem",
+    "quality": "E",
+    "classic_item_id": 19336,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 267,
+  "fields": {
+    "name": "The Black Book",
+    "quality": "E",
+    "classic_item_id": 19337,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 268,
+  "fields": {
+    "name": "Gloves of Rapid Evolution",
+    "quality": "E",
+    "classic_item_id": 19369,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 269,
+  "fields": {
+    "name": "Mantle of the Blackwing Cabal",
+    "quality": "E",
+    "classic_item_id": 19370,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 270,
+  "fields": {
+    "name": "Spineshatter",
+    "quality": "E",
+    "classic_item_id": 19335,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 271,
+  "fields": {
+    "name": "The Untamed Blade",
+    "quality": "E",
+    "classic_item_id": 19334,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 272,
+  "fields": {
+    "name": "Mind Quickening Gem",
+    "quality": "E",
+    "classic_item_id": 19339,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 273,
+  "fields": {
+    "name": "Rune of Metamorphosis",
+    "quality": "E",
+    "classic_item_id": 19340,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 274,
+  "fields": {
+    "name": "Pendant of the Fallen Dragon",
+    "quality": "E",
+    "classic_item_id": 19371,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 275,
+  "fields": {
+    "name": "Helm of Endless Rage",
+    "quality": "E",
+    "classic_item_id": 19372,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 276,
+  "fields": {
+    "name": "Dragonfang Blade",
+    "quality": "E",
+    "classic_item_id": 19346,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 277,
+  "fields": {
+    "name": "Red Dragonscale Protector",
+    "quality": "E",
+    "classic_item_id": 19348,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 278,
+  "fields": {
+    "name": "Lifegiving Gem",
+    "quality": "E",
+    "classic_item_id": 19341,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 279,
+  "fields": {
+    "name": "Venomous Totem",
+    "quality": "E",
+    "classic_item_id": 19342,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 280,
+  "fields": {
+    "name": "Black Brood Pauldrons",
+    "quality": "E",
+    "classic_item_id": 19373,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 281,
+  "fields": {
+    "name": "Bracers of Arcane Accuracy",
+    "quality": "E",
+    "classic_item_id": 19374,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 282,
+  "fields": {
+    "name": "Heartstriker",
+    "quality": "E",
+    "classic_item_id": 19350,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 283,
+  "fields": {
+    "name": "Maladath, Runed Blade of the Black Flight",
+    "quality": "E",
+    "classic_item_id": 19351,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 284,
+  "fields": {
+    "name": "Taut Dragonhide Belt",
+    "quality": "E",
+    "classic_item_id": 19396,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 285,
+  "fields": {
+    "name": "Drake Talon Pauldrons",
+    "quality": "E",
+    "classic_item_id": 19394,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 286,
+  "fields": {
+    "name": "Ring of Blackrock",
+    "quality": "E",
+    "classic_item_id": 19397,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 287,
+  "fields": {
+    "name": "Rejuvenating Gem",
+    "quality": "E",
+    "classic_item_id": 19395,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 288,
+  "fields": {
+    "name": "Shadow Wing Focus Staff",
+    "quality": "E",
+    "classic_item_id": 19355,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 289,
+  "fields": {
+    "name": "Drake Talon Cleaver",
+    "quality": "E",
+    "classic_item_id": 19353,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 290,
+  "fields": {
+    "name": "Scrolls of Blinding Light",
+    "quality": "E",
+    "classic_item_id": 19343,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 291,
+  "fields": {
+    "name": "Natural Alignment Crystal",
+    "quality": "E",
+    "classic_item_id": 19344,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 292,
+  "fields": {
+    "name": "Black Ash Robe",
+    "quality": "E",
+    "classic_item_id": 19399,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 293,
+  "fields": {
+    "name": "Firemaw's Clutch",
+    "quality": "E",
+    "classic_item_id": 19400,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 294,
+  "fields": {
+    "name": "Claw of the Black Drake",
+    "quality": "E",
+    "classic_item_id": 19365,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 295,
+  "fields": {
+    "name": "Cloak of Firemaw",
+    "quality": "E",
+    "classic_item_id": 19398,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 296,
+  "fields": {
+    "name": "Legguards of the Fallen Crusader",
+    "quality": "E",
+    "classic_item_id": 19402,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 297,
+  "fields": {
+    "name": "Primalist's Linked Legguards",
+    "quality": "E",
+    "classic_item_id": 19401,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 298,
+  "fields": {
+    "name": "Aegis of Preservation",
+    "quality": "E",
+    "classic_item_id": 19345,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 299,
+  "fields": {
+    "name": "Band of Forced Concentration",
+    "quality": "E",
+    "classic_item_id": 19403,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 300,
+  "fields": {
+    "name": "Drake Fang Talisman",
+    "quality": "E",
+    "classic_item_id": 19406,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 301,
+  "fields": {
+    "name": "Ebony Flame Gloves",
+    "quality": "E",
+    "classic_item_id": 19407,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 302,
+  "fields": {
+    "name": "Malfurion's Blessed Bulwark",
+    "quality": "E",
+    "classic_item_id": 19405,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 303,
+  "fields": {
+    "name": "Dragonbreath Hand Cannon",
+    "quality": "E",
+    "classic_item_id": 19368,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 304,
+  "fields": {
+    "name": "Shroud of Pure Thought",
+    "quality": "E",
+    "classic_item_id": 19430,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 305,
+  "fields": {
+    "name": "Circle of Applied Force",
+    "quality": "E",
+    "classic_item_id": 19432,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 306,
+  "fields": {
+    "name": "Emberweave Leggings",
+    "quality": "E",
+    "classic_item_id": 19433,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 307,
+  "fields": {
+    "name": "Styleen's Impeding Scarab",
+    "quality": "E",
+    "classic_item_id": 19431,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 308,
+  "fields": {
+    "name": "Dragon's Touch",
+    "quality": "E",
+    "classic_item_id": 19367,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 309,
+  "fields": {
+    "name": "Herald of Woe",
+    "quality": "E",
+    "classic_item_id": 19357,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 310,
+  "fields": {
+    "name": "Angelista's Grasp",
+    "quality": "E",
+    "classic_item_id": 19388,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 311,
+  "fields": {
+    "name": "Taut Dragonhide Shoulderpads",
+    "quality": "E",
+    "classic_item_id": 19389,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 312,
+  "fields": {
+    "name": "Chromatic Boots",
+    "quality": "E",
+    "classic_item_id": 19387,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 313,
+  "fields": {
+    "name": "Taut Dragonhide Gloves",
+    "quality": "E",
+    "classic_item_id": 19390,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 314,
+  "fields": {
+    "name": "Shimmering Geta",
+    "quality": "E",
+    "classic_item_id": 19391,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 315,
+  "fields": {
+    "name": "Elementium Threaded Cloak",
+    "quality": "E",
+    "classic_item_id": 19386,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 316,
+  "fields": {
+    "name": "Girdle of the Fallen Crusader",
+    "quality": "E",
+    "classic_item_id": 19392,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 317,
+  "fields": {
+    "name": "Empowered Leggings",
+    "quality": "E",
+    "classic_item_id": 19385,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 318,
+  "fields": {
+    "name": "Chromatically Tempered Sword",
+    "quality": "E",
+    "classic_item_id": 19352,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 319,
+  "fields": {
+    "name": "Claw of Chromaggus",
+    "quality": "E",
+    "classic_item_id": 19347,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 320,
+  "fields": {
+    "name": "Primalist's Linked Waistguard",
+    "quality": "E",
+    "classic_item_id": 19393,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 321,
+  "fields": {
+    "name": "Ashjre'thul, Crossbow of Smiting",
+    "quality": "E",
+    "classic_item_id": 19361,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 322,
+  "fields": {
+    "name": "Elementium Reinforced Bulwark",
+    "quality": "E",
+    "classic_item_id": 19349,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 323,
+  "fields": {
+    "name": "Head of Nefarian",
+    "quality": "E",
+    "classic_item_id": 19002,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 324,
+  "fields": {
+    "name": "Cloak of the Brood Lord",
+    "quality": "E",
+    "classic_item_id": 19378,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 325,
+  "fields": {
+    "name": "Boots of the Shadow Flame",
+    "quality": "E",
+    "classic_item_id": 19381,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 326,
+  "fields": {
+    "name": "Therazane's Link",
+    "quality": "E",
+    "classic_item_id": 19380,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 327,
+  "fields": {
+    "name": "Archimtiros' Ring of Reckoning",
+    "quality": "E",
+    "classic_item_id": 19376,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 328,
+  "fields": {
+    "name": "Neltharion's Tear",
+    "quality": "E",
+    "classic_item_id": 19379,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 329,
+  "fields": {
+    "name": "Pure Elementium Band",
+    "quality": "E",
+    "classic_item_id": 19382,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 330,
+  "fields": {
+    "name": "Mish'undare, Circlet of the Mind Flayer",
+    "quality": "E",
+    "classic_item_id": 19375,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 331,
+  "fields": {
+    "name": "Prestor's Talisman of Connivery",
+    "quality": "E",
+    "classic_item_id": 19377,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 332,
+  "fields": {
+    "name": "Staff of the Shadow Flame",
+    "quality": "E",
+    "classic_item_id": 19356,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 333,
+  "fields": {
+    "name": "Ashkandi, Greatsword of the Brotherhood",
+    "quality": "E",
+    "classic_item_id": 19364,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 334,
+  "fields": {
+    "name": "Crul'shorukh, Edge of Chaos",
+    "quality": "E",
+    "classic_item_id": 19363,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 335,
+  "fields": {
+    "name": "Lok'amir il Romathis",
+    "quality": "E",
+    "classic_item_id": 19360,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 336,
+  "fields": {
+    "name": "Cloak of Draconic Might",
+    "quality": "E",
+    "classic_item_id": 19436,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 337,
+  "fields": {
+    "name": "Interlaced Shadow Jerkin",
+    "quality": "E",
+    "classic_item_id": 19439,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 338,
+  "fields": {
+    "name": "Boots of Pure Thought",
+    "quality": "E",
+    "classic_item_id": 19437,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 339,
+  "fields": {
+    "name": "Ringo's Blizzard Boots",
+    "quality": "E",
+    "classic_item_id": 19438,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 340,
+  "fields": {
+    "name": "Band of Dark Dominion",
+    "quality": "E",
+    "classic_item_id": 19434,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 341,
+  "fields": {
+    "name": "Essence Gatherer",
+    "quality": "E",
+    "classic_item_id": 19435,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 342,
+  "fields": {
+    "name": "Doom's Edge",
+    "quality": "E",
+    "classic_item_id": 19362,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 343,
+  "fields": {
+    "name": "Draconic Avenger",
+    "quality": "E",
+    "classic_item_id": 19354,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 344,
+  "fields": {
+    "name": "Draconic Maul",
+    "quality": "E",
+    "classic_item_id": 19358,
+    "classicdb_item_id_suffix": ""
   }
 }
 ]

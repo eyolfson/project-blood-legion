@@ -1,1 +1,1 @@
-<a class="has-text-{{ item.get_quality_display|lower }}" href="{% url 'project_blood_legion:item_detail' item.id %}" rel="item={{ item.classicdb_id }}">{{ item }}</a>
+<a class="has-text-{{ item.get_quality_display|lower }}" href="{% url 'project_blood_legion:item_detail' item.id %}" rel="item={{ item.get_rel }}">{{ item }}</a>

@@ -57,6 +57,57 @@ class Character(models.Model):
 	class Meta:
 		ordering = ['name']
 
+class Item(models.Model):
+	POOR = 'P'
+	COMMON = 'C'
+	UNCOMMON = 'U'
+	RARE = 'R'
+	EPIC = 'E'
+	LEGENDARY = 'L'
+	ARTIFACT = 'A'
+	QUALITY_CHOICES = [
+		(POOR, 'Poor'),
+		(COMMON, 'Common'),
+		(UNCOMMON, 'Uncommon'),
+		(RARE, 'Rare'),
+		(EPIC, 'Epic'),
+		(LEGENDARY, 'Legendary'),
+		(ARTIFACT, 'Artifact'),
+	]
+
+	name = models.CharField(
+		max_length=100,
+	)
+	quality = models.CharField(max_length=1, choices=QUALITY_CHOICES)
+	classic_item_id = models.IntegerField()
+	classicdb_item_id_suffix = models.CharField(max_length=8,
+	                                            blank=True,
+	                                            null=False)
+
+	def __str__(self):
+		if self.classic_item_id == 18563:
+			return 'Bindings of the Windseeker (Left)'
+		elif self.classic_item_id == 18564:
+			return 'Bindings of the Windseeker (Right)'
+		return self.name
+
+	def get_rel(self):
+		return '{}{}'.format(
+			self.classic_item_id,
+			self.classicdb_item_id_suffix
+		)
+
+	def get_url(self):
+		return 'https://classicdb.ch/?item={}'.format(
+			self.get_rel,
+		)
+
+	def ordered_loot(self):
+                return self.loot_set.order_by('instance__scheduled_start', 'character')
+
+	class Meta:
+		ordering = ['name']
+
 class Zone(models.Model):
 	name = models.CharField(
 		max_length=100,
@@ -77,13 +128,19 @@ class Boss(models.Model):
 	name = models.CharField(
 		max_length=100,
 	)
+	items = models.ManyToManyField(
+		Item,
+		blank=True,
+		db_table='project_blood_legion_boss_items',
+	)
 
 	def __str__(self):
 		if self.name == 'Trash':
-			return 'Trash ({})'.format(self.zone)
+			return '{} Trash'.format(self.zone)
 		return self.name
 
 	class Meta:
+		ordering = ['-zone__id', 'id']
 		verbose_name = 'boss'
 		verbose_name_plural = 'bosses'
 		unique_together = ['zone', 'name']
@@ -118,7 +175,10 @@ class Instance(models.Model):
 	name = models.CharField(
 		max_length=100,
 	)
-	characters = models.ManyToManyField(Character)
+	characters = models.ManyToManyField(
+		Character,
+		blank=True,
+	)
 	scheduled_start = models.DateTimeField()
 
 	def ordered_characters(self):
@@ -133,46 +193,6 @@ class Instance(models.Model):
 	class Meta:
 		ordering = ['raid', 'name']
 		unique_together = ['raid', 'name']
-
-class Item(models.Model):
-	POOR = 'P'
-	COMMON = 'C'
-	UNCOMMON = 'U'
-	RARE = 'R'
-	EPIC = 'E'
-	LEGENDARY = 'L'
-	ARTIFACT = 'A'
-	QUALITY_CHOICES = [
-		(POOR, 'Poor'),
-		(COMMON, 'Common'),
-		(UNCOMMON, 'Uncommon'),
-		(RARE, 'Rare'),
-		(EPIC, 'Epic'),
-		(LEGENDARY, 'Legendary'),
-		(ARTIFACT, 'Artifact'),
-	]
-
-	name = models.CharField(
-		max_length=100,
-	)
-	quality = models.CharField(max_length=1, choices=QUALITY_CHOICES)
-	classicdb_id = models.IntegerField()
-
-	def __str__(self):
-		if self.classicdb_id == 18563:
-			return 'Bindings of the Windseeker (Left)'
-		elif self.classicdb_id == 18564:
-			return 'Bindings of the Windseeker (Right)'
-		return self.name
-
-	def get_url(self):
-		return 'https://classicdb.ch/?item={}'.format(self.classicdb_id)
-
-	def ordered_loot(self):
-                return self.loot_set.order_by('instance__scheduled_start', 'character')
-
-	class Meta:
-		ordering = ['name']
 
 class Loot(models.Model):
 	character = models.ForeignKey(

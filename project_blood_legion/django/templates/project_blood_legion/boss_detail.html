@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<h1 class="title">{{ boss }} ({{ boss_kills }} kill{{ boss_kills|pluralize }})</h1>
+<h1 class="title">{{ boss }} {% if boss.name == 'Trash' %}({{ boss_kills }} clear{{ boss_kills|pluralize }}){% else %}({{ boss_kills }} kill{{ boss_kills|pluralize }}){% endif %}</h1>
 
 {% if boss_drops %}
 <table class="table is-narrow">
@@ -28,5 +28,14 @@
 {% else %}
 <p>Never looted.</p>
 {% endif %}
+
+<br>
+<h2 class="title is-size-4">Drops</h2>
+
+<ul>
+{% for item in boss.items.all %}
+  <li>{% include "project_blood_legion/item_link.html" %}</li>
+{% endfor %}
+</ul>
 
 {% endblock %}
