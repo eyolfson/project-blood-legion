@@ -4451,5 +4451,115 @@
     "classic_item_id": 19358,
     "classicdb_item_id_suffix": ""
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 345,
+  "fields": {
+    "name": "Lava Belt",
+    "quality": "E",
+    "classic_item_id": 19149,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 346,
+  "fields": {
+    "name": "Molten Belt",
+    "quality": "E",
+    "classic_item_id": 19163,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 347,
+  "fields": {
+    "name": "Corehound Belt",
+    "quality": "E",
+    "classic_item_id": 19162,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 348,
+  "fields": {
+    "name": "Dark Iron Boots",
+    "quality": "E",
+    "classic_item_id": 20039,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 349,
+  "fields": {
+    "name": "Dark Iron Gauntlets",
+    "quality": "E",
+    "classic_item_id": 16983,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 350,
+  "fields": {
+    "name": "Molten Helm",
+    "quality": "E",
+    "classic_item_id": 16983,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 351,
+  "fields": {
+    "name": "Corehound Boots",
+    "quality": "E",
+    "classic_item_id": 16982,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 352,
+  "fields": {
+    "name": "Dark Iron Bracers",
+    "quality": "E",
+    "classic_item_id": 17014,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 353,
+  "fields": {
+    "name": "Dark Iron Helm",
+    "quality": "E",
+    "classic_item_id": 19148,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 354,
+  "fields": {
+    "name": "Dark Iron Leggings",
+    "quality": "E",
+    "classic_item_id": 17013,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 355,
+  "fields": {
+    "name": "Nightfall",
+    "quality": "E",
+    "classic_item_id": 19169,
+    "classicdb_item_id_suffix": ""
+  }
 }
 ]
