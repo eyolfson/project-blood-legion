@@ -5,6 +5,8 @@
 {% block content %}
 
 <h1 class="title">Members ({{ members.count }})</h1>
+<p class="subtitle"><a href={% url 'project_blood_legion:alts' %}>Alts</a></p>
+
 
 {% regroup members by main_character.get_cls_display as cls_list %}
 

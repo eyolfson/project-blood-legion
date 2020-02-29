@@ -10,7 +10,7 @@ import markdown
 from markdown.extensions.toc import TocExtension
 
 from .forms import LootForm, NoteForm
-from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer, Instance
+from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer, Instance, Alt
 
 def get_member_or_deny(request):
 	try:
@@ -27,6 +27,12 @@ def roster(request):
 		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'main_character__name'),
 	}
 	return render(request, 'project_blood_legion/roster.html', context)
+
+def alts(request):
+	context = {
+		'alts': Alt.objects.all(),
+	}
+	return render(request, 'project_blood_legion/alts.html', context)
 
 @login_required
 @permission_required('project_blood_legion.view_character', raise_exception=True)
