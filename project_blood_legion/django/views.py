@@ -30,7 +30,7 @@ def roster(request):
 
 def alts(request):
 	context = {
-		'alts': Alt.objects.all(),
+		'alts': Alt.objects.order_by('character__cls', 'character__name'),
 	}
 	return render(request, 'project_blood_legion/alts.html', context)
 
