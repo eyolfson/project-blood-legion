@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Blood Legion - Alts ({{ alts.count }}){% endblock %}
+
+{% block content %}
+
+<h1 class="title">Alts ({{ alts.count }})</h1>
+
+{% regroup alts by character.get_cls_display as cls_list %}
+
+{% for cls, alt_list in cls_list %}
+<ul>
+  <li><strong>{{ cls }} ({{ alt_list|length }})</strong></li>
+  {% for alt in alt_list %}
+  <li>
+    {% include "project_blood_legion/character_link.html" with character=alt.character %}
+    ({% include "project_blood_legion/character_link.html" with character=alt.member.main_character %})
+  </li>
+  {% endfor %}
+</ul>
+{% if not forloop.last %}<br>{% endif %}
+{% endfor %}
+
+{% endblock %}
