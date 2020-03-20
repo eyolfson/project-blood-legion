@@ -1013,6 +1013,216 @@
   }
 },
 {
+  "model": "project_blood_legion.raid",
+  "pk": 64,
+  "fields": {
+    "zone": 2,
+    "reset": 36,
+    "start": "2020-02-19T16:00:00Z",
+    "end": "2020-02-24T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 65,
+  "fields": {
+    "zone": 2,
+    "reset": 37,
+    "start": "2020-02-24T16:00:00Z",
+    "end": "2020-02-29T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 66,
+  "fields": {
+    "zone": 1,
+    "reset": 27,
+    "start": "2020-02-25T16:00:00Z",
+    "end": "2020-03-03T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 67,
+  "fields": {
+    "zone": 3,
+    "reset": 3,
+    "start": "2020-02-25T16:00:00Z",
+    "end": "2020-03-03T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 68,
+  "fields": {
+    "zone": 2,
+    "reset": 38,
+    "start": "2020-02-29T16:00:00Z",
+    "end": "2020-03-05T16:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 69,
+  "fields": {
+    "zone": 1,
+    "reset": 28,
+    "start": "2020-03-03T16:00:00Z",
+    "end": "2020-03-10T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 70,
+  "fields": {
+    "zone": 3,
+    "reset": 4,
+    "start": "2020-03-03T16:00:00Z",
+    "end": "2020-03-10T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 71,
+  "fields": {
+    "zone": 2,
+    "reset": 39,
+    "start": "2020-03-05T16:00:00Z",
+    "end": "2020-03-10T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 72,
+  "fields": {
+    "zone": 1,
+    "reset": 29,
+    "start": "2020-03-10T15:00:00Z",
+    "end": "2020-03-17T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 73,
+  "fields": {
+    "zone": 2,
+    "reset": 40,
+    "start": "2020-03-10T15:00:00Z",
+    "end": "2020-03-15T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 74,
+  "fields": {
+    "zone": 3,
+    "reset": 5,
+    "start": "2020-03-10T15:00:00Z",
+    "end": "2020-03-17T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 75,
+  "fields": {
+    "zone": 2,
+    "reset": 41,
+    "start": "2020-03-15T15:00:00Z",
+    "end": "2020-03-20T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 76,
+  "fields": {
+    "zone": 1,
+    "reset": 30,
+    "start": "2020-03-17T15:00:00Z",
+    "end": "2020-03-24T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 77,
+  "fields": {
+    "zone": 3,
+    "reset": 6,
+    "start": "2020-03-17T15:00:00Z",
+    "end": "2020-03-24T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 78,
+  "fields": {
+    "zone": 2,
+    "reset": 42,
+    "start": "2020-03-20T15:00:00Z",
+    "end": "2020-03-25T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 79,
+  "fields": {
+    "zone": 1,
+    "reset": 31,
+    "start": "2020-03-24T15:00:00Z",
+    "end": "2020-03-31T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 80,
+  "fields": {
+    "zone": 3,
+    "reset": 7,
+    "start": "2020-03-24T15:00:00Z",
+    "end": "2020-03-31T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 81,
+  "fields": {
+    "zone": 2,
+    "reset": 43,
+    "start": "2020-03-25T15:00:00Z",
+    "end": "2020-03-30T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 82,
+  "fields": {
+    "zone": 2,
+    "reset": 44,
+    "start": "2020-03-30T15:00:00Z",
+    "end": "2020-04-04T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 83,
+  "fields": {
+    "zone": 1,
+    "reset": 32,
+    "start": "2020-03-31T15:00:00Z",
+    "end": "2020-04-07T15:00:00Z"
+  }
+},
+{
+  "model": "project_blood_legion.raid",
+  "pk": 84,
+  "fields": {
+    "zone": 3,
+    "reset": 8,
+    "start": "2020-03-31T15:00:00Z",
+    "end": "2020-04-07T15:00:00Z"
+  }
+},
+{
   "model": "project_blood_legion.item",
   "pk": 1,
   "fields": {
