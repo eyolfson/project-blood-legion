@@ -87,8 +87,13 @@ def character_detail(request, character_id):
 		else:
 			note_form = NoteForm()
 
+	loot_set = character.loot_set.all()
+	if 'by-date' in request.GET:
+                loot_set = loot_set.order_by('-instance__scheduled_start')
+
 	context = {
 		'character': character,
+		'loot_set': loot_set,
 		'note': note,
 		'note_form': note_form,
 	}

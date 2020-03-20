@@ -59,7 +59,9 @@
 
 <h2 class="title is-4">Items</h2>
 
-{% if character.loot_set.count %}
+{% if loot_set.count %}
+<p><a href="?">By Name</a> <a href="?by-date">By Date</a></p>
+
 <table class="table is-narrow">
   <thead>
     <tr>
@@ -68,7 +70,7 @@
     </tr>
   </thead>
   <tbody>
-    {% for loot in character.loot_set.all %}
+    {% for loot in loot_set %}
     <tr>
       <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
       <td>
