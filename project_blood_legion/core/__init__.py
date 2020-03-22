@@ -16,8 +16,13 @@ def update_css():
 
 def main(unparsed_args):
 	parser = argparse.ArgumentParser(prog='project_blood_legion')
-	parser.add_argument('--update-css', action='store_true')
+	parser.add_argument('--addons')
+	parser.add_argument('--css', action='store_true')
 	args = parser.parse_args(unparsed_args)
 
-	if args.update_css:
+	if args.addons:
+		from ..addons import update
+		update(args.addons)
+
+	if args.css:
 		update_css()
