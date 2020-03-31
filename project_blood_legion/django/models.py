@@ -243,6 +243,7 @@ class Member(models.Model):
 		(4, 'Trial'),
 		(5, 'Member'),
 		(6, 'Friend'),
+		(7, 'Retired'),
 	]
 
 	user = models.OneToOneField(
