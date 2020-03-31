@@ -24,13 +24,29 @@ def index(request):
 
 def roster(request):
 	context = {
+		'hide_rank': 3,
+		'show_members': True,
 		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'main_character__name'),
+	}
+	return render(request, 'project_blood_legion/roster.html', context)
+
+def member(request):
+	context = {
+		'hide_rank': 5,
+		'show_members': False,
+		'members': Member.objects.filter(rank__gt=4).order_by('main_character__cls', 'main_character__name'),
 	}
 	return render(request, 'project_blood_legion/roster.html', context)
 
 def alts(request):
 	context = {
-		'alts': Alt.objects.order_by('character__cls', 'character__name'),
+		'alts': Alt.objects.filter(member__rank__lte=4).order_by('character__cls', 'character__name'),
+	}
+	return render(request, 'project_blood_legion/alts.html', context)
+
+def member_alts(request):
+	context = {
+		'alts': Alt.objects.filter(member__rank__gt=4).order_by('character__cls', 'character__name'),
 	}
 	return render(request, 'project_blood_legion/alts.html', context)
 
