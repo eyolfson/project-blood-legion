@@ -268,6 +268,7 @@ class Alt(models.Model):
 	member = models.ForeignKey(
 		Member,
 		on_delete=models.CASCADE,
+		related_name='alts',
 	)
 	character = models.OneToOneField(
 		Character,

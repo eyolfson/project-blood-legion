@@ -67,7 +67,13 @@ def character_detail(request, character_id):
 	can_view = False
 	if request.user.is_authenticated:
 		try:
-			is_character = request.user.member.main_character == character
+			member = request.user.member
+			if member.main_character == character:
+				is_character = True
+			for alt in member.alts.all():
+				if alt.character == character:
+					is_character = True
+					break
 		except Member.DoesNotExist:
 			pass
 		can_view = request.user.has_perm('project_blood_legion.view_note')
@@ -87,7 +93,7 @@ def character_detail(request, character_id):
 
 	if is_character:
 		if request.method == 'POST' and 'note' in request.POST:
-			note_form = NoteForm(request.POST, prefix="note")
+			note_form = NoteForm(request.POST, prefix='note')
 			if note_form.is_valid():
 				new_note = note_form.save(commit=False)
 				if note:

@@ -92,7 +92,7 @@
 <form action="{% url 'project_blood_legion:character_detail' character.id %}" method="post">
   {% csrf_token %}
   <div class="field">
-    <textarea class="textarea" placeholder="Include details about personal preferences." id="id_text" name="text"></textarea>
+    <textarea class="textarea" placeholder="Include details about personal preferences." id="id_note-text" name="note-text"></textarea>
   </div>
   <div class="field">
     <input class="button is-success" type="submit" name="note" value="Change">
