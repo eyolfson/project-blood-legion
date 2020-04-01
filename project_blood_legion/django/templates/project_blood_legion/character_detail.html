@@ -12,9 +12,9 @@
 <p>
   {% if character.alt %}
   <strong>Main:</strong> {% include "project_blood_legion/character_link.html" with character=character.alt.member.main_character %}
-    {% if character.alt.member.alt_set.count > 1 %}
+    {% if character.alt.member.alts.count > 1 %}
     <br><strong>Alts:</strong>
-      {% for alt in character.alt.member.alt_set.all %}
+      {% for alt in character.alt.member.alts.all %}
         {% if alt.character != character %}
           {% include "project_blood_legion/character_link.html" with character=alt.character %}
         {% endif %}
@@ -26,9 +26,9 @@
   <strong>Rank:</strong> {{ character.member.get_rank_display }}
   {% endif %}
 
-  {% if character.member.alt_set.count %}
+  {% if character.member.alts.count %}
   <br><strong>Alts:</strong>
-    {% for alt in character.member.alt_set.all %}
+    {% for alt in character.member.alts.all %}
       {% include "project_blood_legion/character_link.html" with character=alt.character %}
     {% endfor %}
   {% endif %}
