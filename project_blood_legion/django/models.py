@@ -339,6 +339,14 @@ class Reserve(models.Model):
 	class Meta:
 		unique_together = ['character', 'zone']
 
+class InstanceReserveManager(models.Manager):
+
+	def order_by_item1(self):
+		return self.order_by('item1')
+
+	def order_by_item2(self):
+		return self.order_by('item2')
+
 class InstanceReserve(models.Model):
 	character = models.ForeignKey(
 		Character,
@@ -363,6 +371,7 @@ class InstanceReserve(models.Model):
 		null=True,
 		related_name='instance_reserve2',
 	)
+	objects = InstanceReserveManager()
 
 	def __str__(self):
 		return '{} ({})'.format(self.character, self.instance)

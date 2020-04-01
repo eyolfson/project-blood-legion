@@ -86,7 +86,7 @@
   <br />
   <h3 class="title is-4">Item Reserves</h3>
 
-  {% regroup instance.reserves.all by item1 as reserve_list %}
+  {% regroup instance.reserves.order_by_item1 by item1 as reserve_list %}
   <table class="table is-narrow">
     <thead>
       <tr>
@@ -113,7 +113,7 @@
 
   <h3 class="title is-4">Set Item Reserves</h3>
 
-  {% regroup instance.reserves.all by item2 as reserve_list %}
+  {% regroup instance.reserves.order_by_item2 by item2 as reserve_list %}
   <table class="table is-narrow">
     <thead>
       <tr>
@@ -129,7 +129,7 @@
         <td>
 	  {{ entry.list|length }}
 	  {% if perms.project_blood_legion.view_instancereserve%}
-	  ({% for reserve in entry.list %}{% include "project_blood_legion/character_link.html" with character=reserve.character %}{% if not forloop.first %}, {% endif %}{% endfor %})
+	  ({% for reserve in entry.list %}{% if not forloop.first %}, {% endif %}{% include "project_blood_legion/character_link.html" with character=reserve.character %}{% endfor %})
 	  {% endif %}
 	</td>
       </tr>
