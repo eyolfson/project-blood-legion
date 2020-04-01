@@ -307,3 +307,64 @@ class Answer(models.Model):
 
 	def __str__(self):
 		return '{} → {}'.format(self.question, self.member)
+
+class Reserve(models.Model):
+	character = models.ForeignKey(
+		Character,
+		on_delete=models.CASCADE,
+	)
+	zone = models.ForeignKey(
+		Zone,
+		on_delete=models.CASCADE,
+	)
+	item1 = models.ForeignKey(
+		Item,
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
+		related_name='reserve1',
+	)
+	item2 = models.ForeignKey(
+		Item,
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
+		related_name='reserve2',
+	)
+
+	def __str__(self):
+		return '{} ({})'.format(self.character, self.zone)
+
+	class Meta:
+		unique_together = ['character', 'zone']
+
+class InstanceReserve(models.Model):
+	character = models.ForeignKey(
+		Character,
+		on_delete=models.CASCADE,
+	)
+	instance = models.ForeignKey(
+		Instance,
+		on_delete=models.CASCADE,
+		related_name='reserves',
+	)
+	item1 = models.ForeignKey(
+		Item,
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
+		related_name='instance_reserve1',
+	)
+	item2 = models.ForeignKey(
+		Item,
+		on_delete=models.CASCADE,
+		blank=True,
+		null=True,
+		related_name='instance_reserve2',
+	)
+
+	def __str__(self):
+		return '{} ({})'.format(self.character, self.instance)
+
+	class Meta:
+		unique_together = ['character', 'instance']

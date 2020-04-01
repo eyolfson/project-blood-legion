@@ -34,6 +34,53 @@
   {% endif %}
 </p>
 
+{% if reserves %}
+<h2 class="title is-4">Reserves</h2>
+
+{% for reserve in reserves %}
+<p>
+  <strong>{{ reserve.zone }}</strong></br>
+  {% if reserve.item1 %}{% include "project_blood_legion/item_link.html" with item=reserve.item1 %}{% else %}None{% endif %}</br>
+  Set: {% if reserve.item2 %}{% include "project_blood_legion/item_link.html" with item=reserve.item2 %}{% else %}None{% endif %}</br>
+</p>
+
+{% if reserve.form %}
+<form action="{% url 'project_blood_legion:character_detail' character.id %}" method="post">
+  {% csrf_token %}
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label for="{{ reserve.form.item1.id_for_label }}" class="label">Item:</label>
+    </div>
+    <div class="field-body">
+      <div class="select">
+      {{ reserve.form.item1 }}
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label for="{{ reserve.form.item2.id_for_label }}" class="label">Item (Set):</label>
+    </div>
+    <div class="field-body">
+      <div class="select">
+      {{ reserve.form.item2 }}
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-label">
+    </div>
+    <div class="field-body">
+      <input class="button is-success" type="submit" name="{{ reserve.prefix }}" value="Change">
+    </div>
+  </div>
+</form>
+{% endif %}
+{% endfor %}
+{% endif %}
+
 {% if note or note_form %}
 <h2 class="title is-4">Note</h2>
 
@@ -48,7 +95,7 @@
     <textarea class="textarea" placeholder="Include details about personal preferences." id="id_text" name="text"></textarea>
   </div>
   <div class="field">
-    <input class="button is-success" type="submit" value="Change">
+    <input class="button is-success" type="submit" name="note" value="Change">
   </div>
 </form>
 {% endif %}

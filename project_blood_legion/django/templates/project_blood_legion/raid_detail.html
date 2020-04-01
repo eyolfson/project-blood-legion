@@ -82,6 +82,32 @@
 </form>
 {% endif %}
 
+{% if perms.project_blood_legion.view_instancereserve and instance.reserves.count %}
+  <br />
+  <h3 class="title is-5">Reserves</h3>
+
+  <table class="table is-narrow">
+    <thead>
+      <tr>
+        <th>Character</th>
+        <th>Item</th>
+        <th>Set Item</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for reserve in instance.reserves.all %}
+      <tr>
+        <td>
+          {% include "project_blood_legion/character_link.html" with character=reserve.character %}
+        </td>
+        <td>{% if reserve.item1 %}{% include "project_blood_legion/item_link.html" with item=reserve.item1 %}{% else %}None{% endif %}</td>
+        <td>{% if reserve.item2 %}{% include "project_blood_legion/item_link.html" with item=reserve.item2 %}{% else %}None{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
+
 {% endfor %}
 
 {% if raid.uninstanced_ordered_loot %}

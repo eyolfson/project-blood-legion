@@ -9,8 +9,8 @@ from django.utils.html import escape
 import markdown
 from markdown.extensions.toc import TocExtension
 
-from .forms import LootForm, NoteForm
-from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer, Instance, Alt
+from .forms import LootForm, NoteForm, ReserveForm
+from .models import Boss, Character, Item, Raid, Note, Member, Question, Answer, Instance, Alt, Reserve
 
 def get_member_or_deny(request):
 	try:
@@ -80,9 +80,14 @@ def character_detail(request, character_id):
 			note = None
 
 	note_form = None
+	if is_character or request.user.has_perm('project_blood_legion.view_reserve'):
+		reserves = list(Reserve.objects.filter(character=character))
+	else:
+		reserves = []
+
 	if is_character:
-		if request.method == 'POST':
-			note_form = NoteForm(request.POST)
+		if request.method == 'POST' and 'note' in request.POST:
+			note_form = NoteForm(request.POST, prefix="note")
 			if note_form.is_valid():
 				new_note = note_form.save(commit=False)
 				if note:
@@ -101,7 +106,19 @@ def character_detail(request, character_id):
 					new_note.save()
 				return HttpResponseRedirect(reverse('project_blood_legion:character_detail', args=(character_id,)))
 		else:
-			note_form = NoteForm()
+			note_form = NoteForm(prefix='note')
+		for reserve in reserves:
+			reserve.prefix = 'zone-{}'.format(reserve.zone.id)
+			if request.method == 'POST' and reserve.prefix in request.POST:
+				reserve.form = ReserveForm(request.POST, prefix=reserve.prefix)
+				if reserve.form.is_valid():
+					new_reserve = reserve.form.save(commit=False)
+					reserve.item1 = new_reserve.item1
+					reserve.item2 = new_reserve.item2
+					reserve.save()
+					return HttpResponseRedirect(reverse('project_blood_legion:character_detail', args=(character_id,)))
+			else:
+				reserve.form = ReserveForm(prefix=reserve.prefix)
 
 	loot_set = character.loot_set.all()
 	if 'by-date' in request.GET:
@@ -112,6 +129,7 @@ def character_detail(request, character_id):
 		'loot_set': loot_set,
 		'note': note,
 		'note_form': note_form,
+		'reserves': reserves,
 	}
 	return render(request, 'project_blood_legion/character_detail.html', context)
 
