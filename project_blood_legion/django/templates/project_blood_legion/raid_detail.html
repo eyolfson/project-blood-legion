@@ -82,10 +82,63 @@
 </form>
 {% endif %}
 
-{% if perms.project_blood_legion.view_instancereserve and instance.reserves.count %}
+{% if instance.reserves.count %}
   <br />
-  <h3 class="title is-5">Reserves</h3>
+  <h3 class="title is-4">Item Reserves</h3>
 
+  {% regroup instance.reserves.all by item1 as reserve_list %}
+  <table class="table is-narrow">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Characters</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in reserve_list %}
+        {% if entry.grouper %}
+      <tr>
+        <td>{% include "project_blood_legion/item_link.html" with item=entry.grouper %}</td>
+        <td>
+	  {{ entry.list|length }}
+	  {% if perms.project_blood_legion.view_instancereserve%}
+	  ({% for reserve in entry.list %}{% if not forloop.first %}, {% endif %}{% include "project_blood_legion/character_link.html" with character=reserve.character %}{% endfor %})
+	  {% endif %}
+	</td>
+      </tr>
+	{% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <h3 class="title is-4">Set Item Reserves</h3>
+
+  {% regroup instance.reserves.all by item2 as reserve_list %}
+  <table class="table is-narrow">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Characters</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in reserve_list %}
+        {% if entry.grouper %}
+      <tr>
+        <td>{% include "project_blood_legion/item_link.html" with item=entry.grouper %}</td>
+        <td>
+	  {{ entry.list|length }}
+	  {% if perms.project_blood_legion.view_instancereserve%}
+	  ({% for reserve in entry.list %}{% include "project_blood_legion/character_link.html" with character=reserve.character %}{% if not forloop.first %}, {% endif %}{% endfor %})
+	  {% endif %}
+	</td>
+      </tr>
+	{% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+
+  {% if perms.project_blood_legion.view_instancereserve%}
   <table class="table is-narrow">
     <thead>
       <tr>
@@ -95,7 +148,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for reserve in instance.reserves.all %}
+    {% for reserve in instance.reserves.all %}
       <tr>
         <td>
           {% include "project_blood_legion/character_link.html" with character=reserve.character %}
@@ -106,6 +159,7 @@
     {% endfor %}
     </tbody>
   </table>
+  {% endif %}
 {% endif %}
 
 {% endfor %}
