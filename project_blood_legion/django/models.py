@@ -337,6 +337,7 @@ class Reserve(models.Model):
 		return '{} ({})'.format(self.character, self.zone)
 
 	class Meta:
+		ordering = ['character', 'zone']
 		unique_together = ['character', 'zone']
 
 class InstanceReserveManager(models.Manager):
@@ -377,4 +378,5 @@ class InstanceReserve(models.Model):
 		return '{} ({})'.format(self.character, self.instance)
 
 	class Meta:
+		ordering = ['character', 'instance']
 		unique_together = ['character', 'instance']
