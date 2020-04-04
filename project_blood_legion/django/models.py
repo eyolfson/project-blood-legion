@@ -301,7 +301,7 @@ class Question(models.Model):
 class Answer(models.Model):
 	question = models.ForeignKey(Question, on_delete=models.CASCADE)
 	choice = models.BooleanField()
-	member = models.OneToOneField(
+	member = models.ForeignKey(
 		Member,
 		on_delete=models.CASCADE,
 	)
