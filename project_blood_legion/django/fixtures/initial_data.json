@@ -4841,5 +4841,35 @@
     "classic_item_id": 19169,
     "classicdb_item_id_suffix": ""
   }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 356,
+  "fields": {
+    "name": "Bloodvine Boots",
+    "quality": "R",
+    "classic_item_id": 19684,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 357,
+  "fields": {
+    "name": "Bloodvine Leggings",
+    "quality": "R",
+    "classic_item_id": 19683,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 358,
+  "fields": {
+    "name": "Bloodvine Vest",
+    "quality": "R",
+    "classic_item_id": 19682,
+    "classicdb_item_id_suffix": ""
+  }
 }
 ]
