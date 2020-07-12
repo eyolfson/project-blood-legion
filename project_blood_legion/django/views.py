@@ -30,6 +30,8 @@ def roster(request):
 	}
 	return render(request, 'project_blood_legion/roster.html', context)
 
+@login_required
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def member(request):
 	context = {
 		'hide_rank': 5,
@@ -38,12 +40,16 @@ def member(request):
 	}
 	return render(request, 'project_blood_legion/roster.html', context)
 
+@login_required
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def alts(request):
 	context = {
 		'alts': Alt.objects.filter(member__rank__lte=4).order_by('character__cls', 'character__name'),
 	}
 	return render(request, 'project_blood_legion/alts.html', context)
 
+@login_required
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def member_alts(request):
 	context = {
 		'alts': Alt.objects.filter(member__rank=5).order_by('character__cls', 'character__name'),
