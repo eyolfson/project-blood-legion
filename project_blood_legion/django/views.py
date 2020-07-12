@@ -22,6 +22,8 @@ def get_member_or_deny(request):
 def index(request):
 	return render(request, 'project_blood_legion/index.html', {})
 
+@login_required
+@permission_required('project_blood_legion.view_character', raise_exception=True)
 def roster(request):
 	context = {
 		'hide_rank': 3,
