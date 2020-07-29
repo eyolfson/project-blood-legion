@@ -54,6 +54,20 @@ class Command(BaseCommand):
 			raid=bwl
 		))
 
+		aq_zone = Zone.objects.get(name="Temple of Ahn'Qiraj")
+		aq_release = datetime.datetime(2020, 8, 4, 12, 0, 0)
+		aq_first_reset = datetime.datetime(2020, 8, 11, 12, 0, 0)
+		aq, _ = Raid.objects.get_or_create(zone=aq_zone, reset=1, defaults={
+			'start': eastern_tz.localize(aq_release),
+			'end': eastern_tz.localize(aq_first_reset)
+		})
+		entries.append(Entry(
+			next_reset=aq_first_reset,
+			zone_id=aq_zone.id,
+			reset_frequency=7,
+			raid=aq
+		))
+
 		until = datetime.datetime.now() + datetime.timedelta(days=14)
 		while True:
 			entries = sorted(entries)
