@@ -390,6 +390,308 @@
   }
 },
 {
+  "model": "project_blood_legion.boss",
+  "pk": 23,
+  "fields": {
+    "zone": 4,
+    "name": "The Prophet Skeram",
+    "items": [
+      365,
+      363,
+      371,
+      368,
+      367,
+      369,
+      372,
+      364,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      366,
+      373,
+      374,
+      362,
+      360,
+      370,
+      361
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 24,
+  "fields": {
+    "zone": 4,
+    "name": "Silithid Royalty",
+    "items": [
+      384,
+      389,
+      392,
+      382,
+      391,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      383,
+      387,
+      373,
+      374,
+      395,
+      393,
+      394,
+      385,
+      400,
+      399,
+      390,
+      388,
+      386,
+      396,
+      398,
+      397
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 25,
+  "fields": {
+    "zone": 4,
+    "name": "Battleguard Sartura",
+    "items": [
+      406,
+      405,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      410,
+      408,
+      373,
+      374,
+      412,
+      403,
+      413,
+      401,
+      407,
+      402,
+      404,
+      409,
+      411
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 26,
+  "fields": {
+    "zone": 4,
+    "name": "Fankriss the Unyielding",
+    "items": [
+      419,
+      415,
+      423,
+      414,
+      418,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      417,
+      373,
+      374,
+      426,
+      424,
+      416,
+      422,
+      420,
+      421,
+      425
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 27,
+  "fields": {
+    "zone": 4,
+    "name": "Viscidus",
+    "items": [
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      431,
+      430,
+      435,
+      373,
+      374,
+      427,
+      428,
+      434,
+      432,
+      429,
+      433
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 28,
+  "fields": {
+    "zone": 4,
+    "name": "Princess Huhuran",
+    "items": [
+      441,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      439,
+      438,
+      436,
+      373,
+      374,
+      427,
+      428,
+      440,
+      437
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 29,
+  "fields": {
+    "zone": 4,
+    "name": "The Twin Emperors",
+    "items": [
+      454,
+      452,
+      447,
+      450,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      451,
+      453,
+      373,
+      374,
+      456,
+      449,
+      455,
+      448,
+      445,
+      444,
+      443,
+      446,
+      442
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 30,
+  "fields": {
+    "zone": 4,
+    "name": "Ouro",
+    "items": [
+      460,
+      461,
+      381,
+      380,
+      377,
+      376,
+      378,
+      375,
+      379,
+      373,
+      374,
+      464,
+      462,
+      457,
+      458,
+      463,
+      459
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 31,
+  "fields": {
+    "zone": 4,
+    "name": "C'Thun",
+    "items": [
+      475,
+      465,
+      473,
+      479,
+      469,
+      474,
+      468,
+      467,
+      478,
+      471,
+      472,
+      466,
+      480,
+      476,
+      477,
+      470
+    ]
+  }
+},
+{
+  "model": "project_blood_legion.boss",
+  "pk": 32,
+  "fields": {
+    "zone": 4,
+    "name": "Trash",
+    "items": [
+      487,
+      481,
+      482,
+      483,
+      491,
+      494,
+      489,
+      496,
+      492,
+      495,
+      493,
+      490,
+      484,
+      488,
+      485,
+      486
+    ]
+  }
+},
+{
   "model": "project_blood_legion.raid",
   "pk": 1,
   "fields": {
@@ -5476,6 +5778,1386 @@
     "name": "Bloodvine Vest",
     "quality": "R",
     "classic_item_id": 19682,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 359,
+  "fields": {
+    "name": "Black Qiraji Resonating Crystal",
+    "quality": "L",
+    "classic_item_id": 21176,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 360,
+  "fields": {
+    "name": "Pendant of the Qiraji Guardian",
+    "quality": "E",
+    "classic_item_id": 21700,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 361,
+  "fields": {
+    "name": "Staff of the Qiraji Prophets",
+    "quality": "E",
+    "classic_item_id": 21128,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 362,
+  "fields": {
+    "name": "Leggings of Immersion",
+    "quality": "E",
+    "classic_item_id": 21698,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 363,
+  "fields": {
+    "name": "Barrage Shoulders",
+    "quality": "E",
+    "classic_item_id": 21699,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 364,
+  "fields": {
+    "name": "Cloak of Concentrated Hatred",
+    "quality": "E",
+    "classic_item_id": 21701,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 365,
+  "fields": {
+    "name": "Amulet of Foul Warding",
+    "quality": "E",
+    "classic_item_id": 21702,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 366,
+  "fields": {
+    "name": "Hammer of Ji'zhi",
+    "quality": "E",
+    "classic_item_id": 21703,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 367,
+  "fields": {
+    "name": "Boots of the Redeemed Prophecy",
+    "quality": "E",
+    "classic_item_id": 21704,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 368,
+  "fields": {
+    "name": "Boots of the Fallen Prophet",
+    "quality": "E",
+    "classic_item_id": 21705,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 369,
+  "fields": {
+    "name": "Boots of the Unwavering Will",
+    "quality": "E",
+    "classic_item_id": 21706,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 370,
+  "fields": {
+    "name": "Ring of Swarming Thought",
+    "quality": "E",
+    "classic_item_id": 21707,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 371,
+  "fields": {
+    "name": "Beetle Scaled Wristguards",
+    "quality": "E",
+    "classic_item_id": 21708,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 372,
+  "fields": {
+    "name": "Breastplate of Annihilation",
+    "quality": "E",
+    "classic_item_id": 21814,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 373,
+  "fields": {
+    "name": "Imperial Qiraji Armaments",
+    "quality": "E",
+    "classic_item_id": 21232,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 374,
+  "fields": {
+    "name": "Imperial Qiraji Regalia",
+    "quality": "E",
+    "classic_item_id": 21237,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 375,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Shadow Power",
+    "quality": "R",
+    "classic_item_id": 20727,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 376,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Frost Power",
+    "quality": "R",
+    "classic_item_id": 20728,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 377,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Fire Power",
+    "quality": "R",
+    "classic_item_id": 20729,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 378,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Healing Power",
+    "quality": "R",
+    "classic_item_id": 20730,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 379,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Superior Agility",
+    "quality": "R",
+    "classic_item_id": 20731,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 380,
+  "fields": {
+    "name": "Formula: Enchant Cloak - Stealth",
+    "quality": "R",
+    "classic_item_id": 20734,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 381,
+  "fields": {
+    "name": "Formula: Enchant Cloak - Dodge",
+    "quality": "R",
+    "classic_item_id": 20736,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 382,
+  "fields": {
+    "name": "Boots of the Fallen Hero",
+    "quality": "E",
+    "classic_item_id": 21688,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 383,
+  "fields": {
+    "name": "Gloves of Ebru",
+    "quality": "E",
+    "classic_item_id": 21689,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 384,
+  "fields": {
+    "name": "Angelista's Charm",
+    "quality": "E",
+    "classic_item_id": 21690,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 385,
+  "fields": {
+    "name": "Ooze-ridden Gauntlets",
+    "quality": "E",
+    "classic_item_id": 21691,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 386,
+  "fields": {
+    "name": "Triad Girdle",
+    "quality": "E",
+    "classic_item_id": 21692,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 387,
+  "fields": {
+    "name": "Guise of the Devourer",
+    "quality": "E",
+    "classic_item_id": 21693,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 388,
+  "fields": {
+    "name": "Ternary Mantle",
+    "quality": "E",
+    "classic_item_id": 21694,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 389,
+  "fields": {
+    "name": "Angelista's Touch",
+    "quality": "E",
+    "classic_item_id": 21695,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 390,
+  "fields": {
+    "name": "Robes of the Triumvirate",
+    "quality": "E",
+    "classic_item_id": 21696,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 391,
+  "fields": {
+    "name": "Cape of the Trinity",
+    "quality": "E",
+    "classic_item_id": 21697,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 392,
+  "fields": {
+    "name": "Bile-Covered Gauntlets",
+    "quality": "E",
+    "classic_item_id": 21682,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 393,
+  "fields": {
+    "name": "Mantle of the Desert Crusade",
+    "quality": "E",
+    "classic_item_id": 21683,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 394,
+  "fields": {
+    "name": "Mantle of the Desert's Fury",
+    "quality": "E",
+    "classic_item_id": 21684,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 395,
+  "fields": {
+    "name": "Mantle of Phrenic Power",
+    "quality": "E",
+    "classic_item_id": 21686,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 396,
+  "fields": {
+    "name": "Ukko's Ring of Darkness",
+    "quality": "E",
+    "classic_item_id": 21687,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 397,
+  "fields": {
+    "name": "Wand of Qiraji Nobility",
+    "quality": "E",
+    "classic_item_id": 21603,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 398,
+  "fields": {
+    "name": "Vest of Swift Execution",
+    "quality": "E",
+    "classic_item_id": 21680,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 399,
+  "fields": {
+    "name": "Ring of the Devoured",
+    "quality": "E",
+    "classic_item_id": 21681,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 400,
+  "fields": {
+    "name": "Petrified Scarab",
+    "quality": "E",
+    "classic_item_id": 21685,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 401,
+  "fields": {
+    "name": "Recomposed Boots",
+    "quality": "E",
+    "classic_item_id": 21648,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 402,
+  "fields": {
+    "name": "Sartura's Might",
+    "quality": "E",
+    "classic_item_id": 21666,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 403,
+  "fields": {
+    "name": "Legplates of Blazing Light",
+    "quality": "E",
+    "classic_item_id": 21667,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 404,
+  "fields": {
+    "name": "Scaled Leggings of Qiraji Fury",
+    "quality": "E",
+    "classic_item_id": 21668,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 405,
+  "fields": {
+    "name": "Creeping Vine Helm",
+    "quality": "E",
+    "classic_item_id": 21669,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 406,
+  "fields": {
+    "name": "Badge of the Swarmguard",
+    "quality": "E",
+    "classic_item_id": 21670,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 407,
+  "fields": {
+    "name": "Robes of the Battleguard",
+    "quality": "E",
+    "classic_item_id": 21671,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 408,
+  "fields": {
+    "name": "Gloves of Enforcement",
+    "quality": "E",
+    "classic_item_id": 21672,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 409,
+  "fields": {
+    "name": "Silithid Claw",
+    "quality": "E",
+    "classic_item_id": 21673,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 410,
+  "fields": {
+    "name": "Gauntlets of Steadfast Determination",
+    "quality": "E",
+    "classic_item_id": 21674,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 411,
+  "fields": {
+    "name": "Thick Qirajihide Belt",
+    "quality": "E",
+    "classic_item_id": 21675,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 412,
+  "fields": {
+    "name": "Leggings of the Festering Swarm",
+    "quality": "E",
+    "classic_item_id": 21676,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 413,
+  "fields": {
+    "name": "Necklace of Purity",
+    "quality": "E",
+    "classic_item_id": 21678,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 414,
+  "fields": {
+    "name": "Cloak of Untold Secrets",
+    "quality": "E",
+    "classic_item_id": 21627,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 415,
+  "fields": {
+    "name": "Barb of the Sand Reaver",
+    "quality": "E",
+    "classic_item_id": 21635,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 416,
+  "fields": {
+    "name": "Pauldrons of the Unrelenting",
+    "quality": "E",
+    "classic_item_id": 21639,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 417,
+  "fields": {
+    "name": "Hive Tunneler's Boots",
+    "quality": "E",
+    "classic_item_id": 21645,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 418,
+  "fields": {
+    "name": "Fetish of the Sand Reaver",
+    "quality": "E",
+    "classic_item_id": 21647,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 419,
+  "fields": {
+    "name": "Ancient Qiraji Ripper",
+    "quality": "E",
+    "classic_item_id": 21650,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 420,
+  "fields": {
+    "name": "Scaled Sand Reaver Leggings",
+    "quality": "E",
+    "classic_item_id": 21651,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 421,
+  "fields": {
+    "name": "Silithid Carapace Chestguard",
+    "quality": "E",
+    "classic_item_id": 21652,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 422,
+  "fields": {
+    "name": "Robes of the Guardian Saint",
+    "quality": "E",
+    "classic_item_id": 21663,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 423,
+  "fields": {
+    "name": "Barbed Choker",
+    "quality": "E",
+    "classic_item_id": 21664,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 424,
+  "fields": {
+    "name": "Mantle of Wicked Revenge",
+    "quality": "E",
+    "classic_item_id": 21665,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 425,
+  "fields": {
+    "name": "Totem of Life",
+    "quality": "E",
+    "classic_item_id": 22396,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 426,
+  "fields": {
+    "name": "Libram of Grace",
+    "quality": "E",
+    "classic_item_id": 22402,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 427,
+  "fields": {
+    "name": "Qiraji Bindings of Command",
+    "quality": "E",
+    "classic_item_id": 20928,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 428,
+  "fields": {
+    "name": "Qiraji Bindings of Dominance",
+    "quality": "E",
+    "classic_item_id": 20932,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 429,
+  "fields": {
+    "name": "Sharpened Silithid Femur",
+    "quality": "E",
+    "classic_item_id": 21622,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 430,
+  "fields": {
+    "name": "Gauntlets of the Righteous Champion",
+    "quality": "E",
+    "classic_item_id": 21623,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 431,
+  "fields": {
+    "name": "Gauntlets of Kalimdor",
+    "quality": "E",
+    "classic_item_id": 21624,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 432,
+  "fields": {
+    "name": "Scarab Brooch",
+    "quality": "E",
+    "classic_item_id": 21625,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 433,
+  "fields": {
+    "name": "Slime-coated Leggings",
+    "quality": "E",
+    "classic_item_id": 21626,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 434,
+  "fields": {
+    "name": "Ring of the Qiraji Fury",
+    "quality": "E",
+    "classic_item_id": 21677,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 435,
+  "fields": {
+    "name": "Idol of Health",
+    "quality": "E",
+    "classic_item_id": 22399,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 436,
+  "fields": {
+    "name": "Huhuran's Stinger",
+    "quality": "E",
+    "classic_item_id": 21616,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 437,
+  "fields": {
+    "name": "Wasphide Gauntlets",
+    "quality": "E",
+    "classic_item_id": 21617,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 438,
+  "fields": {
+    "name": "Hive Defiler Wristguards",
+    "quality": "E",
+    "classic_item_id": 21618,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 439,
+  "fields": {
+    "name": "Gloves of the Messiah",
+    "quality": "E",
+    "classic_item_id": 21619,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 440,
+  "fields": {
+    "name": "Ring of the Martyr",
+    "quality": "E",
+    "classic_item_id": 21620,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 441,
+  "fields": {
+    "name": "Cloak of the Golden Hive",
+    "quality": "E",
+    "classic_item_id": 21621,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 442,
+  "fields": {
+    "name": "Vek'nilash's Circlet",
+    "quality": "E",
+    "classic_item_id": 20926,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 443,
+  "fields": {
+    "name": "Vek'lor's Diadem",
+    "quality": "E",
+    "classic_item_id": 20930,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 444,
+  "fields": {
+    "name": "Royal Scepter of Vek'lor",
+    "quality": "E",
+    "classic_item_id": 21597,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 445,
+  "fields": {
+    "name": "Royal Qiraji Belt",
+    "quality": "E",
+    "classic_item_id": 21598,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 446,
+  "fields": {
+    "name": "Vek'lor's Gloves of Devastation",
+    "quality": "E",
+    "classic_item_id": 21599,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 447,
+  "fields": {
+    "name": "Boots of Epiphany",
+    "quality": "E",
+    "classic_item_id": 21600,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 448,
+  "fields": {
+    "name": "Ring of Emperor Vek'lor",
+    "quality": "E",
+    "classic_item_id": 21601,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 449,
+  "fields": {
+    "name": "Qiraji Execution Bracers",
+    "quality": "E",
+    "classic_item_id": 21602,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 450,
+  "fields": {
+    "name": "Bracelets of Royal Redemption",
+    "quality": "E",
+    "classic_item_id": 21604,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 451,
+  "fields": {
+    "name": "Gloves of the Hidden Temple",
+    "quality": "E",
+    "classic_item_id": 21605,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 452,
+  "fields": {
+    "name": "Belt of the Fallen Emperor",
+    "quality": "E",
+    "classic_item_id": 21606,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 453,
+  "fields": {
+    "name": "Grasp of the Fallen Emperor",
+    "quality": "E",
+    "classic_item_id": 21607,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 454,
+  "fields": {
+    "name": "Amulet of Vek'nilash",
+    "quality": "E",
+    "classic_item_id": 21608,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 455,
+  "fields": {
+    "name": "Regenerating Belt of Vek'nilash",
+    "quality": "E",
+    "classic_item_id": 21609,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 456,
+  "fields": {
+    "name": "Kalimdor's Revenge",
+    "quality": "E",
+    "classic_item_id": 21679,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 457,
+  "fields": {
+    "name": "Ouro's Intact Hide",
+    "quality": "E",
+    "classic_item_id": 20927,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 458,
+  "fields": {
+    "name": "Skin of the Great Sandworm",
+    "quality": "E",
+    "classic_item_id": 20931,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 459,
+  "fields": {
+    "name": "Wormscale Blocker",
+    "quality": "E",
+    "classic_item_id": 21610,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 460,
+  "fields": {
+    "name": "Burrower Bracers",
+    "quality": "E",
+    "classic_item_id": 21611,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 461,
+  "fields": {
+    "name": "Don Rigoberto's Lost Hat",
+    "quality": "E",
+    "classic_item_id": 21615,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 462,
+  "fields": {
+    "name": "Larvae of the Great Worm",
+    "quality": "E",
+    "classic_item_id": 23557,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 463,
+  "fields": {
+    "name": "The Burrower's Shell",
+    "quality": "E",
+    "classic_item_id": 23558,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 464,
+  "fields": {
+    "name": "Jom Gabbar",
+    "quality": "E",
+    "classic_item_id": 23570,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 465,
+  "fields": {
+    "name": "Carapace of the Old God",
+    "quality": "E",
+    "classic_item_id": 20929,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 466,
+  "fields": {
+    "name": "Husk of the Old God",
+    "quality": "E",
+    "classic_item_id": 20933,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 467,
+  "fields": {
+    "name": "Eye of C'Thun",
+    "quality": "E",
+    "classic_item_id": 21221,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 468,
+  "fields": {
+    "name": "Death's Sting",
+    "quality": "E",
+    "classic_item_id": 21126,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 469,
+  "fields": {
+    "name": "Dark Edge of Insanity",
+    "quality": "E",
+    "classic_item_id": 21134,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 470,
+  "fields": {
+    "name": "Vanquished Tentacle of C'Thun",
+    "quality": "E",
+    "classic_item_id": 21579,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 471,
+  "fields": {
+    "name": "Gauntlets of Annihilation",
+    "quality": "E",
+    "classic_item_id": 21581,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 472,
+  "fields": {
+    "name": "Grasp of the Old God",
+    "quality": "E",
+    "classic_item_id": 21582,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 473,
+  "fields": {
+    "name": "Cloak of Clarity",
+    "quality": "E",
+    "classic_item_id": 21583,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 474,
+  "fields": {
+    "name": "Dark Storm Gauntlets",
+    "quality": "E",
+    "classic_item_id": 21585,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 475,
+  "fields": {
+    "name": "Belt of Never-ending Agony",
+    "quality": "E",
+    "classic_item_id": 21586,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 476,
+  "fields": {
+    "name": "Ring of the Godslayer",
+    "quality": "E",
+    "classic_item_id": 21596,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 477,
+  "fields": {
+    "name": "Scepter of the False Prophet",
+    "quality": "E",
+    "classic_item_id": 21839,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 478,
+  "fields": {
+    "name": "Eyestalk Waist Cord",
+    "quality": "E",
+    "classic_item_id": 22730,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 479,
+  "fields": {
+    "name": "Cloak of the Devoured",
+    "quality": "E",
+    "classic_item_id": 22731,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 480,
+  "fields": {
+    "name": "Mark of C'Thun",
+    "quality": "E",
+    "classic_item_id": 22732,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 481,
+  "fields": {
+    "name": "Garb of Royal Ascension",
+    "quality": "E",
+    "classic_item_id": 21838,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 482,
+  "fields": {
+    "name": "Gloves of the Immortal",
+    "quality": "E",
+    "classic_item_id": 21888,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 483,
+  "fields": {
+    "name": "Gloves of the Redeemed Prophecy",
+    "quality": "E",
+    "classic_item_id": 21889,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 484,
+  "fields": {
+    "name": "Neretzek, The Blood Drinker",
+    "quality": "E",
+    "classic_item_id": 21856,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 485,
+  "fields": {
+    "name": "Ritssyn's Ring of Chaos",
+    "quality": "E",
+    "classic_item_id": 21836,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 486,
+  "fields": {
+    "name": "Shard of the Fallen Star",
+    "quality": "E",
+    "classic_item_id": 21891,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 487,
+  "fields": {
+    "name": "Anubisath Warhammer",
+    "quality": "E",
+    "classic_item_id": 21837,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 488,
+  "fields": {
+    "name": "Red Qiraji Resonating Crystal",
+    "quality": "R",
+    "classic_item_id": 21321,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 489,
+  "fields": {
+    "name": "Idol of Night",
+    "quality": "R",
+    "classic_item_id": 20875,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 490,
+  "fields": {
+    "name": "Idol of the Sun",
+    "quality": "R",
+    "classic_item_id": 20874,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 491,
+  "fields": {
+    "name": "Idol of Death",
+    "quality": "R",
+    "classic_item_id": 20876,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 492,
+  "fields": {
+    "name": "Idol of Strife",
+    "quality": "R",
+    "classic_item_id": 20881,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 493,
+  "fields": {
+    "name": "Idol of the Sage",
+    "quality": "R",
+    "classic_item_id": 20877,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 494,
+  "fields": {
+    "name": "Idol of Life",
+    "quality": "R",
+    "classic_item_id": 20879,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 495,
+  "fields": {
+    "name": "Idol of War",
+    "quality": "R",
+    "classic_item_id": 20882,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 496,
+  "fields": {
+    "name": "Idol of Rebirth",
+    "quality": "R",
+    "classic_item_id": 20878,
     "classicdb_item_id_suffix": ""
   }
 }
