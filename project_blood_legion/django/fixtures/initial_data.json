@@ -603,6 +603,7 @@
       378,
       375,
       379,
+      498,
       451,
       453,
       373,
@@ -7176,6 +7177,16 @@
     "name": "Formula: Enchant Cloak - Subtlety",
     "quality": "R",
     "classic_item_id": 20735,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 498,
+  "fields": {
+    "name": "Formula: Enchant Gloves - Threat",
+    "quality": "R",
+    "classic_item_id": 20726,
     "classicdb_item_id_suffix": ""
   }
 }
