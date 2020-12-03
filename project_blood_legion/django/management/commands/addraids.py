@@ -68,6 +68,20 @@ class Command(BaseCommand):
 			raid=aq
 		))
 
+		naxx_zone = Zone.objects.get(name="Naxxramas")
+		naxx_release = datetime.datetime(2020, 12, 3, 17, 0, 0)
+		naxx_first_reset = datetime.datetime(2020, 12, 8, 11, 0, 0)
+		naxx, _ = Raid.objects.get_or_create(zone=naxx_zone, reset=1, defaults={
+			'start': eastern_tz.localize(naxx_release),
+			'end': eastern_tz.localize(naxx_first_reset)
+		})
+		entries.append(Entry(
+			next_reset=naxx_first_reset,
+			zone_id=naxx_zone.id,
+			reset_frequency=7,
+			raid=naxx
+		))
+
 		until = datetime.datetime.now() + datetime.timedelta(days=14)
 		while True:
 			entries = sorted(entries)
