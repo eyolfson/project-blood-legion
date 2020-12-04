@@ -1006,6 +1006,7 @@
       617,
       613,
       610,
+      638,
       623,
       621,
       611,
@@ -9739,6 +9740,16 @@
     "name": "Misplaced Servo Arm",
     "quality": "E",
     "classic_item_id": 23221,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 638,
+  "fields": {
+    "name": "Nerubian Slavemaker",
+    "quality": "E",
+    "classic_item_id": 22812,
     "classicdb_item_id_suffix": ""
   }
 }
