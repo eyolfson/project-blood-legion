@@ -35,52 +35,36 @@
 
 {% include "project_blood_legion/raid_loot_table.html" with ordered_loot=instance.ordered_loot %}
 
-{% if instance.loot_form %}
+{% for loot_form in instance.loot_forms %}
 <form action="{% url 'project_blood_legion:raid_detail' raid.id %}" method="post">
+
   {% csrf_token %}
 
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label for="{{ instance.loot_form.item.id_for_label }}" class="label">Item:</label>
+  <div class="field is-grouped">
+    <div class="control">
+      <a class="button">{{ loot_form.boss }}</a>
     </div>
-    <div class="field-body">
+
+    <div class="control">
       <div class="select">
-      {{ instance.loot_form.item }}
+        {{ loot_form.item }}
       </div>
     </div>
-  </div>
 
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label for="{{ instance.loot_form.boss.id_for_label }}" class="label">Boss:</label>
-    </div>
-    <div class="field-body">
+    <div class="control">
       <div class="select">
-      {{ instance.loot_form.boss }}
+        {{ loot_form.character }}
       </div>
     </div>
+
+    <div class="control">
+      <button class="button is-success" type="submit" name="{{ loot_form.prefix }}" value="add">Add</button>
+    </div>
+
   </div>
 
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label for="{{ instance.loot_form.character.id_for_label }}" class="label">Character:</label>
-    </div>
-    <div class="field-body">
-      <div class="select">
-      {{ instance.loot_form.character }}
-      </div>
-    </div>
-  </div>
-
-  <div class="field is-horizontal">
-    <div class="field-label">
-    </div>
-    <div class="field-body">
-      <input class="button is-success" type="submit" name="{{ instance.prefix }}" value="Add">
-    </div>
-  </div>
 </form>
-{% endif %}
+{% endfor %}
 
 {% if instance.reserves.count %}
   <br />

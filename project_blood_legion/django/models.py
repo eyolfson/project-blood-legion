@@ -124,6 +124,7 @@ class Boss(models.Model):
 	zone = models.ForeignKey(
 		Zone,
 		on_delete=models.CASCADE,
+		related_name='bosses',
 	)
 	name = models.CharField(
 		max_length=100,

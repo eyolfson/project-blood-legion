@@ -179,16 +179,20 @@ def raid_detail(request, raid_id):
 	instances = list(raid.instance_set.all())
 	if request.user.is_authenticated and request.user.has_perm('project_blood_legion.change_loot'):
 		for instance in instances:
-			instance.prefix = 'loot-{}'.format(instance.id)
-			if request.method == 'POST' and instance.prefix in request.POST:
-				instance.loot_form = LootForm(request.POST, prefix=instance.prefix)
-				if instance.loot_form.is_valid():
-					loot = instance.loot_form.save()
-					loot.instance = instance
-					loot.save()
-					return HttpResponseRedirect(reverse('project_blood_legion:raid_detail', args=(raid_id,)))
-			else:
-				instance.loot_form = LootForm(prefix=instance.prefix)
+			instance.loot_forms = []
+			for boss in instance.raid.zone.bosses.all():
+				prefix = 'instance-{}-boss-{}'.format(instance.id, boss.id)
+				if request.method == 'POST' and prefix in request.POST:
+					loot_form = LootForm(boss, request.POST, prefix=prefix)
+					if loot_form.is_valid():
+						loot = loot_form.save()
+						loot.instance = instance
+						loot.boss = boss
+						loot.save()
+						return HttpResponseRedirect(reverse('project_blood_legion:raid_detail', args=(raid_id,)))
+				else:
+					loot_form = LootForm(boss, prefix=prefix)
+				instance.loot_forms.append(loot_form)
 	context = {
 		'raid': raid,
 		'instances': instances,
