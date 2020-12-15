@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}Blood Legion - {% if show_members %}Raiders{% else %}Members{% endif %} ({{ members.count }}){% endblock %}
+{% block title %}Blood Legion - Raiders ({{ members.count }}){% endblock %}
 
 {% block content %}
 
-<h1 class="title">{% if show_members %}Raiders{% else %}Members{% endif %} ({{ members.count }})</h1>
-<p class="subtitle">{% if show_members %}<a href={% url 'project_blood_legion:member' %}>Members</a> {% endif %}<a {% if show_members %}href={% url 'project_blood_legion:alts' %}{% else %}href={% url 'project_blood_legion:member_alts' %}{% endif %}>Alts</a></p>
+<h1 class="title">Raiders ({{ members.count }})</h1>
+<p class="subtitle"><a href="{% url 'project_blood_legion:alts' %}">Alts</a></p>
 
 
 {% regroup members by main_character.get_cls_display as cls_list %}

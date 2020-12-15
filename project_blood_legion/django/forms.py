@@ -9,7 +9,7 @@ class LootForm(ModelForm):
 
 		self.boss = boss
 		self.fields['character'].queryset = Character.objects.filter(
-			Q(member__rank__lte=5) | Q(alt__member__rank__lte=5)
+			Q(member__rank__lte=4) | Q(alt__member__rank__lte=4)
 		)
 		self.fields['item'].queryset = Item.objects.filter(boss=boss)
 
