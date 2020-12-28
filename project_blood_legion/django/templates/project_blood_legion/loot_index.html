@@ -3,31 +3,6 @@
 {% block content %}
 <h1 class="title">Loot</h1>
 
-<!--{% if classes %}                                                                                                                                            -->
-<!--<p class="subtitle">                                                                                                                                        -->
-<!--    <span><a class="has-text-priest has-text-weight-bold" href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}">All Classes</a> </span>-->
-<!--    {% for cls in classes %}                                                                                                                                -->
-<!--        <span><a class="has-text-{{ cls.1|lower }} has-text-weight-bold"                                                                                    -->
-<!--            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}">{{ cls.1 }}</a> </span>                               -->
-<!--    {% endfor %}                                                                                                                                            -->
-<!--</p>                                                                                                                                                        -->
-<!--{% else %}                                                                                                                                                  -->
-<!--  <p>No classes exist.</p>                                                                                                                                  -->
-<!--{% endif %}                                                                                                                                                 -->
-<!--                                                                                                                                                            -->
-<!--{% if zones %}                                                                                                                                              -->
-<!--<p class="subtitle">                                                                                                                                        -->
-<!--    <span><a class="has-text-weight-bold {% if 'zf' not in request.GET %} has-text-priest {% endif %}"                                                      -->
-<!--        href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a> </span>                                                    -->
-<!--    {% for zone in zones %}                                                                                                                                 -->
-<!--        <span><a class="has-text-weight-bold {% ifequal request.GET.zf zone.id|stringformat:"s" %} has-text-priest {% endifequal %}"                        -->
-<!--            href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a> </span>                         -->
-<!--    {% endfor %}                                                                                                                                            -->
-<!--</p>                                                                                                                                                        -->
-<!--{% else %}                                                                                                                                                  -->
-<!--  <p>No zones exist.</p>                                                                                                                                    -->
-<!--{% endif %}                                                                                                                                                 -->
-
 {% if classes %}
 <table style="float:left; width:15%">
     <thead>
@@ -62,7 +37,7 @@
     <!--</thead>-->
     <!--<tbody>-->
         <tr><td>
-        <a class="has-text-weight-bold {% if 'zf' not in request.GET %} has-text-priest {% endif %}"
+        <a class="has-text-weight-bold {% if 'zf' not in request.GET or request.GET.zf == '' %} has-text-priest {% endif %}"
             href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a>
         </td></tr>
     {% for zone in zones %}
@@ -76,13 +51,13 @@
   <p>No zones exist.</p>
 {% endif %}
 
-{% if bosses and 'zf' in request.GET %}
+{% if bosses and 'zf' in request.GET and not request.GET.zf == '' %}
     <tr><td>&nbsp;</td></tr>
     <tr>
         <th>Boss</th> 
     </tr>
     <tr><td>
-    <a class="has-text-weight-bold {% if 'bf' not in request.GET %} has-text-priest {% endif %}"
+    <a class="has-text-weight-bold {% if 'bf' not in request.GET or request.GET.bf == '' %} has-text-priest {% endif %}"
         href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}&zf={{ request.GET.zf }}">All Bosses</a>
     </td></tr>        
     
@@ -94,9 +69,6 @@
                 </td></tr>                
             {% endifequal %}
         {% endfor %}
-    
-{% else %}
-    <p>No bosses exist.</p>
 {% endif %}
 </tbody>
 </table>
