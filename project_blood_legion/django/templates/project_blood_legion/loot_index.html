@@ -37,12 +37,13 @@
     </thead>
     <tbody>
         <tr><td>
-            <a class="has-text-priest has-text-weight-bold" href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}">All Classes</a>
+            <a class="has-text-priest has-text-weight-bold" 
+                href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">All Classes</a>
         </td></tr>
     {% for cls in classes %}
     <tr><td>
         <a class="has-text-{{ cls.1|lower }} has-text-weight-bold" 
-            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}">{{ cls.1 }}</a>
+            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">{{ cls.1 }}</a>
     </td></tr>
     {% endfor %}
 <!--</tbody>-->
@@ -70,11 +71,34 @@
             href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a>
         </td></tr>                
     {% endfor %}
-    </tbody>
-</table>
+    <!--</tbody>-->
 {% else %}
   <p>No zones exist.</p>
 {% endif %}
+
+{% if bosses and 'zf' in request.GET %}
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+        <th>Boss</th> 
+    </tr>
+    <tr><td>
+    <a class="has-text-weight-bold {% if 'bf' not in request.GET %} has-text-priest {% endif %}"
+        href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}&zf={{ request.GET.zf }}">All Bosses</a>
+    </td></tr>        
+    
+        {% for boss in bosses %}
+            {% ifequal boss.zone.id|stringformat:"s" request.GET.zf %}
+                <tr><td>
+                <a class="has-text-weight-bold {% ifequal request.GET.bf boss.id|stringformat:"s" %} has-text-priest {% endifequal %}"
+                    href="{% url 'project_blood_legion:loot_index' %}?bf={{ boss.id }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}">{{ boss.name }}</a>
+                </td></tr>                
+            {% endifequal %}
+        {% endfor %}
+    
+{% else %}
+    <p>No bosses exist.</p>
+{% endif %}
+</tbody>
 </table>
 
 {% if loots %}

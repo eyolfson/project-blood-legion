@@ -227,13 +227,19 @@ def loot_index(request):
 	else:
 		cf = Character.objects.all()
 
+	if request.GET.get('bf'): 
+		bf = Boss.objects.filter(id=request.GET['bf'])
+	else:
+		bf = Boss.objects.order_by('id').values('id').distinct()
+
 	#limit results to 200 so the page isn't too massive:
-	loots = Loot.objects.filter(instance__raid__zone__id__in=zf).filter(character__in=cf).order_by('-instance__scheduled_start', '-boss__id')[:200]
+	loots = Loot.objects.filter(instance__raid__zone__id__in=zf, boss__in=bf, character__in=cf).order_by('-instance__scheduled_start', '-boss__id')[:200]
 
 	context = {
 		'loots': loots,	
 		'classes' : Character.CLS_CHOICES,
 		'zones' : Zone.objects.all(),
+		'bosses' : Boss.objects.all(),
 	}
 	return render(request, 'project_blood_legion/loot_index.html', context)
 
