@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Blood Legion - Loot{% endblock %}
+{% block content %}
+<h1 class="title">Loot</h1>
+
+<!--{% if classes %}                                                                                                                                            -->
+<!--<p class="subtitle">                                                                                                                                        -->
+<!--    <span><a class="has-text-priest has-text-weight-bold" href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}">All Classes</a> </span>-->
+<!--    {% for cls in classes %}                                                                                                                                -->
+<!--        <span><a class="has-text-{{ cls.1|lower }} has-text-weight-bold"                                                                                    -->
+<!--            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}">{{ cls.1 }}</a> </span>                               -->
+<!--    {% endfor %}                                                                                                                                            -->
+<!--</p>                                                                                                                                                        -->
+<!--{% else %}                                                                                                                                                  -->
+<!--  <p>No classes exist.</p>                                                                                                                                  -->
+<!--{% endif %}                                                                                                                                                 -->
+<!--                                                                                                                                                            -->
+<!--{% if zones %}                                                                                                                                              -->
+<!--<p class="subtitle">                                                                                                                                        -->
+<!--    <span><a class="has-text-weight-bold {% if 'zf' not in request.GET %} has-text-priest {% endif %}"                                                      -->
+<!--        href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a> </span>                                                    -->
+<!--    {% for zone in zones %}                                                                                                                                 -->
+<!--        <span><a class="has-text-weight-bold {% ifequal request.GET.zf zone.id|stringformat:"s" %} has-text-priest {% endifequal %}"                        -->
+<!--            href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a> </span>                         -->
+<!--    {% endfor %}                                                                                                                                            -->
+<!--</p>                                                                                                                                                        -->
+<!--{% else %}                                                                                                                                                  -->
+<!--  <p>No zones exist.</p>                                                                                                                                    -->
+<!--{% endif %}                                                                                                                                                 -->
+
+{% if classes %}
+<table style="float:left; width:15%">
+    <thead>
+        <tr>
+            <th>Class</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>
+            <a class="has-text-priest has-text-weight-bold" href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}">All Classes</a>
+        </td></tr>
+    {% for cls in classes %}
+    <tr><td>
+        <a class="has-text-{{ cls.1|lower }} has-text-weight-bold" 
+            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}">{{ cls.1 }}</a>
+    </td></tr>
+    {% endfor %}
+<!--</tbody>-->
+<!--</table>-->
+{% else %}
+  <p>No classes exist.</p>
+{% endif %}
+
+{% if zones %}
+<!--<table >-->
+<!--    <thead>-->
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th>Zone</th> 
+        </tr>
+    <!--</thead>-->
+    <!--<tbody>-->
+        <tr><td>
+        <a class="has-text-weight-bold {% if 'zf' not in request.GET %} has-text-priest {% endif %}"
+            href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a>
+        </td></tr>
+    {% for zone in zones %}
+        <tr><td>
+        <a class="has-text-weight-bold {% ifequal request.GET.zf zone.id|stringformat:"s" %} has-text-priest {% endifequal %}"
+            href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a>
+        </td></tr>                
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+  <p>No zones exist.</p>
+{% endif %}
+</table>
+
+{% if loots %}
+<table class="table is-narrow" style="float:right; width:85%">
+<thead>
+    <tr>
+        <th>Item</th> 
+        <th>Character</th>
+        <th>Boss</th>
+        <th>Instance</th>        
+        <th>Date</th>
+    </tr>
+</thead>
+<tbody>
+  {% for loot in loots %}
+  <tr> 
+    <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
+    <td>{% include "project_blood_legion/character_link.html" with character=loot.character %}</td>
+    <td>{% include "project_blood_legion/boss_link.html" with boss=loot.boss %}</td>
+    <td>
+        {% if loot.instance %}
+        <a href="{% url 'project_blood_legion:raid_detail' loot.instance.raid.id %}">{{ loot.instance.raid }}</a>
+        {% elif loot.raid %}
+        <a href="{% url 'project_blood_legion:raid_detail' loot.raid.id %}">{{ loot.raid }}</a>
+        {% else %}
+        Unknown
+        {% endif %}
+    </td>
+    <td>{{ loot.instance.raid.start|date:"M j Y" }}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+{% else %}
+  <p>No loot exists.</p>
+{% endif %}
+
+{% endblock %}
