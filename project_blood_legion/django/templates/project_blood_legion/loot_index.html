@@ -7,35 +7,29 @@
 <table style="float:left; width:15%">
     <thead>
         <tr>
-            <th>Class</th> 
+            <th>Class</th>
         </tr>
     </thead>
     <tbody>
         <tr><td>
-            <a class="has-text-priest has-text-weight-bold" 
+            <a class="has-text-priest has-text-weight-bold"
                 href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">All Classes</a>
         </td></tr>
     {% for cls in classes %}
     <tr><td>
-        <a class="has-text-{{ cls.1|lower }} has-text-weight-bold" 
+        <a class="has-text-{{ cls.1|lower }} has-text-weight-bold"
             href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">{{ cls.1 }}</a>
     </td></tr>
     {% endfor %}
-<!--</tbody>-->
-<!--</table>-->
 {% else %}
   <p>No classes exist.</p>
 {% endif %}
 
 {% if zones %}
-<!--<table >-->
-<!--    <thead>-->
         <tr><td>&nbsp;</td></tr>
         <tr>
-            <th>Zone</th> 
+            <th>Zone</th>
         </tr>
-    <!--</thead>-->
-    <!--<tbody>-->
         <tr><td>
         <a class="has-text-weight-bold {% if 'zf' not in request.GET or request.GET.zf == '' %} has-text-priest {% endif %}"
             href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a>
@@ -44,9 +38,8 @@
         <tr><td>
         <a class="has-text-weight-bold {% ifequal request.GET.zf zone.id|stringformat:"s" %} has-text-priest {% endifequal %}"
             href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a>
-        </td></tr>                
+        </td></tr>
     {% endfor %}
-    <!--</tbody>-->
 {% else %}
   <p>No zones exist.</p>
 {% endif %}
@@ -54,19 +47,18 @@
 {% if bosses and 'zf' in request.GET and not request.GET.zf == '' %}
     <tr><td>&nbsp;</td></tr>
     <tr>
-        <th>Boss</th> 
+        <th>Boss</th>
     </tr>
     <tr><td>
     <a class="has-text-weight-bold {% if 'bf' not in request.GET or request.GET.bf == '' %} has-text-priest {% endif %}"
         href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}&zf={{ request.GET.zf }}">All Bosses</a>
-    </td></tr>        
-    
+    </td></tr>
         {% for boss in bosses %}
             {% ifequal boss.zone.id|stringformat:"s" request.GET.zf %}
                 <tr><td>
                 <a class="has-text-weight-bold {% ifequal request.GET.bf boss.id|stringformat:"s" %} has-text-priest {% endifequal %}"
                     href="{% url 'project_blood_legion:loot_index' %}?bf={{ boss.id }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}">{{ boss.name }}</a>
-                </td></tr>                
+                </td></tr>
             {% endifequal %}
         {% endfor %}
 {% endif %}
@@ -77,16 +69,16 @@
 <table class="table is-narrow" style="float:right; width:85%">
 <thead>
     <tr>
-        <th>Item</th> 
+        <th>Item</th>
         <th>Character</th>
         <th>Boss</th>
-        <th>Instance</th>        
+        <th>Instance</th>
         <th>Date</th>
     </tr>
 </thead>
 <tbody>
   {% for loot in loots %}
-  <tr> 
+  <tr>
     <td>{% include "project_blood_legion/item_link.html" with item=loot.item %}</td>
     <td>{% include "project_blood_legion/character_link.html" with character=loot.character %}</td>
     <td>{% include "project_blood_legion/boss_link.html" with boss=loot.boss %}</td>
