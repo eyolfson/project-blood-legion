@@ -215,7 +215,11 @@ def boss_detail(request, boss_id):
 
 @login_required
 @permission_required('project_blood_legion.view_item', raise_exception=True)
-def loot_index(request):
+def loot_index(request):	
+	
+	max_results = 200 #limit results to 200 so the page isn't too massive:
+	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] #exclude Poor, Artifact from rarity filter list
+
 	if request.GET.get('zf'):
 		zf = request.GET['zf']
 	else:
@@ -230,8 +234,27 @@ def loot_index(request):
 	else:
 		bf = Boss.objects.order_by('id').values('id').distinct()
 
-	# limit results to 200 so the page isn't too massive
-	loots = Loot.objects.filter(instance__raid__zone__id__in=zf, boss__in=bf, character__in=cf).order_by('-instance__scheduled_start', '-boss__id')[:200]
+	if request.GET.get('rf'): 
+		rf = Item.objects.filter(quality=request.GET['rf'])
+	else:
+		rf = Item.objects.all()
+
+	if request.GET.get('sort'): 
+		sort_parms = request.GET['sort']
+		if sort_parms == 'cd':custom_sort = '-character__name'
+		elif sort_parms == 'ca':custom_sort = 'character__name'
+		elif sort_parms == 'bd':custom_sort = '-boss__name'
+		elif sort_parms == 'ba':custom_sort = 'boss__name'
+		elif sort_parms == 'dd':custom_sort = '-instance__scheduled_start'
+		elif sort_parms == 'da':custom_sort = 'instance__scheduled_start'
+		elif sort_parms == 'id':custom_sort = '-instance__raid__zone__name'
+		elif sort_parms == 'ia':custom_sort = 'instance__raid__zone__name'
+		elif sort_parms == 'ld':custom_sort = '-item__name'
+		elif sort_parms == 'la':custom_sort = 'item__name'
+	else:
+		custom_sort = '-instance__scheduled_start'
+
+	loots = Loot.objects.filter(instance__raid__zone__id__in=zf, boss__in=bf, character__in=cf, item__in=rf).order_by(custom_sort, '-boss__id')[:max_results]
 
 	context = {
 		'loots': loots,
