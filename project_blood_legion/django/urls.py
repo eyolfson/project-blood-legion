@@ -14,6 +14,7 @@ urlpatterns = [
 	path('item/<int:item_id>/', views.item_detail, name='item_detail'),
 	path('raid/', views.raid_index, name='raid_index'),
 	path('raid/<int:raid_id>/', views.raid_detail, name='raid_detail'),
+	path('loot/', views.loot_index, name='loot_index'),
 	path('boss/', views.boss_index, name='boss_index'),
 	path('boss/<int:boss_id>/', views.boss_detail, name='boss_detail'),
 	path('question/', views.question_index, name='question_index'),

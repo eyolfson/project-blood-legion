@@ -6,3 +6,4 @@
 
 .sass-cache/
 __pycache__/
+.vscode/settings.json

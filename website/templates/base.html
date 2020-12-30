@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	  <a class="navbar-item" href="{% url 'project_blood_legion:character_index' %}">Characters</a>{% endif %}
           {% if perms.project_blood_legion.view_item %}<a class="navbar-item" href="{% url 'project_blood_legion:item_index' %}">Items</a>{% endif %}
           {% if perms.project_blood_legion.view_raid %}<a class="navbar-item" href="{% url 'project_blood_legion:raid_index' %}">Raids</a>{% endif %}
+          {% if perms.project_blood_legion.view_raid %}<a class="navbar-item" href="{% url 'project_blood_legion:loot_index' %}">Loot</a>{% endif %}
           {% if perms.project_blood_legion.view_boss %}<a class="navbar-item" href="{% url 'project_blood_legion:boss_index' %}">Bosses</a>{% endif %}
           {% if perms.project_blood_legion.view_question %}<a class="navbar-item" href="{% url 'project_blood_legion:question_index' %}">Questions</a>{% endif %}
         </div>
