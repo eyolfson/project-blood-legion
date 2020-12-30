@@ -21,21 +21,34 @@
             href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">{{ cls.1 }}</a>
     </td></tr>
     {% endfor %}
-<!--</tbody>-->
-<!--</table>-->
 {% else %}
   <p>No classes exist.</p>
 {% endif %}
 
+{% if items %}
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th>Quality</th> 
+        </tr>
+        <tr><td>
+        <a class="has-text-weight-bold {% if 'rf' not in request.GET or request.GET.rf == '' %} has-text-priest {% endif %}"
+            href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}&cf={{ request.GET.cf }}">All</a>
+        </td></tr>
+    {% for item in items %}
+        <tr><td>
+        <a class="has-text-{{ item.1|lower }} has-text-weight-bold"
+            href="{% url 'project_blood_legion:loot_index' %}?rf={{ item.0 }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}&bf={{ request.GET.bf }}">{{ item.1 }}</a>
+        </td></tr>                
+    {% endfor %}
+{% else %}
+  <p>No items exist.</p>
+{% endif %}
+
 {% if zones %}
-<!--<table >-->
-<!--    <thead>-->
         <tr><td>&nbsp;</td></tr>
         <tr>
             <th>Zone</th> 
         </tr>
-    <!--</thead>-->
-    <!--<tbody>-->
         <tr><td>
         <a class="has-text-weight-bold {% if 'zf' not in request.GET or request.GET.zf == '' %} has-text-priest {% endif %}"
             href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a>
@@ -46,7 +59,6 @@
             href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a>
         </td></tr>                
     {% endfor %}
-    <!--</tbody>-->
 {% else %}
   <p>No zones exist.</p>
 {% endif %}
@@ -70,6 +82,7 @@
             {% endifequal %}
         {% endfor %}
 {% endif %}
+
 </tbody>
 </table>
 
@@ -77,11 +90,11 @@
 <table class="table is-narrow" style="float:right; width:85%">
 <thead>
     <tr>
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'la' %}&sort=ld{% else %}&sort=la{% endif %}">Item</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ca' %}&sort=cd{% else %}&sort=ca{% endif %}">Character</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ba' %}&sort=bd{% else %}&sort=ba{% endif %}">Boss</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'la' %}&sort=ld{% else %}&sort=la{% endif %}">Item</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ca' %}&sort=cd{% else %}&sort=ca{% endif %}">Character</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ba' %}&sort=bd{% else %}&sort=ba{% endif %}">Boss</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
     </tr>
 </thead>
 <tbody>

@@ -219,6 +219,7 @@ def loot_index(request):
 	
 	#limit results to 200 so the page isn't too massive:
 	max_results = 200
+	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] 
 
 	if request.GET.get('zf'):
 		zf = request.GET['zf']
@@ -262,6 +263,8 @@ def loot_index(request):
 		'classes' : Character.CLS_CHOICES,
 		'zones' : Zone.objects.all(),
 		'bosses' : Boss.objects.all(),
+		#'items' : Item.objects.order_by('quality').values('quality').distinct()
+		'items' : qualities
 	}
 	return render(request, 'project_blood_legion/loot_index.html', context)
 
