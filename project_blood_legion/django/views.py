@@ -220,9 +220,8 @@ def loot_index(request):
 =======
 def loot_index(request):	
 	
-	#limit results to 200 so the page isn't too massive:
-	max_results = 200
-	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] 
+	max_results = 200 #limit results to 200 so the page isn't too massive:
+	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] #exclude Poor, Artifact from rarity filter list
 
 >>>>>>> dd354e4 (added column sorting to loot view)
 	if request.GET.get('zf'):
@@ -271,7 +270,6 @@ def loot_index(request):
 		'classes' : Character.CLS_CHOICES,
 		'zones' : Zone.objects.all(),
 		'bosses' : Boss.objects.all(),
-		#'items' : Item.objects.order_by('quality').values('quality').distinct()
 		'items' : qualities
 	}
 	return render(request, 'project_blood_legion/loot_index.html', context)
