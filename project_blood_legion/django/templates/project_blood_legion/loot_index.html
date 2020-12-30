@@ -77,11 +77,11 @@
 <table class="table is-narrow" style="float:right; width:85%">
 <thead>
     <tr>
-        <th>Item</th> 
-        <th>Character</th>
-        <th>Boss</th>
-        <th>Instance</th>        
-        <th>Date</th>
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'la' %}&sort=ld{% else %}&sort=la{% endif %}">Item</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ca' %}&sort=cd{% else %}&sort=ca{% endif %}">Character</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ba' %}&sort=bd{% else %}&sort=ba{% endif %}">Boss</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
     </tr>
 </thead>
 <tbody>
