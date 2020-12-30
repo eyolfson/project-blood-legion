@@ -25,6 +25,25 @@
   <p>No classes exist.</p>
 {% endif %}
 
+{% if items %}
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th>Quality</th> 
+        </tr>
+        <tr><td>
+        <a class="has-text-weight-bold {% if 'rf' not in request.GET or request.GET.rf == '' %} has-text-priest {% endif %}"
+            href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}&cf={{ request.GET.cf }}">All</a>
+        </td></tr>
+    {% for item in items %}
+        <tr><td>
+        <a class="has-text-{{ item.1|lower }} has-text-weight-bold"
+            href="{% url 'project_blood_legion:loot_index' %}?rf={{ item.0 }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}&bf={{ request.GET.bf }}">{{ item.1 }}</a>
+        </td></tr>                
+    {% endfor %}
+{% else %}
+  <p>No items exist.</p>
+{% endif %}
+
 {% if zones %}
         <tr><td>&nbsp;</td></tr>
         <tr>
@@ -62,6 +81,7 @@
             {% endifequal %}
         {% endfor %}
 {% endif %}
+
 </tbody>
 </table>
 
@@ -69,6 +89,7 @@
 <table class="table is-narrow" style="float:right; width:85%">
 <thead>
     <tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <th>Item</th>
         <th>Character</th>
@@ -82,6 +103,13 @@
         <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
         <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
 >>>>>>> dd354e4 (added column sorting to loot view)
+=======
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'la' %}&sort=ld{% else %}&sort=la{% endif %}">Item</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ca' %}&sort=cd{% else %}&sort=ca{% endif %}">Character</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ba' %}&sort=bd{% else %}&sort=ba{% endif %}">Boss</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
+>>>>>>> bb2ab34... added item rarity filtering and column sorting
     </tr>
 </thead>
 <tbody>
