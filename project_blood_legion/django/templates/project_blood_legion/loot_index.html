@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load url_handling %}
 {% block title %}Blood Legion - Loot{% endblock %}
 {% block content %}
 <h1 class="title">Loot</h1>
@@ -13,12 +14,12 @@
     <tbody>
         <tr><td>
             <a class="has-text-priest has-text-weight-bold"
-                href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">All Classes</a>
+                href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'cf' '' %}">All Classes</a>
         </td></tr>
     {% for cls in classes %}
     <tr><td>
         <a class="has-text-{{ cls.1|lower }} has-text-weight-bold"
-            href="{% url 'project_blood_legion:loot_index' %}?cf={{ cls.0 }}&zf={{ request.GET.zf }}&bf={{ request.GET.bf }}">{{ cls.1 }}</a>
+            href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'cf' cls.0 %}">{{ cls.1 }}</a>
     </td></tr>
     {% endfor %}
 {% else %}
@@ -32,12 +33,11 @@
         </tr>
         <tr><td>
         <a class="has-text-weight-bold {% if 'rf' not in request.GET or request.GET.rf == '' %} has-text-priest {% endif %}"
-            href="{% url 'project_blood_legion:loot_index' %}?zf={{ request.GET.zf }}&bf={{ request.GET.bf }}&cf={{ request.GET.cf }}">All</a>
+            href="{% url 'project_blood_legion:loot_index' %}?{%  url_replace request 'rf' '' %}">All</a>
         </td></tr>
     {% for item in items %}
         <tr><td>
-        <a class="has-text-{{ item.1|lower }} has-text-weight-bold"
-            href="{% url 'project_blood_legion:loot_index' %}?rf={{ item.0 }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}&bf={{ request.GET.bf }}">{{ item.1 }}</a>
+        <a class="has-text-{{ item.1|lower }} has-text-weight-bold" href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'rf' item.0 %}">{{ item.1 }}</a>
         </td></tr>                
     {% endfor %}
 {% else %}
@@ -50,13 +50,13 @@
             <th>Zone</th>
         </tr>
         <tr><td>
-        <a class="has-text-weight-bold {% if 'zf' not in request.GET or request.GET.zf == '' %} has-text-priest {% endif %}"
-            href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}">All Zones</a>
+        <a class="has-text-weight-bold {% if 'zf' not in request.GET or request.GET.zf == '' %} has-text-priest {% endif %}" 
+            href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'zf' '' %}">All Zones</a>
         </td></tr>
     {% for zone in zones %}
         <tr><td>
         <a class="has-text-weight-bold {% ifequal request.GET.zf zone.id|stringformat:"s" %} has-text-priest {% endifequal %}"
-            href="{% url 'project_blood_legion:loot_index' %}?zf={{ zone.id }}&cf={{ request.GET.cf }}">{{ zone.name }}</a>
+            href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'zf' zone.id %}">{{ zone.name }}</a>
         </td></tr>
     {% endfor %}
 {% else %}
@@ -70,13 +70,13 @@
     </tr>
     <tr><td>
     <a class="has-text-weight-bold {% if 'bf' not in request.GET or request.GET.bf == '' %} has-text-priest {% endif %}"
-        href="{% url 'project_blood_legion:loot_index' %}?cf={{ request.GET.cf }}&zf={{ request.GET.zf }}">All Bosses</a>
+        href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'bf' '' %}">All Bosses</a>
     </td></tr>
         {% for boss in bosses %}
             {% ifequal boss.zone.id|stringformat:"s" request.GET.zf %}
                 <tr><td>
                 <a class="has-text-weight-bold {% ifequal request.GET.bf boss.id|stringformat:"s" %} has-text-priest {% endifequal %}"
-                    href="{% url 'project_blood_legion:loot_index' %}?bf={{ boss.id }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}">{{ boss.name }}</a>
+                    href="{% url 'project_blood_legion:loot_index' %}?{% url_replace request 'bf' boss.id %}">{{ boss.name }}</a>
                 </td></tr>
             {% endifequal %}
         {% endfor %}
@@ -89,11 +89,11 @@
 <table class="table is-narrow" style="float:right; width:85%">
 <thead>
     <tr>
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'la' %}&sort=ld{% else %}&sort=la{% endif %}">Item</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ca' %}&sort=cd{% else %}&sort=ca{% endif %}">Character</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ba' %}&sort=bd{% else %}&sort=ba{% endif %}">Boss</a></th> 
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'ia' %}&sort=id{% else %}&sort=ia{% endif %}">Instance</a></th>        
-        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?rf={{ request.GET.rf }}&bf={{ request.GET.bf }}&zf={{ request.GET.zf }}&cf={{ request.GET.cf }}{% if request.GET.sort == 'da' %}&sort=dd{% else %}&sort=da{% endif %}">Date</a></th>  
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?{% if request.GET.sort == 'la' %}{% url_replace request 'sort' 'ld' %}{% else %}{% url_replace request 'sort' 'la' %}{% endif %}">Item</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?{% if request.GET.sort == 'ca' %}{% url_replace request 'sort' 'cd' %}{% else %}{% url_replace request 'sort' 'ca' %}{% endif %}">Character</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?{% if request.GET.sort == 'ba' %}{% url_replace request 'sort' 'bd' %}{% else %}{% url_replace request 'sort' 'ba' %}{% endif %}">Boss</a></th> 
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?{% if request.GET.sort == 'ia' %}{% url_replace request 'sort' 'id' %}{% else %}{% url_replace request 'sort' 'ia' %}{% endif %}">Instance</a></th>        
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:loot_index' %}?{% if request.GET.sort == 'da' %}{% url_replace request 'sort' 'dd' %}{% else %}{% url_replace request 'sort' 'da' %}{% endif %}">Date</a></th>  
     </tr>
 </thead>
 <tbody>

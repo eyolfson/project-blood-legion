@@ -217,7 +217,7 @@ def boss_detail(request, boss_id):
 @permission_required('project_blood_legion.view_item', raise_exception=True)
 def loot_index(request):	
 	
-	max_results = 200 #limit results to 200 so the page isn't too massive:
+	max_results = 120 #limit results to 200 so the page isn't too massive:
 	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] #exclude Poor, Artifact from rarity filter list
 
 	if request.GET.get('zf'):
