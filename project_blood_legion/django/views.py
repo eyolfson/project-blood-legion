@@ -28,7 +28,8 @@ def roster(request):
 	context = {
 		'hide_rank': 3,
 		'show_members': True,
-		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'main_character__name'),
+		'members': Member.objects.filter(rank__lte=4).order_by('main_character__cls', 'rank', 'main_character__name'),
+		'alts': Alt.objects.filter(member__rank__lte=4).order_by('character__cls', 'character__name'),
 	}
 	return render(request, 'project_blood_legion/roster.html', context)
 
