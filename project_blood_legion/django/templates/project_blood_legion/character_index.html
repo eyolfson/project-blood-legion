@@ -7,14 +7,25 @@
 <h1 class="title">Characters</h1>
 
 {% if characters %}
+
+{% regroup characters by get_cls_display as cls_list %}
+<div class="box" style="float:left; box-shadow:none; width:66%;">
+  
+  {% for cls, char_list in cls_list %}
+  
+  <div class="box" style="box-shadow:none; float:left; width:20%; padding:0%;">
   <ul>
-  {% for character in characters %}
-    {% ifchanged %}
-    <li><strong>{{ character.get_cls_display }}</strong></li>
-    {% endifchanged %}
-  <li>{% include "project_blood_legion/character_link.html" %}</li>
-  {% endfor %}
+    <li><strong>{{ cls }}</strong></li>
+    {% for char in char_list %}
+    
+    <li>{% include "project_blood_legion/character_link.html" with character=char %}</li>
+    {% endfor %}
   </ul>
+  </div>
+  {% if forloop.counter == 5 %}<div class="box" style="box-shadow:none; clear:both; width:100%; padding:0%;">{% endif %}
+  {% endfor %}
+  </div>
+  </div>
 {% else %}
   <p>No characters exist.</p>
 {% endif %}

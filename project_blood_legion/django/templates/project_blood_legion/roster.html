@@ -5,9 +5,8 @@
 {% block content %}
 
 {% regroup members by main_character.get_cls_display as cls_list %}
-<div class="box" style="float:left; clear: both; box-shadow:none; width:66%;">
-<strong>Raiders ({{ members.count }})</strong>
-<br>
+<div class="box" style="float:left;  box-shadow:none; width:66%; padding:0%;">
+<h1 class="title">Raiders ({{ members.count }})</h1>
 {% for cls, member_list in cls_list %}
 <div class="box" style="box-shadow:none; float:left; width: 20%;">
 <ul>
@@ -21,17 +20,15 @@
   </li>
   {% endfor %}
 </ul>
-{% if forloop.counter == 5 %}<br>{% endif %}
 </div>
+{% if forloop.counter == 5 %}<div class="box" style="box-shadow:none; clear:both; width:100%; padding:0%;">{% endif %}
 {% endfor %}
 </div>
-
-<br>
+</div>
 
 {% regroup alts by character.get_cls_display as cls_list %}
-<div class="box" style="float:left; clear: both; box-shadow:none; width:66%;">
-<strong>Alts ({{ alts.count }})</strong>
-<br>
+<div class="box" style="float:left;  box-shadow:none; width:66%; padding:0%;">
+<h1 class="title">Alts ({{ alts.count }})</h1>
 {% for cls, alt_list in cls_list %}
 <div class="box" style="box-shadow:none; float:left; width: 20%;">
 <ul>
@@ -43,8 +40,9 @@
   </li>
   {% endfor %}
 </ul>
-{% if forloop.counter == 5 %}<br>{% endif %}
 </div>
+{% if forloop.counter == 5 %}<div class="box" style="box-shadow:none; clear:both; width:100%; padding:0%;">{% endif %}
 {% endfor %}
+</div>
 </div>
 {% endblock %}
