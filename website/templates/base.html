@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
           {% if perms.project_blood_legion.view_raid %}<a class="navbar-item" href="{% url 'project_blood_legion:loot_index' %}">Loot</a>{% endif %}
           {% if perms.project_blood_legion.view_boss %}<a class="navbar-item" href="{% url 'project_blood_legion:boss_index' %}">Bosses</a>{% endif %}
           {% if perms.project_blood_legion.view_question %}<a class="navbar-item" href="{% url 'project_blood_legion:question_index' %}">Questions</a>{% endif %}
+          {% if perms.project_blood_legion.add_loot %}<a class="navbar-item" href="{% url 'project_blood_legion:note_index' %}">Loot Notes</a>{% endif %}
         </div>
         <div class="navbar-end">
           {% if user.is_authenticated and user.member %}

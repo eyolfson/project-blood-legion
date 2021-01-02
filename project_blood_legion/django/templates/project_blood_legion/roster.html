@@ -4,11 +4,12 @@
 
 {% block content %}
 
-{% regroup members by main_character.get_cls_display as cls_list %}
-<div class="box" style="float:left;  box-shadow:none; width:66%; padding:0%;">
 <h1 class="title">Raiders ({{ members.count }})</h1>
+{% regroup members by main_character.get_cls_display as cls_list %}
+<div class="box" style="float:left; box-shadow:none; width:66%;">
+
 {% for cls, member_list in cls_list %}
-<div class="box" style="box-shadow:none; float:left; width: 20%;">
+<div class="box" style="box-shadow:none; float:left; width: 20%; padding:0%;">
 <ul>
   <li><strong>{{ cls }} ({{ member_list|length }})</strong></li>
   {% for member in member_list %}
@@ -26,11 +27,12 @@
 </div>
 </div>
 
+<div class="box" style="float:left; box-shadow:none; width:100%; padding:0%;"><h1 class="title" >Alts ({{ alts.count }})</h1></div>
 {% regroup alts by character.get_cls_display as cls_list %}
-<div class="box" style="float:left;  box-shadow:none; width:66%; padding:0%;">
-<h1 class="title">Alts ({{ alts.count }})</h1>
+<div class="box" style="float:left; box-shadow:none; width:66%;">
+
 {% for cls, alt_list in cls_list %}
-<div class="box" style="box-shadow:none; float:left; width: 20%;">
+<div class="box" style="box-shadow:none; float:left; width: 20%; padding:0%;">
 <ul>
   <li><strong>{{ cls }} ({{ alt_list|length }})</strong></li>
   {% for alt in alt_list %}

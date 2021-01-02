@@ -19,4 +19,5 @@ urlpatterns = [
 	path('boss/<int:boss_id>/', views.boss_detail, name='boss_detail'),
 	path('question/', views.question_index, name='question_index'),
 	path('question/<int:question_id>/', views.question_detail, name='question_detail'),
+	path('notes/', views.note_index, name='note_index'),
 ]

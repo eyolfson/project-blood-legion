@@ -11,7 +11,12 @@ admin.site.register(Item)
 admin.site.register(Loot, LootAdmin)
 admin.site.register(Member)
 admin.site.register(Alt)
-admin.site.register(Note)
+
+class NoteAdmin(admin.ModelAdmin):
+    model = Note
+    list_display = ('character', 'last_updated')
+admin.site.register(Note, NoteAdmin)
+
 admin.site.register(Question)
 admin.site.register(Reserve)
 admin.site.register(InstanceReserve)

@@ -5,6 +5,7 @@ from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.utils.html import escape
+from datetime import date, datetime
 
 import markdown
 from markdown.extensions.toc import TocExtension
@@ -97,9 +98,11 @@ def character_detail(request, character_id):
 						],
 						output='html5',
 					)
+					note.last_updated = datetime.now()
 					note.save()
 				else:
 					new_note.character = character
+					note.last_updated = datetime.now()
 					new_note.save()
 				return HttpResponseRedirect(reverse('project_blood_legion:character_detail', args=(character_id,)))
 		else:
@@ -218,7 +221,7 @@ def boss_detail(request, boss_id):
 @permission_required('project_blood_legion.view_item', raise_exception=True)
 def loot_index(request):	
 	
-	max_results = 120 #limit results to 200 so the page isn't too massive:
+	max_results = 120 #limit results so the page isn't too massive:
 	qualities = [x for x in Item.QUALITY_CHOICES if x[0] in('R','E','L','U')] #exclude Poor, Artifact from rarity filter list
 
 	if request.GET.get('zf'):
@@ -303,3 +306,29 @@ def question_detail(request, question_id):
 		answers = Answer.objects.filter(question=question).order_by('-choice', 'member__main_character__cls', 'member__main_character__name')
 		context['answers'] = answers
 	return render(request, 'project_blood_legion/question_detail.html', context)
+
+@login_required
+@permission_required('project_blood_legion.view_character', raise_exception=True)
+def note_index(request):
+
+	# can we re-use this permission check?
+	can_view = request.user.has_perm('project_blood_legion.add_loot')
+
+	if can_view:
+
+		if request.GET.get('sort'): 
+			sort_parms = request.GET['sort']
+			if sort_parms == 'cd':custom_sort = '-character__name'
+			elif sort_parms == 'ca':custom_sort = 'character__name'
+			elif sort_parms == 'dd':custom_sort = '-last_updated'
+			elif sort_parms == 'da':custom_sort = 'last_updated'
+		else:
+			custom_sort = '-last_updated'
+
+		context = {
+			'notes': Note.objects.order_by(custom_sort),
+		}
+		return render(request, 'project_blood_legion/note_index.html', context)
+
+	else:
+		return render(request, '403.html')

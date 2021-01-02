@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load url_handling %}
+{% block title %}Blood Legion - Notes{% endblock %}
+{% block content %}
+<h1 class="title">Note View</h1>
+<h2 class="subtitle">Sorted by most recently updated (default).<br>Sort by Character or Updated time by clicking the field headings.</h2>
+
+{% if notes %}
+<table class="table is-narrow" style="width:100%;">
+<thead>
+    <tr>
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:note_index' %}?{% if request.GET.sort == 'ca' %}{% url_replace request 'sort' 'cd' %}{% else %}{% url_replace request 'sort' 'ca' %}{% endif %}">Character&nbsp;&varr;</a></th>
+        <th><a class="has-text-priest" href="{% url 'project_blood_legion:note_index' %}?{% if request.GET.sort == 'da' %}{% url_replace request 'sort' 'dd' %}{% else %}{% url_replace request 'sort' 'da' %}{% endif %}">Updated&nbsp;&varr;</a></th>
+        <th class="has-text-priest">Note Text</th> 
+    </tr>
+</thead>
+<tbody>
+  {% for note in notes %}
+  <tr>
+    <td>{% include "project_blood_legion/character_link.html" with character=note.character %}</td>
+    <td>{{ note.last_updated|date:"m-d-y h:i A" }}</td>
+    <td>{{ note.text|safe }}</td>    
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+{% else %}
+  <p>No notes exist.</p>
+{% endif %}
+
+{% endblock %}
