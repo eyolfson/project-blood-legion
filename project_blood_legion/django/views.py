@@ -307,28 +307,21 @@ def question_detail(request, question_id):
 		context['answers'] = answers
 	return render(request, 'project_blood_legion/question_detail.html', context)
 
+# can we re-use this permission check?
 @login_required
 @permission_required('project_blood_legion.add_loot', raise_exception=True)
 def note_index(request):
 
-	# can we re-use this permission check?
-	can_view = request.user.has_perm('project_blood_legion.add_loot')
-
-	if can_view:
-
-		if request.GET.get('sort'): 
-			sort_parms = request.GET['sort']
-			if sort_parms == 'cd':custom_sort = '-character__name'
-			elif sort_parms == 'ca':custom_sort = 'character__name'
-			elif sort_parms == 'dd':custom_sort = '-last_updated'
-			elif sort_parms == 'da':custom_sort = 'last_updated'
-		else:
-			custom_sort = '-last_updated'
-
-		context = {
-			'notes': Note.objects.order_by(custom_sort),
-		}
-		return render(request, 'project_blood_legion/note_index.html', context)
-
+	if request.GET.get('sort'): 
+		sort_parms = request.GET['sort']
+		if sort_parms == 'cd':custom_sort = '-character__name'
+		elif sort_parms == 'ca':custom_sort = 'character__name'
+		elif sort_parms == 'dd':custom_sort = '-last_updated'
+		elif sort_parms == 'da':custom_sort = 'last_updated'
 	else:
-		return render(request, '403.html')
+		custom_sort = '-last_updated'
+
+	context = {
+		'notes': Note.objects.order_by(custom_sort),
+	}
+	return render(request, 'project_blood_legion/note_index.html', context)
