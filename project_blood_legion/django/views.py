@@ -308,7 +308,7 @@ def question_detail(request, question_id):
 	return render(request, 'project_blood_legion/question_detail.html', context)
 
 @login_required
-@permission_required('project_blood_legion.view_character', raise_exception=True)
+@permission_required('project_blood_legion.add_loot', raise_exception=True)
 def note_index(request):
 
 	# can we re-use this permission check?
