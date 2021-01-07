@@ -1017,6 +1017,7 @@
       625,
       619,
       615,
+      639,
       607
     ]
   }
@@ -9960,6 +9961,16 @@
     "name": "Nerubian Slavemaker",
     "quality": "E",
     "classic_item_id": 22812,
+    "classicdb_item_id_suffix": ""
+  }
+},
+{
+  "model": "project_blood_legion.item",
+  "pk": 639,
+  "fields": {
+    "name": "The Hungering Cold",
+    "quality": "E",
+    "classic_item_id": 23577,
     "classicdb_item_id_suffix": ""
   }
 }
